@@ -7,7 +7,28 @@ You can run this script locally. Just update the the following variables:
 >examples_dir = 'subdirectory'
 collection_file = 'your_collection.json'
 
-This script was also meant to run as a proxied AWS Lambda Function 
+This script was also meant to run as a proxied AWS Lambda Function.
+
+METHOD: POST
+**body**
+
+    {
+        "change" : {
+            "include_response" : false,
+            "remove_header" : [ 
+                "Content-Type",
+                "Accept"
+            ],
+            "change_variables" : {
+                "server" : "my_server",
+                "uk" : "",
+                "baseUrl" : ""
+            }
+        },
+        "collection" : {
+        }
+     }
+
 
 ### Collection Variables
 All collection variables marked with double braces {{variable}} are converted to iac parameters. However, you may also **rename** or **remove** any existing variable using the **change_variables** object. You must specify any variable that you want to rename as the property and the value must contain the new name or "" (empty) if you want to remove it.
@@ -25,4 +46,5 @@ All collection header parameters are converted to iac prameters. You can remove 
 
 ### Collection
 The original collection must be specified in the parameter.
+
 
