@@ -1,0 +1,6166 @@
+{
+	"info": {
+		"_postman_id": "09a663cc-6452-40d5-bafe-1f9e29dfba41",
+		"name": "APIs VTEX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16982738"
+	},
+	"item": [
+		{
+			"name": "1 - Processo Criar Categoria/Campos/Variantes e Produtos e SKUS",
+			"item": [
+				{
+					"name": "1 - Insert Categoria de um Produto",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/vnd.vtex.ds.v10+json",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"value": "vtexappkey-leomadeiras-HLOVYV",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"Name\":\"Puxadores\",\r\n\t\"Keywords\":\"Puxadores\",\r\n\t\"Title\":\"Puxadores\",\r\n\t\"Description\":\"Puxadores\",\r\n\t\"FatherCategoryId\":3,\r\n\t\"GlobalCategoryId\":1356,\r\n\t\"ShowInStoreFront\":true,\r\n\t\"IsActive\":true,\r\n\t\"ActiveStoreFrontLink\":true,\r\n\t\"ShowBrandFilter\":true,\r\n\t\"Score\":3,\r\n\t\"StockKeepingUnitSelectionMode\":\"SPECIFICATION\"\r\n}"
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/category",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog",
+								"pvt",
+								"category"
+							]
+						},
+						"description": "API usada para criar uma categoria de um produto. Se o parametro FatherCategoryId estiver preenchido significa que esta sera um SUB-Categoria."
+					},
+					"response": [
+						{
+							"name": "Insert Categoria de um Produto",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/vnd.vtex.ds.v10+json",
+										"type": "text"
+									},
+									{
+										"key": "content-type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "x-vtex-api-appkey",
+										"value": "vtexappkey-leomadeiras-HLOVYV",
+										"type": "text"
+									},
+									{
+										"key": "x-vtex-api-apptoken",
+										"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"Name\":\"Cola Super Forte Extra Blaster\",\r\n\t\"Keywords\":\"Cola, Glue, Colas, Colante, Super Glue, Super\",\r\n\t\"Title\":\"Colas Super Fortes\",\r\n\t\"Description\":\"Produtos usados para colar madeiras especificamente, alguns nao podendo ser enviados por Correios.\",\r\n\t\"FatherCategoryId\":4,\r\n\t\"GlobalCategoryId\":4,\r\n\t\"ShowInStoreFront\":true,\r\n\t\"IsActive\":true,\r\n\t\"ActiveStoreFrontLink\":true,\r\n\t\"ShowBrandFilter\":true,\r\n\t\"Score\":3,\r\n\t\"StockKeepingUnitSelectionMode\":\"SPECIFICATION\"\r\n}"
+								},
+								"url": {
+									"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/category",
+									"protocol": "https",
+									"host": [
+										"leomadeiras",
+										"myvtex",
+										"com"
+									],
+									"path": [
+										"api",
+										"catalog",
+										"pvt",
+										"category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "533"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 May 2020 23:44:33 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "X-VTEX-Janus-Router-Backend-App",
+									"value": "ctgapi-vv1.16.27+225"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 1cb67cd3abeb0e7aed62661c09da148f.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GIG51-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "3WRidmVCVoDtWqnTO_99F92kDjwdP771iea1DHseNwBa3FPaZBD_tg=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Id\": 6,\n    \"Name\": \"Cola Super Forte Extra Blaster\",\n    \"FatherCategoryId\": 4,\n    \"Title\": \"Colas Super Fortes\",\n    \"Description\": \"Produtos usados para colar madeiras especificamente, alguns nao podendo ser enviados por Correios.\",\n    \"Keywords\": \"Cola, Glue, Colas, Colante, Super Glue, Super\",\n    \"IsActive\": true,\n    \"LomadeeCampaignCode\": null,\n    \"AdWordsRemarketingCode\": null,\n    \"ShowInStoreFront\": true,\n    \"ShowBrandFilter\": true,\n    \"ActiveStoreFrontLink\": true,\n    \"GlobalCategoryId\": 4,\n    \"StockKeepingUnitSelectionMode\": \"SPECIFICATION\",\n    \"Score\": 3,\n    \"LinkId\": null,\n    \"HasChildren\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "2 - Insert Grupo por Categoria",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-vtex-api-appkey",
+								"value": "vtexappkey-leomadeiras-HLOVYV",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CategoryId\": 18,\r\n    \"Name\": \"Especificações\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pvt/specification/group",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog_system",
+								"pvt",
+								"specification",
+								"group"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Insert Grupo por Categoria",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-vtex-api-appkey",
+										"value": "vtexappkey-leomadeiras-HLOVYV",
+										"type": "text"
+									},
+									{
+										"key": "x-vtex-api-apptoken",
+										"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"CategoryId\": 17,\r\n    \"Name\": \"Comprimento\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pvt/specification/group",
+									"protocol": "https",
+									"host": [
+										"leomadeiras",
+										"myvtex",
+										"com"
+									],
+									"path": [
+										"api",
+										"catalog_system",
+										"pvt",
+										"specification",
+										"group"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "172"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 10 Jun 2020 02:26:06 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-VTEX-Janus-Router-Backend-App",
+									"value": "catalogapi-vv2.0.117+353"
+								},
+								{
+									"key": "x-vtex-operation-id",
+									"value": "e758fd54-d848-49b3-9dfe-2d6e6370540a"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 a2e8f1d5e265fbe5b389afd12cc16abc.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GIG51-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "I4Mps2AmuOupzFv-3CkigSFCoqzIKOuifkePEaRpH6EQh40UFyGMIw=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"CategoryId\": 17,\n    \"Id\": 15,\n    \"Name\": \"Comprimento\",\n    \"Position\": 1\n}"
+						},
+						{
+							"name": "2 - Insert Grupo por Categoria",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-vtex-api-appkey",
+										"value": "vtexappkey-leomadeiras-HLOVYV",
+										"type": "text"
+									},
+									{
+										"key": "x-vtex-api-apptoken",
+										"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"CategoryId\": 17,\r\n    \"Name\": \"Especificações\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pvt/specification/group",
+									"protocol": "https",
+									"host": [
+										"leomadeiras",
+										"myvtex",
+										"com"
+									],
+									"path": [
+										"api",
+										"catalog_system",
+										"pvt",
+										"specification",
+										"group"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "172"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 10 Jun 2020 02:26:06 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-VTEX-Janus-Router-Backend-App",
+									"value": "catalogapi-vv2.0.117+353"
+								},
+								{
+									"key": "x-vtex-operation-id",
+									"value": "e758fd54-d848-49b3-9dfe-2d6e6370540a"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 a2e8f1d5e265fbe5b389afd12cc16abc.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GIG51-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "I4Mps2AmuOupzFv-3CkigSFCoqzIKOuifkePEaRpH6EQh40UFyGMIw=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"CategoryId\": 17,\n    \"Id\": 15,\n    \"Name\": \"Especificações\",\n    \"Position\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "3 - Insert Campos de um Grupo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-vtex-api-appkey",
+								"value": "vtexappkey-leomadeiras-HLOVYV",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FieldTypeId\": \"6\",\r\n    \"CategoryId\" : 18,\r\n    \"FieldGroupId\":16,\r\n    \"Name\" : \"Comprimento\",\r\n    \"Description\": \"Comprimento\",\r\n    \"Position\": 1,\r\n    \"IsFilter\": true,\r\n    \"IsRequired\": true,\r\n    \"IsOnProductDetails\": true,\r\n    \"IsStockKeepingUnit\":true,\r\n    \"IsActive\":true,\r\n    \"IsTopMenuLinkActive\":true,\r\n    \"IsSideMenuLinkActive\":true,\r\n    \"DefaultValue\":\"mm\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pvt/specification/field",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog_system",
+								"pvt",
+								"specification",
+								"field"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "3 - Insert Campos de um Grupo",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-vtex-api-appkey",
+										"value": "vtexappkey-leomadeiras-HLOVYV",
+										"type": "text"
+									},
+									{
+										"key": "x-vtex-api-apptoken",
+										"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"FieldTypeId\": \"6\",\r\n    \"CategoryId\" : 18,\r\n    \"FieldGroupId\":16,\r\n    \"Name\" : \"Comprimento\",\r\n    \"Description\": \"Comprimento\",\r\n    \"Position\": 1,\r\n    \"IsFilter\": true,\r\n    \"IsRequired\": true,\r\n    \"IsOnProductDetails\": true,\r\n    \"IsStockKeepingUnit\":true,\r\n    \"IsActive\":true,\r\n    \"IsTopMenuLinkActive\":true,\r\n    \"IsSideMenuLinkActive\":true,\r\n    \"DefaultValue\":\"mm\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pvt/specification/field",
+									"protocol": "https",
+									"host": [
+										"leomadeiras",
+										"myvtex",
+										"com"
+									],
+									"path": [
+										"api",
+										"catalog_system",
+										"pvt",
+										"specification",
+										"field"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "122"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 10 Jun 2020 16:15:26 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-VTEX-Janus-Router-Backend-App",
+									"value": "catalogapi-vv2.0.117+353"
+								},
+								{
+									"key": "x-vtex-operation-id",
+									"value": "d6ea2762-68db-4706-a23d-30827a3b654f"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 ce594f56c7cd2fa701b0529ecb4da832.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GIG51-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "a9iU86iau-i0LG40xcPyGi0WccGcCj-yjHHBBLCjeub82oUppYtxHw=="
+								}
+							],
+							"cookie": [],
+							"body": "36"
+						},
+						{
+							"name": "Insert Grupo por Categoria",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-vtex-api-appkey",
+										"value": "vtexappkey-leomadeiras-HLOVYV",
+										"type": "text"
+									},
+									{
+										"key": "x-vtex-api-apptoken",
+										"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"CategoryId\": 17,\r\n    \"Name\": \"Comprimento\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pvt/specification/group",
+									"protocol": "https",
+									"host": [
+										"leomadeiras",
+										"myvtex",
+										"com"
+									],
+									"path": [
+										"api",
+										"catalog_system",
+										"pvt",
+										"specification",
+										"group"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "172"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 10 Jun 2020 02:26:06 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-VTEX-Janus-Router-Backend-App",
+									"value": "catalogapi-vv2.0.117+353"
+								},
+								{
+									"key": "x-vtex-operation-id",
+									"value": "e758fd54-d848-49b3-9dfe-2d6e6370540a"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 a2e8f1d5e265fbe5b389afd12cc16abc.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GIG51-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "I4Mps2AmuOupzFv-3CkigSFCoqzIKOuifkePEaRpH6EQh40UFyGMIw=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"CategoryId\": 17,\n    \"Id\": 15,\n    \"Name\": \"Comprimento\",\n    \"Position\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "4 - Insert Valor por Campo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FieldId\": \"37\",\r\n    \"Name\" : \"Polido\",\r\n    \"Text\":\"Polido\",\r\n    \"IsActive\": true,\r\n    \"Position\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pvt/specification/fieldValue",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog_system",
+								"pvt",
+								"specification",
+								"fieldValue"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Insert Grupo por Categoria",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-vtex-api-appkey",
+										"value": "vtexappkey-leomadeiras-HLOVYV",
+										"type": "text"
+									},
+									{
+										"key": "x-vtex-api-apptoken",
+										"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"CategoryId\": 17,\r\n    \"Name\": \"Comprimento\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pvt/specification/group",
+									"protocol": "https",
+									"host": [
+										"leomadeiras",
+										"myvtex",
+										"com"
+									],
+									"path": [
+										"api",
+										"catalog_system",
+										"pvt",
+										"specification",
+										"group"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "172"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 10 Jun 2020 02:26:06 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-VTEX-Janus-Router-Backend-App",
+									"value": "catalogapi-vv2.0.117+353"
+								},
+								{
+									"key": "x-vtex-operation-id",
+									"value": "e758fd54-d848-49b3-9dfe-2d6e6370540a"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 a2e8f1d5e265fbe5b389afd12cc16abc.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GIG51-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "I4Mps2AmuOupzFv-3CkigSFCoqzIKOuifkePEaRpH6EQh40UFyGMIw=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"CategoryId\": 17,\n    \"Id\": 15,\n    \"Name\": \"Comprimento\",\n    \"Position\": 1\n}"
+						},
+						{
+							"name": "4 - Insert Valor por Campo",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-vtex-api-appkey",
+										"type": "text",
+										"value": "vtexappkey-leomadeiras-HLOVYV"
+									},
+									{
+										"key": "x-vtex-api-apptoken",
+										"type": "text",
+										"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"FieldId\": \"36\",\r\n    \"Name\" : \"192mm\",\r\n    \"Text\":\"192mm\",\r\n    \"IsActive\": true,\r\n    \"Position\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pvt/specification/fieldValue",
+									"protocol": "https",
+									"host": [
+										"leomadeiras",
+										"myvtex",
+										"com"
+									],
+									"path": [
+										"api",
+										"catalog_system",
+										"pvt",
+										"specification",
+										"fieldValue"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "139"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 10 Jun 2020 16:33:07 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-VTEX-Janus-Router-Backend-App",
+									"value": "catalogapi-vv2.0.117+353"
+								},
+								{
+									"key": "x-vtex-operation-id",
+									"value": "bb31a4cb-9001-46c0-b8ce-f5fba732c557"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 ddfae0d5ede4dbc8ddd0db9d1130fad8.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GIG51-C2"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "6QLUTg-fAMvrETjvwAw6DO61CsFkWtplpr1Ss7Wx9gGICqNFPEpNBw=="
+								}
+							],
+							"cookie": [],
+							"body": "\"Field Value Inserted\""
+						}
+					]
+				},
+				{
+					"name": "5 - Insert Produto",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/vnd.vtex.ds.v10+json",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"value": "vtexappkey-leomadeiras-HLOVYV",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n   \"Name\": \"Cola Leo 2.8 KG\",\r\n   \"DepartmentId\": 1,\r\n   \"CategoryId\": 4,\r\n   \"BrandId\": 10101010,\r\n   \"LinkId\": \"insert-product-test3eddccxsfdsdgfdsgfdgdfa\",\r\n   \"RefId\": \"prod-3-Fita_Galiano_Grwwedsce5ttte3ann_65X040mm_20_Metros_Proadec385867488\",\r\n   \"IsVisible\": true,\r\n   \"Description\": \"Testando a insercao da cola\",\r\n   \"DescriptionShort\": \"Utilize o CEP 04548-005 para frete grátis\",\r\n   \"ReleaseDate\": \"2019-01-01T00:00:00\",\r\n   \"KeyWords\": \"teste,teste2\",\r\n   \"Title\": \"product de teste\",\r\n   \"IsActive\": true,\r\n   \"TaxCode\": \"\",\r\n   \"MetaTagDescription\": \"tag test\",\r\n   \"SupplierId\": 1,\r\n   \"ShowWithoutStock\": true,\r\n   \"AdWordsRemarketingCode\": null,\r\n   \"LomadeeCampaignCode\": null,\r\n   \"Score\": 1\r\n}"
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/product",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog",
+								"pvt",
+								"product"
+							]
+						},
+						"description": "Api usada para inserir um produto na plataforma da VTEX."
+					},
+					"response": [
+						{
+							"name": "Insert Produto",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/vnd.vtex.ds.v10+json",
+										"type": "text"
+									},
+									{
+										"key": "content-type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "x-vtex-api-appkey",
+										"value": "vtexappkey-leomadeiras-HLOVYV",
+										"type": "text"
+									},
+									{
+										"key": "x-vtex-api-apptoken",
+										"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\r\n   \"Name\": \"Cola Leo 2.8 KG\",\r\n   \"DepartmentId\": 1,\r\n   \"CategoryId\": 4,\r\n   \"BrandId\": 10101010,\r\n   \"LinkId\": \"insert-product-test3eddccxsfdsdgfdsgfdgdfa\",\r\n   \"RefId\": \"prod-3-Fita_Galiano_Grwwedsce5ttte3ann_65X040mm_20_Metros_Proadec385867488\",\r\n   \"IsVisible\": true,\r\n   \"Description\": \"Testando a insercao da cola\",\r\n   \"DescriptionShort\": \"Utilize o CEP 04548-005 para frete grátis\",\r\n   \"ReleaseDate\": \"2019-01-01T00:00:00\",\r\n   \"KeyWords\": \"teste,teste2\",\r\n   \"Title\": \"product de teste\",\r\n   \"IsActive\": true,\r\n   \"TaxCode\": \"\",\r\n   \"MetaTagDescription\": \"tag test\",\r\n   \"SupplierId\": 1,\r\n   \"ShowWithoutStock\": true,\r\n   \"AdWordsRemarketingCode\": null,\r\n   \"LomadeeCampaignCode\": null,\r\n   \"Score\": 1\r\n}"
+								},
+								"url": {
+									"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/product",
+									"protocol": "https",
+									"host": [
+										"leomadeiras",
+										"myvtex",
+										"com"
+									],
+									"path": [
+										"api",
+										"catalog",
+										"pvt",
+										"product"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "607"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 May 2020 23:42:25 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "X-VTEX-Janus-Router-Backend-App",
+									"value": "ctgapi-vv1.16.27+225"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 1cb67cd3abeb0e7aed62661c09da148f.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GIG51-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "sidlZpyzUqzkCElutDLNQRkwgL5Th-kyO8K5zTUsgikfN7C3_2nT3Q=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Id\": 9750,\n    \"Name\": \"Cola Leo 2.8 KG\",\n    \"DepartmentId\": 4,\n    \"CategoryId\": 4,\n    \"BrandId\": 10101010,\n    \"LinkId\": \"insert-product-test3eddccxsfdsdgfdsgfdgdfa\",\n    \"RefId\": \"prod-3-Fita_Galiano_Grwwedsce5ttte3ann_65X040mm_20_Metros_Proadec385867488\",\n    \"IsVisible\": true,\n    \"Description\": \"Testando a insercao da cola\",\n    \"DescriptionShort\": \"Utilize o CEP 04548-005 para frete grátis\",\n    \"ReleaseDate\": \"2019-01-01T00:00:00\",\n    \"KeyWords\": \"teste,teste2\",\n    \"Title\": \"product de teste\",\n    \"IsActive\": true,\n    \"TaxCode\": \"\",\n    \"MetaTagDescription\": \"tag test\",\n    \"SupplierId\": 1,\n    \"ShowWithoutStock\": true,\n    \"AdWordsRemarketingCode\": null,\n    \"LomadeeCampaignCode\": null,\n    \"Score\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "6 - Insert SKU",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/vnd.vtex.ds.v10+json",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"value": "vtexappkey-leomadeiras-HLOVYV",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"RefId\": \"3262\",\r\n  \"ProductId\": 5,\r\n  \"IsActive\": true,\r\n  \"IsVisible\": true,\r\n  \"Name\": \"Puxador Alça Reta Alumínio IL02 Escovado 192mm Italy Line\",\r\n  \"DepartmentId\": 0,\r\n  \"CategoryId\": 18,\r\n  \"LinkId\": null,\r\n  \"PackagedHeight\": 2.5,\r\n  \"PackagedLength\": 31,\r\n  \"PackagedWidth\": 2.5,\r\n  \"PackagedWeightKg\": 0.266,\r\n  \"Height\": 2.5,\r\n  \"Length\": 31,\r\n  \"Width\": 2.5,\r\n  \"WeightKg\": 0.208,\r\n  \"CubicWeight\": 0.0880916666666666666666666667,\r\n  \"IsKit\": false,\r\n  \"CreationDate\": \"05/26/2020 20:52:06\",\r\n  \"RewardValue\": 0.0,\r\n  \"EstimatedDateArrival\": null,\r\n  \"ManufacturerCode\": \"0000\",\r\n  \"CommercialConditionId\": 1,\r\n  \"MeasurementUnit\": \"un\",\r\n  \"UnitMultiplier\": 1.0,\r\n  \"ModalType\": null,\r\n  \"KitItensSellApart\": false\r\n}"
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/stockkeepingunit",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog",
+								"pvt",
+								"stockkeepingunit"
+							]
+						},
+						"description": "Api usada para inserir uma nova SKU"
+					},
+					"response": [
+						{
+							"name": "Insert SKU",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/vnd.vtex.ds.v10+json",
+										"type": "text"
+									},
+									{
+										"key": "content-type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "x-vtex-api-appkey",
+										"value": "vtexappkey-leomadeiras-HLOVYV",
+										"type": "text"
+									},
+									{
+										"key": "x-vtex-api-apptoken",
+										"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"RefId\": \"500032190200\",\r\n  \"ProductId\": 7868,\r\n  \"IsActive\": true,\r\n  \"IsVisible\": false,\r\n  \"Name\": \"Fita Teca Java/Louro Freijo 22X0,45mm 20 Metros Rehau\",\r\n  \"DepartmentId\": 0,\r\n  \"CategoryId\": 0,\r\n  \"LinkId\": null,\r\n  \"PackagedHeight\": 2.2,\r\n  \"PackagedLength\": 15.5,\r\n  \"PackagedWidth\": 15.5,\r\n  \"PackagedWeightKg\": 0.266,\r\n  \"Height\": 2.2,\r\n  \"Length\": 15.5,\r\n  \"Width\": 15.5,\r\n  \"WeightKg\": 0.266,\r\n  \"CubicWeight\": 0.0880916666666666666666666667,\r\n  \"IsKit\": false,\r\n  \"CreationDate\": \"05/26/2020 20:52:06\",\r\n  \"RewardValue\": 0.0,\r\n  \"EstimatedDateArrival\": null,\r\n  \"ManufacturerCode\": \"0000\",\r\n  \"CommercialConditionId\": 1,\r\n  \"MeasurementUnit\": \"un\",\r\n  \"UnitMultiplier\": 1.0,\r\n  \"ModalType\": null,\r\n  \"KitItensSellApart\": false\r\n}"
+								},
+								"url": {
+									"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/stockkeepingunit",
+									"protocol": "https",
+									"host": [
+										"leomadeiras",
+										"myvtex",
+										"com"
+									],
+									"path": [
+										"api",
+										"catalog",
+										"pvt",
+										"stockkeepingunit"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "581"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 May 2020 23:54:15 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "X-VTEX-Janus-Router-Backend-App",
+									"value": "ctgapi-vv1.16.27+225"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 a197fe624b532200d0e81a62c7fdff22.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GIG51-C2"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "EsYiyePiCbe55EUmokmsBmJZFqtxhyT8RvIhSeSXv8zKS9xKzcvsCw=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Id\": 310124025,\n    \"ProductId\": 7868,\n    \"IsActive\": true,\n    \"Name\": \"Fita Teca Java/Louro Freijo 22X0,45mm 20 Metros Rehau\",\n    \"RefId\": \"500032190200\",\n    \"PackagedHeight\": 2.2,\n    \"PackagedLength\": 15.5,\n    \"PackagedWidth\": 15.5,\n    \"PackagedWeightKg\": 0.266,\n    \"Height\": 2.2,\n    \"Length\": 15.5,\n    \"Width\": 15.5,\n    \"WeightKg\": 0.266,\n    \"CubicWeight\": 0.0880916666666666666666666667,\n    \"IsKit\": false,\n    \"CreationDate\": \"2020-05-26T20:54:16.296549\",\n    \"RewardValue\": 0,\n    \"EstimatedDateArrival\": null,\n    \"ManufacturerCode\": \"0000\",\n    \"CommercialConditionId\": 1,\n    \"MeasurementUnit\": \"un\",\n    \"UnitMultiplier\": 1,\n    \"ModalType\": null,\n    \"KitItensSellApart\": false,\n    \"Videos\": []\n}"
+						},
+						{
+							"name": "Insert Produto",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/vnd.vtex.ds.v10+json",
+										"type": "text"
+									},
+									{
+										"key": "content-type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "x-vtex-api-appkey",
+										"value": "vtexappkey-leomadeiras-HLOVYV",
+										"type": "text"
+									},
+									{
+										"key": "x-vtex-api-apptoken",
+										"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\r\n   \"Name\": \"Cola Leo 2.8 KG\",\r\n   \"DepartmentId\": 1,\r\n   \"CategoryId\": 4,\r\n   \"BrandId\": 10101010,\r\n   \"LinkId\": \"insert-product-test3eddccxsfdsdgfdsgfdgdfa\",\r\n   \"RefId\": \"prod-3-Fita_Galiano_Grwwedsce5ttte3ann_65X040mm_20_Metros_Proadec385867488\",\r\n   \"IsVisible\": true,\r\n   \"Description\": \"Testando a insercao da cola\",\r\n   \"DescriptionShort\": \"Utilize o CEP 04548-005 para frete grátis\",\r\n   \"ReleaseDate\": \"2019-01-01T00:00:00\",\r\n   \"KeyWords\": \"teste,teste2\",\r\n   \"Title\": \"product de teste\",\r\n   \"IsActive\": true,\r\n   \"TaxCode\": \"\",\r\n   \"MetaTagDescription\": \"tag test\",\r\n   \"SupplierId\": 1,\r\n   \"ShowWithoutStock\": true,\r\n   \"AdWordsRemarketingCode\": null,\r\n   \"LomadeeCampaignCode\": null,\r\n   \"Score\": 1\r\n}"
+								},
+								"url": {
+									"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/product",
+									"protocol": "https",
+									"host": [
+										"leomadeiras",
+										"myvtex",
+										"com"
+									],
+									"path": [
+										"api",
+										"catalog",
+										"pvt",
+										"product"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "607"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 May 2020 23:42:25 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "X-VTEX-Janus-Router-Backend-App",
+									"value": "ctgapi-vv1.16.27+225"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 1cb67cd3abeb0e7aed62661c09da148f.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GIG51-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "sidlZpyzUqzkCElutDLNQRkwgL5Th-kyO8K5zTUsgikfN7C3_2nT3Q=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Id\": 9750,\n    \"Name\": \"Cola Leo 2.8 KG\",\n    \"DepartmentId\": 4,\n    \"CategoryId\": 4,\n    \"BrandId\": 10101010,\n    \"LinkId\": \"insert-product-test3eddccxsfdsdgfdsgfdgdfa\",\n    \"RefId\": \"prod-3-Fita_Galiano_Grwwedsce5ttte3ann_65X040mm_20_Metros_Proadec385867488\",\n    \"IsVisible\": true,\n    \"Description\": \"Testando a insercao da cola\",\n    \"DescriptionShort\": \"Utilize o CEP 04548-005 para frete grátis\",\n    \"ReleaseDate\": \"2019-01-01T00:00:00\",\n    \"KeyWords\": \"teste,teste2\",\n    \"Title\": \"product de teste\",\n    \"IsActive\": true,\n    \"TaxCode\": \"\",\n    \"MetaTagDescription\": \"tag test\",\n    \"SupplierId\": 1,\n    \"ShowWithoutStock\": true,\n    \"AdWordsRemarketingCode\": null,\n    \"LomadeeCampaignCode\": null,\n    \"Score\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "7 - Input Imagem em uma SKU",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"IsMain\": false,\r\n        \"Label\": \"teste de puxador\",\r\n        \"Name\": \"teste de puxador\",\r\n        \"Text\": null,\r\n        \"Url\": \"https://www.leomadeiras.com.br/ccstore/v1/images/?source=/file/v8619324465032676711/products/5058763_Ampliada1.jpg\"\r\n      \r\n}"
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/stockkeepingunit/13/file",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog",
+								"pvt",
+								"stockkeepingunit",
+								"13",
+								"file"
+							]
+						},
+						"description": "Inserir uma imagem em uma SKU. Pode se fazer upload de uma ou mais imagens. Necessario enviar no body os seguintes parametros:\n\n* IsMain: Define se aquela imagem sera a principal ou nao.\n\n* Label: Rotulo para essa imagem.\n\n* Name: Nome para essa imagem.\n\n* Text: Texto para essa imagem.\n\n* Url: Url da qual a API ira buscar a imagem. Nao é possivel inserir uma imagem local, logo, é necessario subir essa imagem para algum repositorio que seja acessivel via URL e depois informar nessa api o caminho.\n"
+					},
+					"response": [
+						{
+							"name": "Input Imagem em uma SKU",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"type": "text",
+										"value": "application/vnd.vtex.ds.v10+json"
+									},
+									{
+										"key": "content-type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "x-vtex-api-appkey",
+										"type": "text",
+										"value": "vtexappkey-leomadeiras-HLOVYV"
+									},
+									{
+										"key": "x-vtex-api-apptoken",
+										"type": "text",
+										"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n        \"IsMain\": false,\r\n        \"Label\": \"Teste da cadeira 2\",\r\n        \"Name\": \"Teste da cadeira 2\",\r\n        \"Text\": null,\r\n        \"Url\": \"https://apiqa.leomadeiras.com.br/fotosvtex/all/iphone.jpg\"\r\n      \r\n}"
+								},
+								"url": {
+									"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/stockkeepingunit/310118449/file",
+									"protocol": "https",
+									"host": [
+										"leomadeiras",
+										"myvtex",
+										"com"
+									],
+									"path": [
+										"api",
+										"catalog",
+										"pvt",
+										"stockkeepingunit",
+										"310118449",
+										"file"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "74"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 May 2020 23:31:17 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "X-VTEX-Janus-Router-Backend-App",
+									"value": "ctgapi-vv1.16.27+225"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 c57d29d79962af7729faa9665c9ff819.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GRU1-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "wt2pFp1fkNbhwFd9E7j-rUB2II73jlVQu9qnF97wcxk0vYeGi66W-w=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Id\": 13099,\n    \"SkuId\": 310118449,\n    \"IsMain\": false,\n    \"Label\": \"Teste da cadeira 2\"\n}"
+						}
+					]
+				},
+				{
+					"name": "8 - Input Estoque por SKU",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/vnd.vtex.ds.v10+json",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"value": "vtexappkey-leomadeiras-HLOVYV",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"unlimitedQuantity\": false,\r\n    \"dateUtcOnBalanceSystem\": null,\r\n    \"quantity\": 105\r\n}"
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/logistics/pvt/inventory/skus/13/warehouses/1_1",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"logistics",
+								"pvt",
+								"inventory",
+								"skus",
+								"13",
+								"warehouses",
+								"1_1"
+							]
+						},
+						"description": "Api usada para setar estoque em uma SKU. Necessario enviar os seguintes parametros no body:\r\n\r\n* unlimitedQuantity: Define se a quantidade sera infinita ou nao.\r\n\r\n* dateUtcOnBalanceSystem: Data de um produto.\r\n\r\n* quantity: Quantidade de um produto em estoque"
+					},
+					"response": [
+						{
+							"name": "Input Estoque SKU",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/vnd.vtex.ds.v10+json",
+										"type": "text"
+									},
+									{
+										"key": "content-type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "x-vtex-api-appkey",
+										"value": "vtexappkey-leomadeiras-HLOVYV",
+										"type": "text"
+									},
+									{
+										"key": "x-vtex-api-apptoken",
+										"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"unlimitedQuantity\": false,\r\n    \"dateUtcOnBalanceSystem\": null,\r\n    \"quantity\": 105\r\n}"
+								},
+								"url": {
+									"raw": "https://leomadeiras.myvtex.com/api/logistics/pvt/inventory/skus/310118449/warehouses/1_1",
+									"protocol": "https",
+									"host": [
+										"leomadeiras",
+										"myvtex",
+										"com"
+									],
+									"path": [
+										"api",
+										"logistics",
+										"pvt",
+										"inventory",
+										"skus",
+										"310118449",
+										"warehouses",
+										"1_1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 May 2020 23:15:47 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/8.0"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "janus_sid=c3b9d2ed-304e-42af-8081-82bf70c394f5; expires=Fri, 29 May 2020 23:15:45 GMT; domain=leomadeiras.myvtex.com; path=/; samesite=lax"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "X-VTEX-Janus-Router-Backend-App",
+									"value": "logist-vv6.6.2+2795"
+								},
+								{
+									"key": "x-vtex-operation-id",
+									"value": "f1960daa-9dd6-497b-a798-5032cc190bcb"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 bd4ad926a3895386fc9d8fdad3e80a4a.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GRU50-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "-UTXlQBMAWh3Wod406LhqMOiXElTd651UIcgMSua4H5xy4NpHUcMeQ=="
+								}
+							],
+							"cookie": [],
+							"body": "true"
+						},
+						{
+							"name": "Input Estoque SKU",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/vnd.vtex.ds.v10+json",
+										"type": "text"
+									},
+									{
+										"key": "content-type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "x-vtex-api-appkey",
+										"value": "vtexappkey-leomadeiras-HLOVYV",
+										"type": "text"
+									},
+									{
+										"key": "x-vtex-api-apptoken",
+										"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"unlimitedQuantity\": false,\r\n    \"dateUtcOnBalanceSystem\": null,\r\n    \"quantity\": 105\r\n}"
+								},
+								"url": {
+									"raw": "https://leomadeiras.myvtex.com/api/logistics/pvt/inventory/skus/310118449/warehouses/1_1",
+									"protocol": "https",
+									"host": [
+										"leomadeiras",
+										"myvtex",
+										"com"
+									],
+									"path": [
+										"api",
+										"logistics",
+										"pvt",
+										"inventory",
+										"skus",
+										"310118449",
+										"warehouses",
+										"1_1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 May 2020 23:15:47 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/8.0"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "janus_sid=c3b9d2ed-304e-42af-8081-82bf70c394f5; expires=Fri, 29 May 2020 23:15:45 GMT; domain=leomadeiras.myvtex.com; path=/; samesite=lax"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "X-VTEX-Janus-Router-Backend-App",
+									"value": "logist-vv6.6.2+2795"
+								},
+								{
+									"key": "x-vtex-operation-id",
+									"value": "f1960daa-9dd6-497b-a798-5032cc190bcb"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 bd4ad926a3895386fc9d8fdad3e80a4a.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GRU50-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "-UTXlQBMAWh3Wod406LhqMOiXElTd651UIcgMSua4H5xy4NpHUcMeQ=="
+								}
+							],
+							"cookie": [],
+							"body": "true"
+						}
+					]
+				},
+				{
+					"name": "9 - Input Preco por SKU",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/vnd.vtex.ds.v10+json",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"value": "vtexappkey-leomadeiras-HLOVYV",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"markup\": 60,\r\n    \"basePrice\": 8.58,\r\n    \"listPrice\" : 12\r\n}"
+						},
+						"url": {
+							"raw": "https://api.vtex.com/leomadeiras/pricing/prices/14",
+							"protocol": "https",
+							"host": [
+								"api",
+								"vtex",
+								"com"
+							],
+							"path": [
+								"leomadeiras",
+								"pricing",
+								"prices",
+								"14"
+							]
+						},
+						"description": "Api responsavel por setar o preco de uma SKU.\r\nAo fazer o PUT, é necessario enviar os pelo menos os seguintes parametros:\r\n\r\n* markup: Quantidade em porcentagem do seu preco final a mais do ganho esperado em relacao ao preco de custo. Ex: Se um produto é vendido a 100 reais, e seu MarkUp esta setado com 100, quando subir para plataforma, o preco de custo aparecera sera 50 reais.\r\n\r\n* basePrice: Preco que aparecera no site caso aja alguma promocao Promoção. Ex: O produto era 100 reais, e agora baixou para 75. BasePrice represeta esses 75\r\n\r\n* listPrice: Preco que original do produto. Se o produto era 100 reais e baixou para 75, o listPrice representa os 100 reais.\r\n\r\n\r\nCaso nao acha promocao, nao mandar BasePrice.\r\nSe tudo estiver certo, a API nao responde nada, apenas o CODIGO 200 OK."
+					},
+					"response": [
+						{
+							"name": "Input Preco por SKU",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "accept",
+										"type": "text",
+										"value": "application/vnd.vtex.ds.v10+json"
+									},
+									{
+										"key": "content-type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "x-vtex-api-appkey",
+										"type": "text",
+										"value": "vtexappkey-leomadeiras-HLOVYV"
+									},
+									{
+										"key": "x-vtex-api-apptoken",
+										"type": "text",
+										"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"markup\": 60,\r\n    \"basePrice\": 70,\r\n    \"listPrice\" : 78\r\n}"
+								},
+								"url": {
+									"raw": "https://api.vtex.com/leomadeiras/pricing/prices/310118449",
+									"protocol": "https",
+									"host": [
+										"api",
+										"vtex",
+										"com"
+									],
+									"path": [
+										"leomadeiras",
+										"pricing",
+										"prices",
+										"310118449"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 May 2020 23:04:20 GMT"
+								},
+								{
+									"key": "Ratelimit-Limit",
+									"value": "1001"
+								},
+								{
+									"key": "Ratelimit-Remaining",
+									"value": "1000"
+								},
+								{
+									"key": "Ratelimit-Reset",
+									"value": "1"
+								},
+								{
+									"key": "Server",
+									"value": "nginx/1.14.1"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "janus_sid=67656516-812e-4f4d-8ba0-c65256d07cf3; expires=Fri, 29 May 2020 23:04:14 GMT; domain=api.vtex.com; path=/; samesite=lax"
+								},
+								{
+									"key": "X-VTEX-Janus-Router-Backend-App",
+									"value": "pricing-vv3.73.2"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "10 - GET Valores dos Campos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pub/specification/fieldvalue/36",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog_system",
+								"pub",
+								"specification",
+								"fieldvalue",
+								"36"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET Marca",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "accept",
+										"type": "text",
+										"value": "application/vnd.vtex.ds.v10+json"
+									},
+									{
+										"key": "content-type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "x-vtex-api-appkey",
+										"type": "text",
+										"value": "vtexappkey-leomadeiras-HLOVYV"
+									},
+									{
+										"key": "x-vtex-api-apptoken",
+										"type": "text",
+										"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+									}
+								],
+								"url": {
+									"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pvt/brand/list",
+									"protocol": "https",
+									"host": [
+										"leomadeiras",
+										"myvtex",
+										"com"
+									],
+									"path": [
+										"api",
+										"catalog_system",
+										"pvt",
+										"brand",
+										"list"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "225"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 04 Jun 2020 23:03:10 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Server",
+									"value": "nginx"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-CacheServer",
+									"value": "janus-apicache-17"
+								},
+								{
+									"key": "X-Powered-by-VTEX-Janus-ApiCache",
+									"value": "v1.15.0"
+								},
+								{
+									"key": "X-VTEX-ApiCache-Time",
+									"value": "0.184"
+								},
+								{
+									"key": "X-VTEX-Backend-Connect-Time",
+									"value": "0.000"
+								},
+								{
+									"key": "X-VTEX-Backend-Header-Time",
+									"value": "0.184"
+								},
+								{
+									"key": "X-VTEX-Cache-Status-Janus-ApiCache",
+									"value": "EXPIRED"
+								},
+								{
+									"key": "X-VTEX-Janus-Router-Backend-App",
+									"value": "catalogapi-vv2.0.116+352"
+								},
+								{
+									"key": "x-vtex-operation-id",
+									"value": "e143207b-f47b-4920-b05e-a1f1664358ad"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 ae55e205a0e1820bc0fe77be2a5169e5.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GRU50-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "sjvFO8mfORYWgIww3lmWwNm7g4Q_Isz7fNsFMbrYSTP8eno9XpGh-g=="
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2000000,\n        \"name\": \"Duratex\",\n        \"isActive\": true,\n        \"title\": \"Duratex\",\n        \"metaTagDescription\": \"\",\n        \"imageUrl\": null\n    },\n    {\n        \"id\": 2000001,\n        \"name\": \"Rehau\",\n        \"isActive\": true,\n        \"title\": \"Rehau\",\n        \"metaTagDescription\": \"Rehau\",\n        \"imageUrl\": null\n    }\n]"
+						},
+						{
+							"name": "Input Imagem em uma SKU",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"type": "text",
+										"value": "application/vnd.vtex.ds.v10+json"
+									},
+									{
+										"key": "content-type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "x-vtex-api-appkey",
+										"type": "text",
+										"value": "vtexappkey-leomadeiras-HLOVYV"
+									},
+									{
+										"key": "x-vtex-api-apptoken",
+										"type": "text",
+										"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n        \"IsMain\": false,\r\n        \"Label\": \"Teste da cadeira 2\",\r\n        \"Name\": \"Teste da cadeira 2\",\r\n        \"Text\": null,\r\n        \"Url\": \"https://apiqa.leomadeiras.com.br/fotosvtex/all/iphone.jpg\"\r\n      \r\n}"
+								},
+								"url": {
+									"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/stockkeepingunit/310118449/file",
+									"protocol": "https",
+									"host": [
+										"leomadeiras",
+										"myvtex",
+										"com"
+									],
+									"path": [
+										"api",
+										"catalog",
+										"pvt",
+										"stockkeepingunit",
+										"310118449",
+										"file"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "74"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 May 2020 23:31:17 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "X-VTEX-Janus-Router-Backend-App",
+									"value": "ctgapi-vv1.16.27+225"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 c57d29d79962af7729faa9665c9ff819.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GRU1-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "wt2pFp1fkNbhwFd9E7j-rUB2II73jlVQu9qnF97wcxk0vYeGi66W-w=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Id\": 13099,\n    \"SkuId\": 310118449,\n    \"IsMain\": false,\n    \"Label\": \"Teste da cadeira 2\"\n}"
+						},
+						{
+							"name": "10 - GET Valores dos Campos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "accept",
+										"type": "text",
+										"value": "application/vnd.vtex.ds.v10+json"
+									},
+									{
+										"key": "content-type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "x-vtex-api-appkey",
+										"type": "text",
+										"value": "vtexappkey-leomadeiras-HLOVYV"
+									},
+									{
+										"key": "x-vtex-api-apptoken",
+										"type": "text",
+										"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+									}
+								],
+								"url": {
+									"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pub/specification/fieldvalue/36",
+									"protocol": "https",
+									"host": [
+										"leomadeiras",
+										"myvtex",
+										"com"
+									],
+									"path": [
+										"api",
+										"catalog_system",
+										"pub",
+										"specification",
+										"fieldvalue",
+										"36"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "199"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 10 Jun 2020 17:32:34 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Server",
+									"value": "nginx"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-CacheServer",
+									"value": "janus-apicache-7"
+								},
+								{
+									"key": "X-Powered-by-VTEX-Janus-ApiCache",
+									"value": "v1.15.0"
+								},
+								{
+									"key": "X-VTEX-ApiCache-Time",
+									"value": "0.099"
+								},
+								{
+									"key": "X-VTEX-Backend-Connect-Time",
+									"value": "0.009"
+								},
+								{
+									"key": "X-VTEX-Backend-Header-Time",
+									"value": "0.099"
+								},
+								{
+									"key": "X-VTEX-Cache-Status-Janus-ApiCache",
+									"value": "MISS"
+								},
+								{
+									"key": "X-VTEX-Janus-Router-Backend-App",
+									"value": "catalogapi-vv2.0.117+353"
+								},
+								{
+									"key": "x-vtex-operation-id",
+									"value": "1b11feac-2369-4033-8226-8c706e96d4c4"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 02fe6e236b00f4dcbdb1bf5c172062d9.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GIG51-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "UN3JJG11L3Od8mHJQxj6iRFcQR6ZviZCkLH2_KuaNbmxj6E-8Xowpg=="
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"FieldValueId\": 77,\n        \"Value\": \"128mm\",\n        \"IsActive\": true,\n        \"Position\": 1\n    },\n    {\n        \"FieldValueId\": 78,\n        \"Value\": \"160mm\",\n        \"IsActive\": true,\n        \"Position\": 1\n    },\n    {\n        \"FieldValueId\": 79,\n        \"Value\": \"192mm\",\n        \"IsActive\": true,\n        \"Position\": 1\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "11 - Criar Especificacao SKU (Associar)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"FieldId\": 36,\r\n        \"FieldValueId\": 79\r\n}"
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/stockkeepingunit/13/specification",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog",
+								"pvt",
+								"stockkeepingunit",
+								"13",
+								"specification"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "11 - Criar Especificacao SKU (Associar)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"type": "text",
+										"value": "application/vnd.vtex.ds.v10+json"
+									},
+									{
+										"key": "content-type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "x-vtex-api-appkey",
+										"type": "text",
+										"value": "vtexappkey-leomadeiras-HLOVYV"
+									},
+									{
+										"key": "x-vtex-api-apptoken",
+										"type": "text",
+										"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n        \"FieldId\": 36,\r\n        \"FieldValueId\": 79\r\n}"
+								},
+								"url": {
+									"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/stockkeepingunit/13/specification",
+									"protocol": "https",
+									"host": [
+										"leomadeiras",
+										"myvtex",
+										"com"
+									],
+									"path": [
+										"api",
+										"catalog",
+										"pvt",
+										"stockkeepingunit",
+										"13",
+										"specification"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "67"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 10 Jun 2020 17:37:29 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "X-VTEX-Janus-Router-Backend-App",
+									"value": "ctgapi-vv1.16.28+229"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 02fe6e236b00f4dcbdb1bf5c172062d9.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GIG51-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "RfTc3gasbC1umhXGBqt7otj1DySm3Mcg-RZNPSNzA7qVLDS49oc4tw=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Id\": 429,\n    \"SkuId\": 13,\n    \"FieldId\": 36,\n    \"FieldValueId\": 79,\n    \"Text\": \"192mm\"\n}"
+						},
+						{
+							"name": "Input Imagem em uma SKU",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"type": "text",
+										"value": "application/vnd.vtex.ds.v10+json"
+									},
+									{
+										"key": "content-type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "x-vtex-api-appkey",
+										"type": "text",
+										"value": "vtexappkey-leomadeiras-HLOVYV"
+									},
+									{
+										"key": "x-vtex-api-apptoken",
+										"type": "text",
+										"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n        \"IsMain\": false,\r\n        \"Label\": \"Teste da cadeira 2\",\r\n        \"Name\": \"Teste da cadeira 2\",\r\n        \"Text\": null,\r\n        \"Url\": \"https://apiqa.leomadeiras.com.br/fotosvtex/all/iphone.jpg\"\r\n      \r\n}"
+								},
+								"url": {
+									"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/stockkeepingunit/310118449/file",
+									"protocol": "https",
+									"host": [
+										"leomadeiras",
+										"myvtex",
+										"com"
+									],
+									"path": [
+										"api",
+										"catalog",
+										"pvt",
+										"stockkeepingunit",
+										"310118449",
+										"file"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "74"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 May 2020 23:31:17 GMT"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "X-VTEX-Janus-Router-Backend-App",
+									"value": "ctgapi-vv1.16.27+225"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 c57d29d79962af7729faa9665c9ff819.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "GRU1-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "wt2pFp1fkNbhwFd9E7j-rUB2II73jlVQu9qnF97wcxk0vYeGi66W-w=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Id\": 13099,\n    \"SkuId\": 310118449,\n    \"IsMain\": false,\n    \"Label\": \"Teste da cadeira 2\"\n}"
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "MasterData",
+			"item": [
+				{
+					"name": "Buscar usuário por documento",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "{{vtex-ApiKey}}"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "{{vtex-ApiToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/dataentities/CL/search?_where=document=455.639.670-00&_fields=_all",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"dataentities",
+								"CL",
+								"search"
+							],
+							"query": [
+								{
+									"key": "_where",
+									"value": "document=455.639.670-00"
+								},
+								{
+									"key": "_fields",
+									"value": "_all"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastro de cliente",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/vnd.vtex.ds.v10+json",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"value": "{{vtex-ApiKey}}",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"value": "{{vtex-ApiToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstName\" : \"teste TI\",\n\t\"document\": \"48170179025\",\n\t\"email\" : \"testeTI@leo.com.br\",\n\t\"homePhone\" : \"67785454\",\n\t\"lastName\" : \"Poc leo\",\n\t\"phone\" : \"11965654787\",\n\t\"IdExterno\" : \"1001545453\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/dataentities/CL/documents",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"dataentities",
+								"CL",
+								"documents"
+							]
+						},
+						"description": "Criacao de clientes"
+					},
+					"response": []
+				},
+				{
+					"name": "Update de cliente Master Data",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/vnd.vtex.ds.v10+json",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"value": "{{vtex-ApiKey}}",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"value": "{{vtex-ApiToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"IdExterno\" : \"100154545323\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/dataentities/CL/documents/881dc0e2-b7c1-11ea-8343-12c76e768305",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"dataentities",
+								"CL",
+								"documents",
+								"881dc0e2-b7c1-11ea-8343-12c76e768305"
+							]
+						},
+						"description": "Atualizacao de cliente"
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta de clientes vtex por Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "{{vtex-ApiKey}}"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "{{vtex-ApiToken}}"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/dataentities/CL/documents/0d81f05f-b580-11ea-8343-1236299758d1?_fields=_all",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"dataentities",
+								"CL",
+								"documents",
+								"0d81f05f-b580-11ea-8343-1236299758d1"
+							],
+							"query": [
+								{
+									"key": "_fields",
+									"value": "_all"
+								}
+							]
+						},
+						"description": "Consulta de clientes"
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta de clientes na api Profiles por email",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-vtex-api-appkey",
+								"value": "{{vtex-ApiKey}}",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"value": "{{vtex-ApiToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/checkout/pub/profiles?email=thales.ribeiro@leomadeiras.com.br&_fields=_all",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"checkout",
+								"pub",
+								"profiles"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "thales.ribeiro@leomadeiras.com.br"
+								},
+								{
+									"key": "_fields",
+									"value": "_all"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criacao de endereco",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-vtex-api-appkey",
+								"value": "{{vtex-ApiKey}}",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"value": "{{vtex-ApiToken}}",
+								"type": "text"
+							},
+							{
+								"key": "accept",
+								"value": "application/vnd.vtex.ds.v10+json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\" : \"f7761e66-a117-4e41-816e-8a83187f9c74\",\r\n    \"street\" : \"Rua teste\",\r\n    \"state\" : \"SP\",\r\n    \"city\" : \"Sao Paulo\",\r\n    \"country\" : \"Brasil\",\r\n    \"neighborhood\" : \"Centro\",\r\n    \"number\" : \"number\",\r\n    \"postalCode\" : \"05417020\",\r\n    \"addressName\" : \"Casa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/dataentities/AD/documents",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"dataentities",
+								"AD",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart e Checkout",
+			"item": [
+				{
+					"name": "Obter orderForm por Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-vtex-api-appkey",
+								"value": "{{vtex-ApiKey}}",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"value": "{{vtex-ApiToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/checkout/pub/orderForm/479cd022fa8a4d33a4f84d720ebf5894",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"checkout",
+								"pub",
+								"orderForm",
+								"479cd022fa8a4d33a4f84d720ebf5894"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar produtos cart",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "x-vtex-api-appkey",
+								"value": "{{vtex-ApiKey}}",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"value": "{{vtex-ApiToken}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderItems\":[\r\n        {\r\n            \"quantity\":2,\r\n            \"index\":\"1\"\r\n        },\r\n        {\r\n            \"quantity\":5,               \r\n            \"seller\":\"1\",\r\n            \"id\":\"11\"\r\n        }\r\n    ]\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/checkout/pub/orderForm/479cd022fa8a4d33a4f84d720ebf5894/items",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"checkout",
+								"pub",
+								"orderForm",
+								"479cd022fa8a4d33a4f84d720ebf5894",
+								"items"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pesquisa",
+			"item": [
+				{
+					"name": "Pesquisa de produtos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-vtex-api-appkey",
+								"value": "{{vtex-ApiKey}}",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"value": "{{vtex-ApiToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pub/products/search/corredica",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog_system",
+								"pub",
+								"products",
+								"search",
+								"corredica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta do autocomplete usado no site",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/buscaautocomplete?productNameContains=corredica",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"buscaautocomplete"
+							],
+							"query": [
+								{
+									"key": "productNameContains",
+									"value": "corredica"
+								}
+							]
+						},
+						"description": "Nao precisa de credenciais para acessar a api"
+					},
+					"response": []
+				},
+				{
+					"name": "Pesquisa de produtos com filtros e ordenacao",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-vtex-api-appkey",
+								"value": "{{vtex-ApiKey}}",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"value": "{{vtex-ApiToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pub/products/search?O=OrderByPriceASC",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog_system",
+								"pub",
+								"products",
+								"search"
+							],
+							"query": [
+								{
+									"key": "O",
+									"value": "OrderByPriceASC"
+								}
+							]
+						},
+						"description": "Documentacao dos filtros\r\nhttps://developers.vtex.com/reference/search-3#productsearchfilteredandordered\r\n\r\nAPi ProductSearch Filtered and Ordered\r\n\r\nFilters\r\nFilter by full text - ft={searchWord}\r\nEx: ft=television\r\n\r\nFilter by category - fq=C:/{a}/{b}\r\n{a} and {b} are categoryIds\r\nEx: fq=C:/1000041/1000049/\r\n\r\nFilter by specification - fq=specificationFilter_{a}:{b}\r\n{a} is the specificationId, {b} = specification value\r\nEx: To filter products where the color is Blue, find the specificationId for color, supose it's 123 then it will be like this fq=specificationFilter_123:Blue\r\n\r\nFilter by price range - fq=P:[{a} TO {b}]\r\n{a} is the minimum price \"from\" and {b} is the highest price \"to\"\r\nEx: fq=P:[0 TO 20] will search products between 0.00 and 20.00.\r\n\r\nFilter by collection - fq=productClusterIds:{{productClusterId}}\r\nwhere productClusterId also know as collectionId\r\nMore information about collections: https://help.vtex.com/en/tutorial/creating-a-product-collection\r\n\r\nFilter by product Id - fq=productId:{{productId}}\r\n\r\nFilter by sku Id - fq=skuId:{{skuId}}\r\n\r\nFilter by referenceId - fq=alternateIds_RefId:{{referenceId}}\r\n\r\nFilter by ean13 - fq=alternateIds_Ean:{{ean13}}\r\n\r\nFilter by availability at a specific sales channel - fq=isAvailablePerSalesChannel_{{sc}}:{{bool}}\r\n{{sc}} is the desired sales channel\r\n{{bool}} is true ou false, 1 or 0.\r\nEx: seaching available products for the sales channel 4 fq=isAvailablePerSalesChannel_4:1\r\n\r\nFilter by available at a specific seller - fq=sellerIds:{{sellerId}}\r\n\r\nSorting\r\nPrice\r\nO=OrderByPriceDESC\r\nO=OrderByPriceASC\r\n\r\nTop Selling Products\r\nO=OrderByTopSaleDESC\r\n\r\nBest Reviews\r\nO=OrderByReviewRateDESC\r\n\r\nName\r\nO=OrderByNameASC\r\nO=OrderByNameDESC\r\n\r\nRelease Date\r\nO=OrderByReleaseDateDESC\r\n\r\nBest Discounts\r\nO=OrderByBestDiscountDESC\r\n\r\nScore\r\nO=OrderByScoreDESC"
+					},
+					"response": []
+				},
+				{
+					"name": "Lista de categorias",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-vtex-api-appkey",
+								"value": "{{vtex-ApiKey}}",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"value": "{{vtex-ApiToken}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/category",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog",
+								"pvt",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta de produtos por Marca",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-vtex-api-appkey",
+								"value": "{{vtex-ApiKey}}",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"value": "{{vtex-ApiToken}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pvt/products/GetProductAndSkuIds?brandId=3",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog_system",
+								"pvt",
+								"products",
+								"GetProductAndSkuIds"
+							],
+							"query": [
+								{
+									"key": "brandId",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta de produtos por categoria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-vtex-api-appkey",
+								"value": "{{vtex-ApiKey}}",
+								"type": "text"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"value": "{{vtex-ApiToken}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pvt/products/GetProductAndSkuIds?categoryId=2",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog_system",
+								"pvt",
+								"products",
+								"GetProductAndSkuIds"
+							],
+							"query": [
+								{
+									"key": "categoryId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Gerar authenticationToken",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);\r",
+									"postman.setEnvironmentVariable(\"vtex-AuthenticationToken\", jsonData.authenticationToken);\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "{{vtex-ApiKey}}",
+								"disabled": true
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "{{vtex-ApiToken}}",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "scope",
+									"value": "leomadeiras",
+									"type": "text"
+								},
+								{
+									"key": "locale",
+									"value": "pt-BR\n",
+									"type": "text"
+								},
+								{
+									"key": "returnUrl:",
+									"value": "https://leomadeiras.myvtex.com/",
+									"type": "text"
+								},
+								{
+									"key": "appStart",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "callbackUrl",
+									"value": "https://leomadeiras.myvtex.com/api/vtexid/pub/authentication/finish\n",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/vtexid/pub/authentication/start",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"vtexid",
+								"pub",
+								"authentication",
+								"start"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Api de validaçao de login",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-vtex-api-appkey",
+								"value": "{{vtex-ApiKey}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"value": "{{vtex-ApiToken}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "login",
+									"value": "testando@6mails.com",
+									"type": "text"
+								},
+								{
+									"key": "authenticationToken",
+									"value": "{{vtex-AuthenticationToken}}",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Leo402103!",
+									"type": "text"
+								},
+								{
+									"key": "fingerprint",
+									"value": "3b24742568161b3e4d41572eb781d8a5\n",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/vtexid/pub/authentication/classic/validate",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"vtexid",
+								"pub",
+								"authentication",
+								"classic",
+								"validate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Insert Marca",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"type": "text",
+						"value": "application/vnd.vtex.ds.v10+json"
+					},
+					{
+						"key": "content-type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-vtex-api-appkey",
+						"type": "text",
+						"value": "vtexappkey-leomadeiras-HLOVYV"
+					},
+					{
+						"key": "x-vtex-api-apptoken",
+						"type": "text",
+						"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n   \"Name\": \"Italy Line\",\r\n   \"Text\": \"Italy Line\",\r\n   \"Keywords\": \"Italy Line\",\r\n   \"SiteTitle\": \"Italy Line\",\r\n   \"Active\": true,\r\n   \"MenuHome\": true,\r\n   \"AdWordsRemarketingCode\": \"\",\r\n   \"LomadeeCampaignCode\": \"\",\r\n   \"Score\": null,\r\n   \"LinkId\": \"Italy-Line\"\r\n}"
+				},
+				"url": {
+					"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/brand",
+					"protocol": "https",
+					"host": [
+						"leomadeiras",
+						"myvtex",
+						"com"
+					],
+					"path": [
+						"api",
+						"catalog",
+						"pvt",
+						"brand"
+					]
+				},
+				"description": "Api usada para inserir Marcas no site."
+			},
+			"response": [
+				{
+					"name": "Insert Marca",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"Id\": 1469283,\r\n   \"Name\": \"Madeiras Cedro\",\r\n   \"Text\": \"Madeiras Cedro\",\r\n   \"Keywords\": \"madeiras cedro\",\r\n   \"SiteTitle\": \"Madeiras Cedro\",\r\n   \"Active\": true,\r\n   \"MenuHome\": true,\r\n   \"AdWordsRemarketingCode\": \"\",\r\n   \"LomadeeCampaignCode\": \"\",\r\n   \"Score\": null,\r\n   \"LinkId\": \"Madeiras-Cedro\"\r\n}"
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/brand",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog",
+								"pvt",
+								"brand"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "229"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 May 2020 00:45:33 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-VTEX-Janus-Router-Backend-App",
+							"value": "ctgapi-vv1.16.27+225"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 69a6f53bb93c9b4237aaeca16be8b088.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "GRU1-C1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "Se3lap6Cz6evm4-dKCCpvunlNYqX0AJrXWgI7RiCL0isY3kfiHC1hg=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Id\": 1469283,\n    \"Name\": \"Madeiras Cedro\",\n    \"Text\": \"Madeiras Cedro\",\n    \"Keywords\": \"madeiras cedro\",\n    \"SiteTitle\": \"Madeiras Cedro\",\n    \"Active\": true,\n    \"MenuHome\": true,\n    \"AdWordsRemarketingCode\": \"\",\n    \"LomadeeCampaignCode\": \"\",\n    \"Score\": null,\n    \"LinkId\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Marca",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"type": "text",
+						"value": "application/vnd.vtex.ds.v10+json"
+					},
+					{
+						"key": "content-type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-vtex-api-appkey",
+						"type": "text",
+						"value": "vtexappkey-leomadeiras-HLOVYV"
+					},
+					{
+						"key": "x-vtex-api-apptoken",
+						"type": "text",
+						"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+					}
+				],
+				"url": {
+					"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pvt/brand/list",
+					"protocol": "https",
+					"host": [
+						"leomadeiras",
+						"myvtex",
+						"com"
+					],
+					"path": [
+						"api",
+						"catalog_system",
+						"pvt",
+						"brand",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Input Imagem em uma SKU",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"IsMain\": false,\r\n        \"Label\": \"Teste da cadeira 2\",\r\n        \"Name\": \"Teste da cadeira 2\",\r\n        \"Text\": null,\r\n        \"Url\": \"https://apiqa.leomadeiras.com.br/fotosvtex/all/iphone.jpg\"\r\n      \r\n}"
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/stockkeepingunit/310118449/file",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog",
+								"pvt",
+								"stockkeepingunit",
+								"310118449",
+								"file"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "74"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 26 May 2020 23:31:17 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-VTEX-Janus-Router-Backend-App",
+							"value": "ctgapi-vv1.16.27+225"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 c57d29d79962af7729faa9665c9ff819.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "GRU1-C1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "wt2pFp1fkNbhwFd9E7j-rUB2II73jlVQu9qnF97wcxk0vYeGi66W-w=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Id\": 13099,\n    \"SkuId\": 310118449,\n    \"IsMain\": false,\n    \"Label\": \"Teste da cadeira 2\"\n}"
+				},
+				{
+					"name": "GET Marca",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pvt/brand/list",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog_system",
+								"pvt",
+								"brand",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "225"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 04 Jun 2020 23:03:10 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-CacheServer",
+							"value": "janus-apicache-17"
+						},
+						{
+							"key": "X-Powered-by-VTEX-Janus-ApiCache",
+							"value": "v1.15.0"
+						},
+						{
+							"key": "X-VTEX-ApiCache-Time",
+							"value": "0.184"
+						},
+						{
+							"key": "X-VTEX-Backend-Connect-Time",
+							"value": "0.000"
+						},
+						{
+							"key": "X-VTEX-Backend-Header-Time",
+							"value": "0.184"
+						},
+						{
+							"key": "X-VTEX-Cache-Status-Janus-ApiCache",
+							"value": "EXPIRED"
+						},
+						{
+							"key": "X-VTEX-Janus-Router-Backend-App",
+							"value": "catalogapi-vv2.0.116+352"
+						},
+						{
+							"key": "x-vtex-operation-id",
+							"value": "e143207b-f47b-4920-b05e-a1f1664358ad"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 ae55e205a0e1820bc0fe77be2a5169e5.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "GRU50-C1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "sjvFO8mfORYWgIww3lmWwNm7g4Q_Isz7fNsFMbrYSTP8eno9XpGh-g=="
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2000000,\n        \"name\": \"Duratex\",\n        \"isActive\": true,\n        \"title\": \"Duratex\",\n        \"metaTagDescription\": \"\",\n        \"imageUrl\": null\n    },\n    {\n        \"id\": 2000001,\n        \"name\": \"Rehau\",\n        \"isActive\": true,\n        \"title\": \"Rehau\",\n        \"metaTagDescription\": \"Rehau\",\n        \"imageUrl\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GET Arvore de Marcas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"type": "text",
+						"value": "application/vnd.vtex.ds.v10+json"
+					},
+					{
+						"key": "content-type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-vtex-api-appkey",
+						"type": "text",
+						"value": "vtexappkey-leomadeiras-HLOVYV"
+					},
+					{
+						"key": "x-vtex-api-apptoken",
+						"type": "text",
+						"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pvt/brand/list",
+					"protocol": "https",
+					"host": [
+						"leomadeiras",
+						"myvtex",
+						"com"
+					],
+					"path": [
+						"api",
+						"catalog_system",
+						"pvt",
+						"brand",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Input Imagem em uma SKU",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"IsMain\": false,\r\n        \"Label\": \"Teste da cadeira 2\",\r\n        \"Name\": \"Teste da cadeira 2\",\r\n        \"Text\": null,\r\n        \"Url\": \"https://apiqa.leomadeiras.com.br/fotosvtex/all/iphone.jpg\"\r\n      \r\n}"
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/stockkeepingunit/310118449/file",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog",
+								"pvt",
+								"stockkeepingunit",
+								"310118449",
+								"file"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "74"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 26 May 2020 23:31:17 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-VTEX-Janus-Router-Backend-App",
+							"value": "ctgapi-vv1.16.27+225"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 c57d29d79962af7729faa9665c9ff819.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "GRU1-C1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "wt2pFp1fkNbhwFd9E7j-rUB2II73jlVQu9qnF97wcxk0vYeGi66W-w=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Id\": 13099,\n    \"SkuId\": 310118449,\n    \"IsMain\": false,\n    \"Label\": \"Teste da cadeira 2\"\n}"
+				},
+				{
+					"name": "GET Arvora de Marcas",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pub/category/tree/3",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog_system",
+								"pub",
+								"category",
+								"tree",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "627"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Jun 2020 19:31:00 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-CacheServer",
+							"value": "janus-apicache-20"
+						},
+						{
+							"key": "X-Powered-by-VTEX-Janus-ApiCache",
+							"value": "v1.15.0"
+						},
+						{
+							"key": "X-VTEX-ApiCache-Time",
+							"value": "0.061"
+						},
+						{
+							"key": "X-VTEX-Backend-Connect-Time",
+							"value": "0.001"
+						},
+						{
+							"key": "X-VTEX-Backend-Header-Time",
+							"value": "0.061"
+						},
+						{
+							"key": "X-VTEX-Cache-Status-Janus-ApiCache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-VTEX-Janus-Router-Backend-App",
+							"value": "catalogapi-vv2.0.117+353"
+						},
+						{
+							"key": "x-vtex-operation-id",
+							"value": "4d9d1342-e263-4946-9271-72d3f3e1ebbe"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 fa21836b5bf2fcc46893f53506378fc5.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "GRU50"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "pizea6Usy_Rsy4xD8KatoHuFAlYZA10rBTCKVT8QcdmYgE8gOl2KwQ=="
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"MDF, MDP e Chapas de Fibra\",\n        \"hasChildren\": true,\n        \"url\": \"https://leomadeiras.myvtex.com/mdf-mdp-e-chapas-de-fibra\",\n        \"children\": [\n            {\n                \"id\": 10,\n                \"name\": \"101\",\n                \"hasChildren\": false,\n                \"url\": \"https://leomadeiras.myvtex.com/mdf-mdp-e-chapas-de-fibra/101\",\n                \"children\": [],\n                \"Title\": \"Chapas de MDF\",\n                \"MetaTagDescription\": \"Chapas de MDF\"\n            },\n            {\n                \"id\": 11,\n                \"name\": \"102\",\n                \"hasChildren\": false,\n                \"url\": \"https://leomadeiras.myvtex.com/mdf-mdp-e-chapas-de-fibra/102\",\n                \"children\": [],\n                \"Title\": \"Chapas de MDP\",\n                \"MetaTagDescription\": \"Chapas de MDP\"\n            },\n            {\n                \"id\": 12,\n                \"name\": \"103\",\n                \"hasChildren\": false,\n                \"url\": \"https://leomadeiras.myvtex.com/mdf-mdp-e-chapas-de-fibra/103\",\n                \"children\": [],\n                \"Title\": \"Expositores\",\n                \"MetaTagDescription\": \"Expositores\"\n            }\n        ],\n        \"Title\": \"MDF, MDP e Chapas de Fibra\",\n        \"MetaTagDescription\": \"MDF, MDP e Chapas de Fibra\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Fitas de Borda e Tapa Furos\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/fitas-de-borda-e-tapa-furos\",\n        \"children\": [],\n        \"Title\": \"Fitas de Borda e Tapa Furos\",\n        \"MetaTagDescription\": \"Fitas de Borda e Tapa Furos\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Ferragens\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/ferragens\",\n        \"children\": [],\n        \"Title\": \"Ferragens\",\n        \"MetaTagDescription\": \"Ferragens\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Madeiras\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/madeiras\",\n        \"children\": [],\n        \"Title\": \"Madeiras\",\n        \"MetaTagDescription\": \"Madeiras\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Fórmicas\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/formicas\",\n        \"children\": [],\n        \"Title\": \"Fórmicas\",\n        \"MetaTagDescription\": \"Fórmicas\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Maquinas e Ferramentas\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/maquinas-e-ferramentas\",\n        \"children\": [],\n        \"Title\": \"Maquinas e Ferramentas\",\n        \"MetaTagDescription\": \"Maquinas e Ferramentas\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Acabamentos\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/acabamentos\",\n        \"children\": [],\n        \"Title\": \"Acabamentos\",\n        \"MetaTagDescription\": \"Acabamentos\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Perfis de Alumínio\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/perfis-de-aluminio\",\n        \"children\": [],\n        \"Title\": \"Perfis de Alumínio\",\n        \"MetaTagDescription\": \"Perfis de Alumínio\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Divisórias\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/divisorias\",\n        \"children\": [],\n        \"Title\": \"Divisórias\",\n        \"MetaTagDescription\": \"Divisórias\"\n    }\n]"
+				},
+				{
+					"name": "GET Marca",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pvt/brand/list",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog_system",
+								"pvt",
+								"brand",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "225"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 04 Jun 2020 23:03:10 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-CacheServer",
+							"value": "janus-apicache-17"
+						},
+						{
+							"key": "X-Powered-by-VTEX-Janus-ApiCache",
+							"value": "v1.15.0"
+						},
+						{
+							"key": "X-VTEX-ApiCache-Time",
+							"value": "0.184"
+						},
+						{
+							"key": "X-VTEX-Backend-Connect-Time",
+							"value": "0.000"
+						},
+						{
+							"key": "X-VTEX-Backend-Header-Time",
+							"value": "0.184"
+						},
+						{
+							"key": "X-VTEX-Cache-Status-Janus-ApiCache",
+							"value": "EXPIRED"
+						},
+						{
+							"key": "X-VTEX-Janus-Router-Backend-App",
+							"value": "catalogapi-vv2.0.116+352"
+						},
+						{
+							"key": "x-vtex-operation-id",
+							"value": "e143207b-f47b-4920-b05e-a1f1664358ad"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 ae55e205a0e1820bc0fe77be2a5169e5.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "GRU50-C1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "sjvFO8mfORYWgIww3lmWwNm7g4Q_Isz7fNsFMbrYSTP8eno9XpGh-g=="
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2000000,\n        \"name\": \"Duratex\",\n        \"isActive\": true,\n        \"title\": \"Duratex\",\n        \"metaTagDescription\": \"\",\n        \"imageUrl\": null\n    },\n    {\n        \"id\": 2000001,\n        \"name\": \"Rehau\",\n        \"isActive\": true,\n        \"title\": \"Rehau\",\n        \"metaTagDescription\": \"Rehau\",\n        \"imageUrl\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GET Arvore de Categorias",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"type": "text",
+						"value": "application/vnd.vtex.ds.v10+json"
+					},
+					{
+						"key": "content-type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-vtex-api-appkey",
+						"type": "text",
+						"value": "vtexappkey-leomadeiras-HLOVYV"
+					},
+					{
+						"key": "x-vtex-api-apptoken",
+						"type": "text",
+						"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pub/category/tree/5",
+					"protocol": "https",
+					"host": [
+						"leomadeiras",
+						"myvtex",
+						"com"
+					],
+					"path": [
+						"api",
+						"catalog_system",
+						"pub",
+						"category",
+						"tree",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Input Imagem em uma SKU",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"IsMain\": false,\r\n        \"Label\": \"Teste da cadeira 2\",\r\n        \"Name\": \"Teste da cadeira 2\",\r\n        \"Text\": null,\r\n        \"Url\": \"https://apiqa.leomadeiras.com.br/fotosvtex/all/iphone.jpg\"\r\n      \r\n}"
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/stockkeepingunit/310118449/file",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog",
+								"pvt",
+								"stockkeepingunit",
+								"310118449",
+								"file"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "74"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 26 May 2020 23:31:17 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-VTEX-Janus-Router-Backend-App",
+							"value": "ctgapi-vv1.16.27+225"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 c57d29d79962af7729faa9665c9ff819.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "GRU1-C1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "wt2pFp1fkNbhwFd9E7j-rUB2II73jlVQu9qnF97wcxk0vYeGi66W-w=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Id\": 13099,\n    \"SkuId\": 310118449,\n    \"IsMain\": false,\n    \"Label\": \"Teste da cadeira 2\"\n}"
+				},
+				{
+					"name": "GET Arvora de Marcas",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pub/category/tree/3",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog_system",
+								"pub",
+								"category",
+								"tree",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "627"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Jun 2020 19:31:00 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-CacheServer",
+							"value": "janus-apicache-20"
+						},
+						{
+							"key": "X-Powered-by-VTEX-Janus-ApiCache",
+							"value": "v1.15.0"
+						},
+						{
+							"key": "X-VTEX-ApiCache-Time",
+							"value": "0.061"
+						},
+						{
+							"key": "X-VTEX-Backend-Connect-Time",
+							"value": "0.001"
+						},
+						{
+							"key": "X-VTEX-Backend-Header-Time",
+							"value": "0.061"
+						},
+						{
+							"key": "X-VTEX-Cache-Status-Janus-ApiCache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-VTEX-Janus-Router-Backend-App",
+							"value": "catalogapi-vv2.0.117+353"
+						},
+						{
+							"key": "x-vtex-operation-id",
+							"value": "4d9d1342-e263-4946-9271-72d3f3e1ebbe"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 fa21836b5bf2fcc46893f53506378fc5.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "GRU50"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "pizea6Usy_Rsy4xD8KatoHuFAlYZA10rBTCKVT8QcdmYgE8gOl2KwQ=="
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"MDF, MDP e Chapas de Fibra\",\n        \"hasChildren\": true,\n        \"url\": \"https://leomadeiras.myvtex.com/mdf-mdp-e-chapas-de-fibra\",\n        \"children\": [\n            {\n                \"id\": 10,\n                \"name\": \"101\",\n                \"hasChildren\": false,\n                \"url\": \"https://leomadeiras.myvtex.com/mdf-mdp-e-chapas-de-fibra/101\",\n                \"children\": [],\n                \"Title\": \"Chapas de MDF\",\n                \"MetaTagDescription\": \"Chapas de MDF\"\n            },\n            {\n                \"id\": 11,\n                \"name\": \"102\",\n                \"hasChildren\": false,\n                \"url\": \"https://leomadeiras.myvtex.com/mdf-mdp-e-chapas-de-fibra/102\",\n                \"children\": [],\n                \"Title\": \"Chapas de MDP\",\n                \"MetaTagDescription\": \"Chapas de MDP\"\n            },\n            {\n                \"id\": 12,\n                \"name\": \"103\",\n                \"hasChildren\": false,\n                \"url\": \"https://leomadeiras.myvtex.com/mdf-mdp-e-chapas-de-fibra/103\",\n                \"children\": [],\n                \"Title\": \"Expositores\",\n                \"MetaTagDescription\": \"Expositores\"\n            }\n        ],\n        \"Title\": \"MDF, MDP e Chapas de Fibra\",\n        \"MetaTagDescription\": \"MDF, MDP e Chapas de Fibra\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Fitas de Borda e Tapa Furos\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/fitas-de-borda-e-tapa-furos\",\n        \"children\": [],\n        \"Title\": \"Fitas de Borda e Tapa Furos\",\n        \"MetaTagDescription\": \"Fitas de Borda e Tapa Furos\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Ferragens\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/ferragens\",\n        \"children\": [],\n        \"Title\": \"Ferragens\",\n        \"MetaTagDescription\": \"Ferragens\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Madeiras\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/madeiras\",\n        \"children\": [],\n        \"Title\": \"Madeiras\",\n        \"MetaTagDescription\": \"Madeiras\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Fórmicas\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/formicas\",\n        \"children\": [],\n        \"Title\": \"Fórmicas\",\n        \"MetaTagDescription\": \"Fórmicas\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Maquinas e Ferramentas\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/maquinas-e-ferramentas\",\n        \"children\": [],\n        \"Title\": \"Maquinas e Ferramentas\",\n        \"MetaTagDescription\": \"Maquinas e Ferramentas\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Acabamentos\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/acabamentos\",\n        \"children\": [],\n        \"Title\": \"Acabamentos\",\n        \"MetaTagDescription\": \"Acabamentos\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Perfis de Alumínio\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/perfis-de-aluminio\",\n        \"children\": [],\n        \"Title\": \"Perfis de Alumínio\",\n        \"MetaTagDescription\": \"Perfis de Alumínio\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Divisórias\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/divisorias\",\n        \"children\": [],\n        \"Title\": \"Divisórias\",\n        \"MetaTagDescription\": \"Divisórias\"\n    }\n]"
+				},
+				{
+					"name": "GET Marca",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pvt/brand/list",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog_system",
+								"pvt",
+								"brand",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "225"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 04 Jun 2020 23:03:10 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-CacheServer",
+							"value": "janus-apicache-17"
+						},
+						{
+							"key": "X-Powered-by-VTEX-Janus-ApiCache",
+							"value": "v1.15.0"
+						},
+						{
+							"key": "X-VTEX-ApiCache-Time",
+							"value": "0.184"
+						},
+						{
+							"key": "X-VTEX-Backend-Connect-Time",
+							"value": "0.000"
+						},
+						{
+							"key": "X-VTEX-Backend-Header-Time",
+							"value": "0.184"
+						},
+						{
+							"key": "X-VTEX-Cache-Status-Janus-ApiCache",
+							"value": "EXPIRED"
+						},
+						{
+							"key": "X-VTEX-Janus-Router-Backend-App",
+							"value": "catalogapi-vv2.0.116+352"
+						},
+						{
+							"key": "x-vtex-operation-id",
+							"value": "e143207b-f47b-4920-b05e-a1f1664358ad"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 ae55e205a0e1820bc0fe77be2a5169e5.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "GRU50-C1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "sjvFO8mfORYWgIww3lmWwNm7g4Q_Isz7fNsFMbrYSTP8eno9XpGh-g=="
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2000000,\n        \"name\": \"Duratex\",\n        \"isActive\": true,\n        \"title\": \"Duratex\",\n        \"metaTagDescription\": \"\",\n        \"imageUrl\": null\n    },\n    {\n        \"id\": 2000001,\n        \"name\": \"Rehau\",\n        \"isActive\": true,\n        \"title\": \"Rehau\",\n        \"metaTagDescription\": \"Rehau\",\n        \"imageUrl\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GET Arvore de Grupos por Categoria",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"type": "text",
+						"value": "application/vnd.vtex.ds.v10+json"
+					},
+					{
+						"key": "content-type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-vtex-api-appkey",
+						"type": "text",
+						"value": "vtexappkey-leomadeiras-HLOVYV"
+					},
+					{
+						"key": "x-vtex-api-apptoken",
+						"type": "text",
+						"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pub/specification/field/listTreeByCategoryId/2",
+					"protocol": "https",
+					"host": [
+						"leomadeiras",
+						"myvtex",
+						"com"
+					],
+					"path": [
+						"api",
+						"catalog_system",
+						"pub",
+						"specification",
+						"field",
+						"listTreeByCategoryId",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Marca",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pvt/brand/list",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog_system",
+								"pvt",
+								"brand",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "225"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 04 Jun 2020 23:03:10 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-CacheServer",
+							"value": "janus-apicache-17"
+						},
+						{
+							"key": "X-Powered-by-VTEX-Janus-ApiCache",
+							"value": "v1.15.0"
+						},
+						{
+							"key": "X-VTEX-ApiCache-Time",
+							"value": "0.184"
+						},
+						{
+							"key": "X-VTEX-Backend-Connect-Time",
+							"value": "0.000"
+						},
+						{
+							"key": "X-VTEX-Backend-Header-Time",
+							"value": "0.184"
+						},
+						{
+							"key": "X-VTEX-Cache-Status-Janus-ApiCache",
+							"value": "EXPIRED"
+						},
+						{
+							"key": "X-VTEX-Janus-Router-Backend-App",
+							"value": "catalogapi-vv2.0.116+352"
+						},
+						{
+							"key": "x-vtex-operation-id",
+							"value": "e143207b-f47b-4920-b05e-a1f1664358ad"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 ae55e205a0e1820bc0fe77be2a5169e5.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "GRU50-C1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "sjvFO8mfORYWgIww3lmWwNm7g4Q_Isz7fNsFMbrYSTP8eno9XpGh-g=="
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2000000,\n        \"name\": \"Duratex\",\n        \"isActive\": true,\n        \"title\": \"Duratex\",\n        \"metaTagDescription\": \"\",\n        \"imageUrl\": null\n    },\n    {\n        \"id\": 2000001,\n        \"name\": \"Rehau\",\n        \"isActive\": true,\n        \"title\": \"Rehau\",\n        \"metaTagDescription\": \"Rehau\",\n        \"imageUrl\": null\n    }\n]"
+				},
+				{
+					"name": "GET Arvora de Marcas",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pub/category/tree/3",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog_system",
+								"pub",
+								"category",
+								"tree",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "627"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Jun 2020 19:31:00 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-CacheServer",
+							"value": "janus-apicache-20"
+						},
+						{
+							"key": "X-Powered-by-VTEX-Janus-ApiCache",
+							"value": "v1.15.0"
+						},
+						{
+							"key": "X-VTEX-ApiCache-Time",
+							"value": "0.061"
+						},
+						{
+							"key": "X-VTEX-Backend-Connect-Time",
+							"value": "0.001"
+						},
+						{
+							"key": "X-VTEX-Backend-Header-Time",
+							"value": "0.061"
+						},
+						{
+							"key": "X-VTEX-Cache-Status-Janus-ApiCache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-VTEX-Janus-Router-Backend-App",
+							"value": "catalogapi-vv2.0.117+353"
+						},
+						{
+							"key": "x-vtex-operation-id",
+							"value": "4d9d1342-e263-4946-9271-72d3f3e1ebbe"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 fa21836b5bf2fcc46893f53506378fc5.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "GRU50"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "pizea6Usy_Rsy4xD8KatoHuFAlYZA10rBTCKVT8QcdmYgE8gOl2KwQ=="
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"MDF, MDP e Chapas de Fibra\",\n        \"hasChildren\": true,\n        \"url\": \"https://leomadeiras.myvtex.com/mdf-mdp-e-chapas-de-fibra\",\n        \"children\": [\n            {\n                \"id\": 10,\n                \"name\": \"101\",\n                \"hasChildren\": false,\n                \"url\": \"https://leomadeiras.myvtex.com/mdf-mdp-e-chapas-de-fibra/101\",\n                \"children\": [],\n                \"Title\": \"Chapas de MDF\",\n                \"MetaTagDescription\": \"Chapas de MDF\"\n            },\n            {\n                \"id\": 11,\n                \"name\": \"102\",\n                \"hasChildren\": false,\n                \"url\": \"https://leomadeiras.myvtex.com/mdf-mdp-e-chapas-de-fibra/102\",\n                \"children\": [],\n                \"Title\": \"Chapas de MDP\",\n                \"MetaTagDescription\": \"Chapas de MDP\"\n            },\n            {\n                \"id\": 12,\n                \"name\": \"103\",\n                \"hasChildren\": false,\n                \"url\": \"https://leomadeiras.myvtex.com/mdf-mdp-e-chapas-de-fibra/103\",\n                \"children\": [],\n                \"Title\": \"Expositores\",\n                \"MetaTagDescription\": \"Expositores\"\n            }\n        ],\n        \"Title\": \"MDF, MDP e Chapas de Fibra\",\n        \"MetaTagDescription\": \"MDF, MDP e Chapas de Fibra\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Fitas de Borda e Tapa Furos\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/fitas-de-borda-e-tapa-furos\",\n        \"children\": [],\n        \"Title\": \"Fitas de Borda e Tapa Furos\",\n        \"MetaTagDescription\": \"Fitas de Borda e Tapa Furos\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Ferragens\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/ferragens\",\n        \"children\": [],\n        \"Title\": \"Ferragens\",\n        \"MetaTagDescription\": \"Ferragens\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Madeiras\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/madeiras\",\n        \"children\": [],\n        \"Title\": \"Madeiras\",\n        \"MetaTagDescription\": \"Madeiras\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Fórmicas\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/formicas\",\n        \"children\": [],\n        \"Title\": \"Fórmicas\",\n        \"MetaTagDescription\": \"Fórmicas\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Maquinas e Ferramentas\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/maquinas-e-ferramentas\",\n        \"children\": [],\n        \"Title\": \"Maquinas e Ferramentas\",\n        \"MetaTagDescription\": \"Maquinas e Ferramentas\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Acabamentos\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/acabamentos\",\n        \"children\": [],\n        \"Title\": \"Acabamentos\",\n        \"MetaTagDescription\": \"Acabamentos\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Perfis de Alumínio\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/perfis-de-aluminio\",\n        \"children\": [],\n        \"Title\": \"Perfis de Alumínio\",\n        \"MetaTagDescription\": \"Perfis de Alumínio\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Divisórias\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/divisorias\",\n        \"children\": [],\n        \"Title\": \"Divisórias\",\n        \"MetaTagDescription\": \"Divisórias\"\n    }\n]"
+				},
+				{
+					"name": "Input Imagem em uma SKU",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"IsMain\": false,\r\n        \"Label\": \"Teste da cadeira 2\",\r\n        \"Name\": \"Teste da cadeira 2\",\r\n        \"Text\": null,\r\n        \"Url\": \"https://apiqa.leomadeiras.com.br/fotosvtex/all/iphone.jpg\"\r\n      \r\n}"
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/stockkeepingunit/310118449/file",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog",
+								"pvt",
+								"stockkeepingunit",
+								"310118449",
+								"file"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "74"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 26 May 2020 23:31:17 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-VTEX-Janus-Router-Backend-App",
+							"value": "ctgapi-vv1.16.27+225"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 c57d29d79962af7729faa9665c9ff819.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "GRU1-C1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "wt2pFp1fkNbhwFd9E7j-rUB2II73jlVQu9qnF97wcxk0vYeGi66W-w=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Id\": 13099,\n    \"SkuId\": 310118449,\n    \"IsMain\": false,\n    \"Label\": \"Teste da cadeira 2\"\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Especificacao de Campo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"type": "text",
+						"value": "application/vnd.vtex.ds.v10+json"
+					},
+					{
+						"key": "content-type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-vtex-api-appkey",
+						"type": "text",
+						"value": "vtexappkey-leomadeiras-HLOVYV"
+					},
+					{
+						"key": "x-vtex-api-apptoken",
+						"type": "text",
+						"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pub/specification/fieldGet/38",
+					"protocol": "https",
+					"host": [
+						"leomadeiras",
+						"myvtex",
+						"com"
+					],
+					"path": [
+						"api",
+						"catalog_system",
+						"pub",
+						"specification",
+						"fieldGet",
+						"38"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Marca",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pvt/brand/list",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog_system",
+								"pvt",
+								"brand",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "225"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 04 Jun 2020 23:03:10 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-CacheServer",
+							"value": "janus-apicache-17"
+						},
+						{
+							"key": "X-Powered-by-VTEX-Janus-ApiCache",
+							"value": "v1.15.0"
+						},
+						{
+							"key": "X-VTEX-ApiCache-Time",
+							"value": "0.184"
+						},
+						{
+							"key": "X-VTEX-Backend-Connect-Time",
+							"value": "0.000"
+						},
+						{
+							"key": "X-VTEX-Backend-Header-Time",
+							"value": "0.184"
+						},
+						{
+							"key": "X-VTEX-Cache-Status-Janus-ApiCache",
+							"value": "EXPIRED"
+						},
+						{
+							"key": "X-VTEX-Janus-Router-Backend-App",
+							"value": "catalogapi-vv2.0.116+352"
+						},
+						{
+							"key": "x-vtex-operation-id",
+							"value": "e143207b-f47b-4920-b05e-a1f1664358ad"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 ae55e205a0e1820bc0fe77be2a5169e5.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "GRU50-C1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "sjvFO8mfORYWgIww3lmWwNm7g4Q_Isz7fNsFMbrYSTP8eno9XpGh-g=="
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2000000,\n        \"name\": \"Duratex\",\n        \"isActive\": true,\n        \"title\": \"Duratex\",\n        \"metaTagDescription\": \"\",\n        \"imageUrl\": null\n    },\n    {\n        \"id\": 2000001,\n        \"name\": \"Rehau\",\n        \"isActive\": true,\n        \"title\": \"Rehau\",\n        \"metaTagDescription\": \"Rehau\",\n        \"imageUrl\": null\n    }\n]"
+				},
+				{
+					"name": "Input Imagem em uma SKU",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"IsMain\": false,\r\n        \"Label\": \"Teste da cadeira 2\",\r\n        \"Name\": \"Teste da cadeira 2\",\r\n        \"Text\": null,\r\n        \"Url\": \"https://apiqa.leomadeiras.com.br/fotosvtex/all/iphone.jpg\"\r\n      \r\n}"
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/stockkeepingunit/310118449/file",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog",
+								"pvt",
+								"stockkeepingunit",
+								"310118449",
+								"file"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "74"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 26 May 2020 23:31:17 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-VTEX-Janus-Router-Backend-App",
+							"value": "ctgapi-vv1.16.27+225"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 c57d29d79962af7729faa9665c9ff819.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "GRU1-C1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "wt2pFp1fkNbhwFd9E7j-rUB2II73jlVQu9qnF97wcxk0vYeGi66W-w=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Id\": 13099,\n    \"SkuId\": 310118449,\n    \"IsMain\": false,\n    \"Label\": \"Teste da cadeira 2\"\n}"
+				},
+				{
+					"name": "GET Arvora de Marcas",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog_system/pub/category/tree/3",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog_system",
+								"pub",
+								"category",
+								"tree",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "627"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Jun 2020 19:31:00 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-CacheServer",
+							"value": "janus-apicache-20"
+						},
+						{
+							"key": "X-Powered-by-VTEX-Janus-ApiCache",
+							"value": "v1.15.0"
+						},
+						{
+							"key": "X-VTEX-ApiCache-Time",
+							"value": "0.061"
+						},
+						{
+							"key": "X-VTEX-Backend-Connect-Time",
+							"value": "0.001"
+						},
+						{
+							"key": "X-VTEX-Backend-Header-Time",
+							"value": "0.061"
+						},
+						{
+							"key": "X-VTEX-Cache-Status-Janus-ApiCache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-VTEX-Janus-Router-Backend-App",
+							"value": "catalogapi-vv2.0.117+353"
+						},
+						{
+							"key": "x-vtex-operation-id",
+							"value": "4d9d1342-e263-4946-9271-72d3f3e1ebbe"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 fa21836b5bf2fcc46893f53506378fc5.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "GRU50"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "pizea6Usy_Rsy4xD8KatoHuFAlYZA10rBTCKVT8QcdmYgE8gOl2KwQ=="
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"MDF, MDP e Chapas de Fibra\",\n        \"hasChildren\": true,\n        \"url\": \"https://leomadeiras.myvtex.com/mdf-mdp-e-chapas-de-fibra\",\n        \"children\": [\n            {\n                \"id\": 10,\n                \"name\": \"101\",\n                \"hasChildren\": false,\n                \"url\": \"https://leomadeiras.myvtex.com/mdf-mdp-e-chapas-de-fibra/101\",\n                \"children\": [],\n                \"Title\": \"Chapas de MDF\",\n                \"MetaTagDescription\": \"Chapas de MDF\"\n            },\n            {\n                \"id\": 11,\n                \"name\": \"102\",\n                \"hasChildren\": false,\n                \"url\": \"https://leomadeiras.myvtex.com/mdf-mdp-e-chapas-de-fibra/102\",\n                \"children\": [],\n                \"Title\": \"Chapas de MDP\",\n                \"MetaTagDescription\": \"Chapas de MDP\"\n            },\n            {\n                \"id\": 12,\n                \"name\": \"103\",\n                \"hasChildren\": false,\n                \"url\": \"https://leomadeiras.myvtex.com/mdf-mdp-e-chapas-de-fibra/103\",\n                \"children\": [],\n                \"Title\": \"Expositores\",\n                \"MetaTagDescription\": \"Expositores\"\n            }\n        ],\n        \"Title\": \"MDF, MDP e Chapas de Fibra\",\n        \"MetaTagDescription\": \"MDF, MDP e Chapas de Fibra\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Fitas de Borda e Tapa Furos\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/fitas-de-borda-e-tapa-furos\",\n        \"children\": [],\n        \"Title\": \"Fitas de Borda e Tapa Furos\",\n        \"MetaTagDescription\": \"Fitas de Borda e Tapa Furos\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Ferragens\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/ferragens\",\n        \"children\": [],\n        \"Title\": \"Ferragens\",\n        \"MetaTagDescription\": \"Ferragens\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Madeiras\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/madeiras\",\n        \"children\": [],\n        \"Title\": \"Madeiras\",\n        \"MetaTagDescription\": \"Madeiras\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Fórmicas\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/formicas\",\n        \"children\": [],\n        \"Title\": \"Fórmicas\",\n        \"MetaTagDescription\": \"Fórmicas\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Maquinas e Ferramentas\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/maquinas-e-ferramentas\",\n        \"children\": [],\n        \"Title\": \"Maquinas e Ferramentas\",\n        \"MetaTagDescription\": \"Maquinas e Ferramentas\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Acabamentos\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/acabamentos\",\n        \"children\": [],\n        \"Title\": \"Acabamentos\",\n        \"MetaTagDescription\": \"Acabamentos\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Perfis de Alumínio\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/perfis-de-aluminio\",\n        \"children\": [],\n        \"Title\": \"Perfis de Alumínio\",\n        \"MetaTagDescription\": \"Perfis de Alumínio\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Divisórias\",\n        \"hasChildren\": false,\n        \"url\": \"https://leomadeiras.myvtex.com/divisorias\",\n        \"children\": [],\n        \"Title\": \"Divisórias\",\n        \"MetaTagDescription\": \"Divisórias\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Criar Preco Fixo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"type": "text",
+						"value": "application/vnd.vtex.ds.v10+json"
+					},
+					{
+						"key": "content-type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-vtex-api-appkey",
+						"type": "text",
+						"value": "vtexappkey-leomadeiras-HLOVYV"
+					},
+					{
+						"key": "x-vtex-api-apptoken",
+						"type": "text",
+						"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"FieldId\": 38,\r\n        \"FieldValueId\": 84\r\n}"
+				},
+				"url": {
+					"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/stockkeepingunit/9/specification",
+					"protocol": "https",
+					"host": [
+						"leomadeiras",
+						"myvtex",
+						"com"
+					],
+					"path": [
+						"api",
+						"catalog",
+						"pvt",
+						"stockkeepingunit",
+						"9",
+						"specification"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "11 - Criar Especificacao SKU (Associar)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"FieldId\": 36,\r\n        \"FieldValueId\": 79\r\n}"
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/stockkeepingunit/13/specification",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog",
+								"pvt",
+								"stockkeepingunit",
+								"13",
+								"specification"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "67"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 10 Jun 2020 17:37:29 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-VTEX-Janus-Router-Backend-App",
+							"value": "ctgapi-vv1.16.28+229"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 02fe6e236b00f4dcbdb1bf5c172062d9.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "GIG51-C1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "RfTc3gasbC1umhXGBqt7otj1DySm3Mcg-RZNPSNzA7qVLDS49oc4tw=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Id\": 429,\n    \"SkuId\": 13,\n    \"FieldId\": 36,\n    \"FieldValueId\": 79,\n    \"Text\": \"192mm\"\n}"
+				},
+				{
+					"name": "Input Imagem em uma SKU",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"type": "text",
+								"value": "application/vnd.vtex.ds.v10+json"
+							},
+							{
+								"key": "content-type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-vtex-api-appkey",
+								"type": "text",
+								"value": "vtexappkey-leomadeiras-HLOVYV"
+							},
+							{
+								"key": "x-vtex-api-apptoken",
+								"type": "text",
+								"value": "GNSISBPKNAFZVUUSDPCYELQZVYLQPJIIOQQNWVABOZRCRFHIQECNSCPUWSMTQZVERXLFEGVHOBJETOHQRCALGUQLAVQEIGKPEMKUUCEJIUZQSKAIKWCNZKYXHZEIPRZH"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"IsMain\": false,\r\n        \"Label\": \"Teste da cadeira 2\",\r\n        \"Name\": \"Teste da cadeira 2\",\r\n        \"Text\": null,\r\n        \"Url\": \"https://apiqa.leomadeiras.com.br/fotosvtex/all/iphone.jpg\"\r\n      \r\n}"
+						},
+						"url": {
+							"raw": "https://leomadeiras.myvtex.com/api/catalog/pvt/stockkeepingunit/310118449/file",
+							"protocol": "https",
+							"host": [
+								"leomadeiras",
+								"myvtex",
+								"com"
+							],
+							"path": [
+								"api",
+								"catalog",
+								"pvt",
+								"stockkeepingunit",
+								"310118449",
+								"file"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "74"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 26 May 2020 23:31:17 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "X-VTEX-Janus-Router-Backend-App",
+							"value": "ctgapi-vv1.16.27+225"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 c57d29d79962af7729faa9665c9ff819.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "GRU1-C1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "wt2pFp1fkNbhwFd9E7j-rUB2II73jlVQu9qnF97wcxk0vYeGi66W-w=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Id\": 13099,\n    \"SkuId\": 310118449,\n    \"IsMain\": false,\n    \"Label\": \"Teste da cadeira 2\"\n}"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,288 @@
+{
+	"info": {
+		"_postman_id": "c5afc20e-d4b7-4673-83f1-adee8074bf08",
+		"name": "Ifood API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Autenticação",
+			"item": [
+				{
+					"name": "Autenticação",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"client_id\": \"{{seuClienteId}}\",\r\n    \"client_secret\": \"{{seuClienteSecret}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://service.sitemercado.com.br/api/v1/oauth/token",
+							"protocol": "https",
+							"host": [
+								"service",
+								"sitemercado",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"v1",
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Produtos",
+			"item": [
+				{
+					"name": "Integrar Produtos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{tokenBearer}}"
+							},
+							{
+								"key": "access_token",
+								"value": "{{seuAccessToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idLoja\": 015,\r\n    \"departamento\": \"Bebidas\",\r\n    \"categoria\": \"Leite\",\r\n    \"subCategoria\": \"Leite Integral\",\r\n    \"marca\": \"Parmalat\",\r\n    \"unidade\": \"UN\",\r\n    \"volume\": \"1UN\",\r\n    \"codigoBarra\": \"7891231231231\",\r\n    \"nome\": \"Leite integral 1 LT\",\r\n    \"valor\": 12.99,\r\n    \"valorPromocao\": 11.99,\r\n    \"valorAtacado\": 10.99,\r\n    \"valorCompra\": 4.99,\r\n    \"quantidadeEstoqueAtual\": 950,\r\n    \"quantidadeEstoqueMinimo\": 12,\r\n    \"quantidadeAtacado\": 950,\r\n    \"descricao\": \"Leite Integral Parmalat muito bom e saudável\",\r\n    \"ativo\": true,\r\n    \"plu\": \"parma123\",\r\n    \"validadeProxima\": false\r\n}"
+						},
+						"url": {
+							"raw": "https://service.sitemercado.com.br/api/v1/produtointegracao?reset=false",
+							"protocol": "https",
+							"host": [
+								"service",
+								"sitemercado",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"v1",
+								"produtointegracao"
+							],
+							"query": [
+								{
+									"key": "reset",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lojas",
+			"item": [
+				{
+					"name": "Retorna o ID das lojas atreladas a credencial",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{tokenBearer}}"
+							},
+							{
+								"key": "access_token",
+								"value": "{{seuAccessToken}}"
+							}
+						],
+						"url": {
+							"raw": "https://service.sitemercado.com.br/api/v1/loja/",
+							"protocol": "https",
+							"host": [
+								"service",
+								"sitemercado",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"v1",
+								"loja",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pedidos",
+			"item": [
+				{
+					"name": "Retorna os eventos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{tokenBearer}}"
+							},
+							{
+								"key": "access_token",
+								"value": "{{seuAccessToken}}"
+							}
+						],
+						"url": {
+							"raw": "https://service.sitemercado.com.br/api/v1/pedido/eventos",
+							"protocol": "https",
+							"host": [
+								"service",
+								"sitemercado",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"v1",
+								"pedido",
+								"eventos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Chamada de evento verificado",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{tokenBearer}}"
+							},
+							{
+								"key": "access_token",
+								"value": "{{seuAccessToken}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "456"
+						},
+						"url": {
+							"raw": "https://service.sitemercado.com.br/api/v1/pedido/eventos/verificado",
+							"protocol": "https",
+							"host": [
+								"service",
+								"sitemercado",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"v1",
+								"pedido",
+								"eventos",
+								"verificado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Chamada de eventos por loja",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{tokenBearer}}"
+							},
+							{
+								"key": "access_token",
+								"value": "{{seuAccessToken}}"
+							}
+						],
+						"url": {
+							"raw": "https://service.sitemercado.com.br/api/v1/pedido/eventos/{{id_pedido}}",
+							"protocol": "https",
+							"host": [
+								"service",
+								"sitemercado",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"v1",
+								"pedido",
+								"eventos",
+								"{{id_pedido}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retorna um pedido de acordo com o código informado",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{tokenBearer}}"
+							},
+							{
+								"key": "access_token",
+								"value": "{{seuAccessToken}}"
+							}
+						],
+						"url": {
+							"raw": "https://service.sitemercado.com.br/api/v1/pedido/{{id_pedido}}",
+							"protocol": "https",
+							"host": [
+								"service",
+								"sitemercado",
+								"com",
+								"br"
+							],
+							"path": [
+								"api",
+								"v1",
+								"pedido",
+								"{{id_pedido}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

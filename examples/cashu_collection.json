@@ -1,0 +1,620 @@
+{
+	"info": {
+		"_postman_id": "f67d70fd-4185-4746-a1a2-2c4bc1c87e72",
+		"name": "SmartScore API CashU",
+		"description": "Olá, bem-vindo à documentação técnica da CashU. Nessa documentação, você vai encontrar todas as informações necessárias para integrar com as nossas APIs.\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "v1",
+			"item": [
+				{
+					"name": "Fornecedor",
+					"item": [
+						{
+							"name": "Envio de informações",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"razao_social\": \"occaecat Excepteur consequat do laborum\",\n  \"cnpj\": \"ut ea\",\n  \"email\": \"in ea enim consectetur adipisicing\",\n  \"telefone\": \"minim do\",\n  \"celular\": \"sunt et pariatur tempor\",\n  \"situacao\": \"enim \",\n  \"faturamentos\": [\n    {\n      \"mes_01\": 58614344.98443517,\n      \"mes_02\": -36197357.296935715,\n      \"mes_03\": -39252727.1039572,\n      \"mes_04\": -25920182.18031989,\n      \"mes_05\": -14017962.984507948,\n      \"mes_06\": 68314936.36196867,\n      \"mes_07\": -89497310.92830211,\n      \"mes_08\": -25231723.751117438,\n      \"mes_09\": -51035491.076768704,\n      \"mes_10\": -22508137.76438649,\n      \"mes_11\": 79825860.39242774,\n      \"mes_12\": 73968595.45802271,\n      \"mes_13\": -17562253.129277214,\n      \"mes_14\": 23028744.273930714,\n      \"mes_15\": 53343528.16725838,\n      \"mes_16\": -15670222.803210571,\n      \"mes_17\": -37018361.41033157,\n      \"mes_18\": 9004825.812629223,\n      \"mes_19\": 34268410.57976338,\n      \"mes_20\": -19604644.183540776,\n      \"mes_21\": 1482811.1376725733,\n      \"mes_22\": 90983237.42000583,\n      \"mes_23\": -65457909.38895508,\n      \"mes_24\": 64441051.247879386,\n      \"mes_25\": -19669866.97327897,\n      \"mes_26\": -30102838.909486577,\n      \"mes_27\": -11148520.786129132,\n      \"mes_28\": 99724796.06041712,\n      \"mes_29\": 78211350.9630062,\n      \"mes_30\": 45557163.89300123,\n      \"mes_31\": -9552291.00491622,\n      \"mes_32\": -78353202.17453292,\n      \"mes_33\": 76175295.02961352,\n      \"mes_34\": 57072594.30420634,\n      \"mes_35\": 51826247.2321378,\n      \"mes_36\": 13224513.21682854\n    },\n    {\n      \"mes_01\": -88810854.23868749,\n      \"mes_02\": -72086993.5146656,\n      \"mes_03\": 91619813.77139446,\n      \"mes_04\": -41144207.22560279,\n      \"mes_05\": 17742274.384098962,\n      \"mes_06\": 93257674.82817832,\n      \"mes_07\": -87821500.679107,\n      \"mes_08\": 88270741.87509325,\n      \"mes_09\": -87186917.69537488,\n      \"mes_10\": 90137464.47764212,\n      \"mes_11\": -33059667.679705165,\n      \"mes_12\": -72262765.85080491,\n      \"mes_13\": 42127904.55365488,\n      \"mes_14\": -19427892.693657085,\n      \"mes_15\": 35672166.525845975,\n      \"mes_16\": 67678753.28803203,\n      \"mes_17\": 54522961.84672934,\n      \"mes_18\": -29489737.264305398,\n      \"mes_19\": 93226545.6518349,\n      \"mes_20\": 68518102.06389204,\n      \"mes_21\": -11125825.159255773,\n      \"mes_22\": -50737961.57273098,\n      \"mes_23\": -89787875.35954958,\n      \"mes_24\": 89706113.13999245,\n      \"mes_25\": -93549336.50626247,\n      \"mes_26\": 364539.00916849077,\n      \"mes_27\": 40889501.46424973,\n      \"mes_28\": 22452832.23973508,\n      \"mes_29\": 90394293.06692138,\n      \"mes_30\": 2640013.6128132045,\n      \"mes_31\": -44703218.98907987,\n      \"mes_32\": 58487774.75331578,\n      \"mes_33\": 69851422.85299441,\n      \"mes_34\": 82140814.78747836,\n      \"mes_35\": -80825789.69515128,\n      \"mes_36\": 45011588.34205851\n    }\n  ],\n  \"despesas\": [\n    {\n      \"mes_01\": -89079919.50320007,\n      \"mes_02\": 4459333.838050172,\n      \"mes_03\": -88125158.2682708,\n      \"mes_04\": -2044143.3482869565,\n      \"mes_05\": -69845739.70517448,\n      \"mes_06\": -35087894.63984265,\n      \"mes_07\": -77466837.68084255,\n      \"mes_08\": -95128418.88910581,\n      \"mes_09\": -12579884.414280817,\n      \"mes_10\": 77912038.06309542,\n      \"mes_11\": -41889811.22933311,\n      \"mes_12\": 63472061.69176179,\n      \"mes_13\": 42048832.27269125,\n      \"mes_14\": 70365749.0268668,\n      \"mes_15\": 86968960.17682323,\n      \"mes_16\": 4236475.399307877,\n      \"mes_17\": 52189117.917565525,\n      \"mes_18\": -67272847.5602205,\n      \"mes_19\": 1294521.542024359,\n      \"mes_20\": 15450430.952490851,\n      \"mes_21\": 26624954.714457154,\n      \"mes_22\": 72820931.12984967,\n      \"mes_23\": -2046806.82230936,\n      \"mes_24\": 81164990.58210725,\n      \"mes_25\": -5839250.166446909,\n      \"mes_26\": 13957663.914838836,\n      \"mes_27\": -85577708.29094453,\n      \"mes_28\": -75003204.96707621,\n      \"mes_29\": 62229817.32486144,\n      \"mes_30\": -84590990.6787687,\n      \"mes_31\": -76660515.851857,\n      \"mes_32\": 54796512.55593142,\n      \"mes_33\": 23067351.74759105,\n      \"mes_34\": 31334763.139446408,\n      \"mes_35\": 12835240.95817037,\n      \"mes_36\": -84761020.8575151\n    },\n    {\n      \"mes_01\": -72954022.80123958,\n      \"mes_02\": 5113850.228399113,\n      \"mes_03\": 22919640.282877296,\n      \"mes_04\": 55003514.65495056,\n      \"mes_05\": 86284506.02641386,\n      \"mes_06\": 11869070.776038855,\n      \"mes_07\": 58346620.487032026,\n      \"mes_08\": -76857188.54248491,\n      \"mes_09\": 81038143.614102,\n      \"mes_10\": 63822380.88669902,\n      \"mes_11\": -73678471.38819008,\n      \"mes_12\": 74046984.15644905,\n      \"mes_13\": 71182662.73521689,\n      \"mes_14\": -17950611.9543491,\n      \"mes_15\": -26268460.156714827,\n      \"mes_16\": -38233484.97506896,\n      \"mes_17\": 67466258.7875945,\n      \"mes_18\": -24300135.591096655,\n      \"mes_19\": -37698123.55542945,\n      \"mes_20\": -78802677.89732489,\n      \"mes_21\": -26749317.997098252,\n      \"mes_22\": -42229404.75781219,\n      \"mes_23\": 38479305.5238671,\n      \"mes_24\": 94273028.83655196,\n      \"mes_25\": 10894351.557093218,\n      \"mes_26\": 51994432.75142208,\n      \"mes_27\": -96623709.59588386,\n      \"mes_28\": -31728704.18537554,\n      \"mes_29\": -46444829.31187772,\n      \"mes_30\": 43455629.540805906,\n      \"mes_31\": 4088973.6725881994,\n      \"mes_32\": 16347099.722130716,\n      \"mes_33\": -63950500.02596587,\n      \"mes_34\": -70860518.20671888,\n      \"mes_35\": 76080081.81986347,\n      \"mes_36\": 4027712.9336087704\n    }\n  ],\n  \"clientes\": [\n    {\n      \"mes_01\": -31409791.12472038,\n      \"mes_02\": 84802359.41201246,\n      \"mes_03\": 13658694.698482066,\n      \"mes_04\": 8307623.07584241,\n      \"mes_05\": -94793142.85144973,\n      \"mes_06\": -37218875.4979065,\n      \"mes_07\": 55309042.74718961,\n      \"mes_08\": -5372686.721202552,\n      \"mes_09\": 43564915.47602719,\n      \"mes_10\": -57845596.759900756,\n      \"mes_11\": -73547485.13280569,\n      \"mes_12\": 87776068.23455942,\n      \"mes_13\": -79918598.63121271,\n      \"mes_14\": 42815285.876722425,\n      \"mes_15\": 31665807.706348076,\n      \"mes_16\": 44183888.53423032,\n      \"mes_17\": -62199522.619401515,\n      \"mes_18\": -99118607.63945541,\n      \"mes_19\": -28602285.034912705,\n      \"mes_20\": 72140173.1941508,\n      \"mes_21\": 59213843.595555544,\n      \"mes_22\": 6327355.887824029,\n      \"mes_23\": -18315685.576384947,\n      \"mes_24\": 13169387.414593682,\n      \"mes_25\": -75593070.07998304,\n      \"mes_26\": 43031913.747410625,\n      \"mes_27\": 29585162.15086022,\n      \"mes_28\": 50171916.57340586,\n      \"mes_29\": -9094668.145416439,\n      \"mes_30\": 22460334.702189937,\n      \"mes_31\": -51157969.16625825,\n      \"mes_32\": -26542812.012595445,\n      \"mes_33\": -59358190.34656294,\n      \"mes_34\": -93045890.35518038,\n      \"mes_35\": 94336778.61075109,\n      \"mes_36\": 95158390.54234254\n    },\n    {\n      \"mes_01\": 51504173.91392198,\n      \"mes_02\": 85758439.39492476,\n      \"mes_03\": 12541699.144533291,\n      \"mes_04\": -16000200.431148008,\n      \"mes_05\": -94616553.13512613,\n      \"mes_06\": 37734710.76425871,\n      \"mes_07\": -69724107.46667546,\n      \"mes_08\": -74469500.04121092,\n      \"mes_09\": -58152310.000354126,\n      \"mes_10\": -52738036.60025487,\n      \"mes_11\": 58450233.429074675,\n      \"mes_12\": 47575711.543325305,\n      \"mes_13\": 86382697.50539926,\n      \"mes_14\": 36485429.294976145,\n      \"mes_15\": -47338851.88771749,\n      \"mes_16\": -28151306.503022328,\n      \"mes_17\": 24170019.811368212,\n      \"mes_18\": -10484547.141843855,\n      \"mes_19\": -75110374.07844187,\n      \"mes_20\": 65437414.552443504,\n      \"mes_21\": 13737152.47770147,\n      \"mes_22\": -47439090.586756594,\n      \"mes_23\": 13244041.732200444,\n      \"mes_24\": -44566587.65861947,\n      \"mes_25\": 16362415.692690477,\n      \"mes_26\": 36327313.31365654,\n      \"mes_27\": 14468114.342362434,\n      \"mes_28\": -35942006.45111041,\n      \"mes_29\": 81970106.4886423,\n      \"mes_30\": -34901072.78632939,\n      \"mes_31\": -96698572.93672282,\n      \"mes_32\": -68158789.29862791,\n      \"mes_33\": 96411018.76561171,\n      \"mes_34\": -77220129.47483417,\n      \"mes_35\": 49521257.30888119,\n      \"mes_36\": -38657342.36902485\n    }\n  ],\n  \"contas_pagar\": [\n    {\n      \"vencido_07\": -36267918.18938742,\n      \"vencido_90\": -26488879.92834279,\n      \"vencido_30\": -63228177.37397166,\n      \"vencido_15\": -15704201.748838738,\n      \"apos_90\": -28801934.998091787,\n      \"ate_05\": 21441205.48622115,\n      \"ate_10\": 21099220.267602533,\n      \"ate_15\": 77757231.19204736,\n      \"ate_20\": 25415507.046757877,\n      \"ate_25\": -49237249.25273829,\n      \"ate_30\": 82913910.66587287,\n      \"ate_35\": 93875160.63113767,\n      \"ate_40\": 94088869.03846216,\n      \"ate_45\": 84623376.64966193,\n      \"ate_50\": -64605642.09306048,\n      \"ate_55\": 68891576.73332754,\n      \"ate_60\": 82232505.04174122,\n      \"ate_65\": -46727690.37473477,\n      \"ate_70\": 61327470.847804695,\n      \"ate_75\": 99790988.10445186,\n      \"ate_80\": -59496516.95787996,\n      \"ate_85\": 50416349.3469103,\n      \"ate_90\": 36634668.17483342\n    },\n    {\n      \"vencido_07\": -68391725.9550704,\n      \"vencido_90\": 34457552.37666154,\n      \"vencido_30\": -33713896.562912814,\n      \"vencido_15\": 41928016.386030555,\n      \"apos_90\": -9608435.459215999,\n      \"ate_05\": -96742123.56304418,\n      \"ate_10\": 75610962.74058339,\n      \"ate_15\": 8278494.949506238,\n      \"ate_20\": -61543050.743744396,\n      \"ate_25\": 68067196.1320959,\n      \"ate_30\": -18546491.045139074,\n      \"ate_35\": -31238023.41094759,\n      \"ate_40\": -69300405.31544681,\n      \"ate_45\": -45905136.43112893,\n      \"ate_50\": -25451308.963037312,\n      \"ate_55\": -93845126.10322928,\n      \"ate_60\": -24414216.57262391,\n      \"ate_65\": -9103828.325750068,\n      \"ate_70\": -85039013.47257856,\n      \"ate_75\": -44773492.199511014,\n      \"ate_80\": -14323395.155860558,\n      \"ate_85\": -6149464.420122623,\n      \"ate_90\": -9984953.971345827\n    }\n  ],\n  \"contas_receber\": [\n    {\n      \"vencido_07\": -15217716.955209896,\n      \"vencido_90\": 65908589.01287979,\n      \"vencido_30\": 2955468.074993789,\n      \"vencido_15\": -29300820.24448058,\n      \"apos_90\": -90147133.77919441,\n      \"ate_05\": 39143581.293846756,\n      \"ate_10\": 62974319.51923823,\n      \"ate_15\": -4551914.620099455,\n      \"ate_20\": -24589793.67089644,\n      \"ate_25\": -52582058.848357074,\n      \"ate_30\": -33603388.32394776,\n      \"ate_35\": 26113190.569977805,\n      \"ate_40\": 91187873.5840775,\n      \"ate_45\": -32495138.133781016,\n      \"ate_50\": 22846983.031974494,\n      \"ate_55\": -98621186.84333314,\n      \"ate_60\": -86629232.28455476,\n      \"ate_65\": 88893704.81449705,\n      \"ate_70\": -48385161.694594726,\n      \"ate_75\": 64470808.883327365,\n      \"ate_80\": 56808253.87079492,\n      \"ate_85\": 81641048.78974357,\n      \"ate_90\": -44888852.255011536\n    },\n    {\n      \"vencido_07\": -98573535.85348555,\n      \"vencido_90\": 17143312.959759578,\n      \"vencido_30\": -66523368.84083216,\n      \"vencido_15\": -38067957.05162948,\n      \"apos_90\": -83041772.82716623,\n      \"ate_05\": -28260223.13232328,\n      \"ate_10\": 2062180.5766452402,\n      \"ate_15\": -16858142.51159656,\n      \"ate_20\": -92974861.68395999,\n      \"ate_25\": -97880956.31681685,\n      \"ate_30\": 71871813.32326448,\n      \"ate_35\": -52105839.07398765,\n      \"ate_40\": -52957560.478884116,\n      \"ate_45\": -85906994.48618953,\n      \"ate_50\": -44596822.62196982,\n      \"ate_55\": -80613216.66044931,\n      \"ate_60\": -3306756.460592732,\n      \"ate_65\": -88192323.84270777,\n      \"ate_70\": 93433428.57470417,\n      \"ate_75\": 62926828.982284576,\n      \"ate_80\": -13962978.269257635,\n      \"ate_85\": -4195061.97682558,\n      \"ate_90\": -88596065.05195528\n    }\n  ],\n  \"top10_clientes\": {\n    \"mes_01\": [\n      {\n        \"cedente_nome_razao_social\": \"dolor reprehe\",\n        \"cedente_cnpj\": \"amet sunt elit qui\",\n        \"sacado_nome_fantasia\": \"laboris velit do elit\",\n        \"sacado_razao_social\": \"Ut consequat velit\",\n        \"sacado_cpf_cnpj\": \"dolore irure\",\n        \"valor_percentual\": -27956834.169570267\n      },\n      {\n        \"cedente_nome_razao_social\": \"esse pariatur in velit\",\n        \"cedente_cnpj\": \"officia laboris\",\n        \"sacado_nome_fantasia\": \"deserunt\",\n        \"sacado_razao_social\": \"ullamco incididunt irure sunt\",\n        \"sacado_cpf_cnpj\": \"proident occaecat sed\",\n        \"valor_percentual\": -96019077.87778243\n      }\n    ],\n    \"mes_02\": [\n      {\n        \"cedente_nome_razao_social\": \"qui\",\n        \"cedente_cnpj\": \"nisi qui adipisicing\",\n        \"sacado_nome_fantasia\": \"in laboris qui\",\n        \"sacado_razao_social\": \"tempor ipsum ullamco\",\n        \"sacado_cpf_cnpj\": \"pariatur Lorem consectetur\",\n        \"valor_percentual\": -61284763.10316175\n      },\n      {\n        \"cedente_nome_razao_social\": \"laboris cupidatat mollit\",\n        \"cedente_cnpj\": \"adipisicing labore pariatur et ad\",\n        \"sacado_nome_fantasia\": \"pariatur labore laboris voluptate ut\",\n        \"sacado_razao_social\": \"esse\",\n        \"sacado_cpf_cnpj\": \"ut sunt ullamco\",\n        \"valor_percentual\": 97752875.24871227\n      }\n    ],\n    \"mes_03\": [\n      {\n        \"cedente_nome_razao_social\": \"enim nulla ad consequat\",\n        \"cedente_cnpj\": \"id sint laboris deserunt\",\n        \"sacado_nome_fantasia\": \"nisi in incididunt nulla\",\n        \"sacado_razao_social\": \"deserunt Excepteur est\",\n        \"sacado_cpf_cnpj\": \"tempor est dolore\",\n        \"valor_percentual\": -6564692.677737489\n      },\n      {\n        \"cedente_nome_razao_social\": \"adipisicing nostrud s\",\n        \"cedente_cnpj\": \"nulla officia\",\n        \"sacado_nome_fantasia\": \"culpa cillum labore velit\",\n        \"sacado_razao_social\": \"est id non\",\n        \"sacado_cpf_cnpj\": \"reprehender\",\n        \"valor_percentual\": 81042221.20813\n      }\n    ],\n    \"mes_04\": [\n      {\n        \"cedente_nome_razao_social\": \"nostrud veniam Excepteur dolor\",\n        \"cedente_cnpj\": \"enim deserunt\",\n        \"sacado_nome_fantasia\": \"consectetur\",\n        \"sacado_razao_social\": \"nisi dolor sint et\",\n        \"sacado_cpf_cnpj\": \"commodo voluptate id sunt\",\n        \"valor_percentual\": 94206858.49732971\n      },\n      {\n        \"cedente_nome_razao_social\": \"velit ea ad in\",\n        \"cedente_cnpj\": \"tempor ad n\",\n        \"sacado_nome_fantasia\": \"cupidatat cillum non dolore est\",\n        \"sacado_razao_social\": \"in ad aliquip aute\",\n        \"sacado_cpf_cnpj\": \"elit aliquip dolore voluptate Lorem\",\n        \"valor_percentual\": -48762158.54542378\n      }\n    ],\n    \"mes_05\": [\n      {\n        \"cedente_nome_razao_social\": \"sint dolor cillum\",\n        \"cedente_cnpj\": \"do aliquip sint\",\n        \"sacado_nome_fantasia\": \"ut Excepteur in pariatu\",\n        \"sacado_razao_social\": \"nisi est dolore esse\",\n        \"sacado_cpf_cnpj\": \"occae\",\n        \"valor_percentual\": 89340191.96478018\n      },\n      {\n        \"cedente_nome_razao_social\": \"ut Duis Lorem\",\n        \"cedente_cnpj\": \"Excepteur id\",\n        \"sacado_nome_fantasia\": \"fugiat eius\",\n        \"sacado_razao_social\": \"dolore Duis in ex eiusmod\",\n        \"sacado_cpf_cnpj\": \"velit esse ut eiusmod sint\",\n        \"valor_percentual\": 62782425.588406354\n      }\n    ],\n    \"mes_06\": [\n      {\n        \"cedente_nome_razao_social\": \"eu exercitation fugiat\",\n        \"cedente_cnpj\": \"Duis sint anim\",\n        \"sacado_nome_fantasia\": \"ut fugiat\",\n        \"sacado_razao_social\": \"id voluptate fugiat et\",\n        \"sacado_cpf_cnpj\": \"laborum ad tempor anim\",\n        \"valor_percentual\": -26888388.136661053\n      },\n      {\n        \"cedente_nome_razao_social\": \"commodo culpa\",\n        \"cedente_cnpj\": \"dolor\",\n        \"sacado_nome_fantasia\": \"proident ad\",\n        \"sacado_razao_social\": \"cillum nulla ut\",\n        \"sacado_cpf_cnpj\": \"exercitation Ut irure\",\n        \"valor_percentual\": -23205101.24498099\n      }\n    ]\n  },\n  \"top10_fornecedores\": {\n    \"mes_01\": [\n      {\n        \"cedente_nome_razao_social\": \"minim reprehenderit\",\n        \"cedente_cnpj\": \"Excepteur eu sit officia ut\",\n        \"sacado_nome_fantasia\": \"incididunt ut\",\n        \"sacado_razao_social\": \"deserunt pariatur nostrud\",\n        \"sacado_cpf_cnpj\": \"ipsum culpa sit pari\",\n        \"valor_percentual\": -82053169.12696353\n      },\n      {\n        \"cedente_nome_razao_social\": \"aliqua pariatur\",\n        \"cedente_cnpj\": \"commodo an\",\n        \"sacado_nome_fantasia\": \"culpa velit\",\n        \"sacado_razao_social\": \"ipsum eiusmod\",\n        \"sacado_cpf_cnpj\": \"dolor qui\",\n        \"valor_percentual\": 87724923.9878113\n      }\n    ],\n    \"mes_02\": [\n      {\n        \"cedente_nome_razao_social\": \"ut esse laboris minim \",\n        \"cedente_cnpj\": \"veniam velit\",\n        \"sacado_nome_fantasia\": \"eu amet magna qui\",\n        \"sacado_razao_social\": \"ipsum\",\n        \"sacado_cpf_cnpj\": \"non Lorem\",\n        \"valor_percentual\": -49891682.7680735\n      },\n      {\n        \"cedente_nome_razao_social\": \"dolore elit proident\",\n        \"cedente_cnpj\": \"ut\",\n        \"sacado_nome_fantasia\": \"ea do amet eiusmod\",\n        \"sacado_razao_social\": \"labor\",\n        \"sacado_cpf_cnpj\": \"ullamco sunt reprehenderit consectetur ex\",\n        \"valor_percentual\": -52160016.06096499\n      }\n    ],\n    \"mes_03\": [\n      {\n        \"cedente_nome_razao_social\": \"labore\",\n        \"cedente_cnpj\": \"ea aliquip aliqua\",\n        \"sacado_nome_fantasia\": \"fugiat \",\n        \"sacado_razao_social\": \"et deserunt\",\n        \"sacado_cpf_cnpj\": \"occaecat deserunt et magna tempor\",\n        \"valor_percentual\": 64839035.97976565\n      },\n      {\n        \"cedente_nome_razao_social\": \"sint commodo\",\n        \"cedente_cnpj\": \"amet\",\n        \"sacado_nome_fantasia\": \"Lorem aute\",\n        \"sacado_razao_social\": \"aliquip et commodo\",\n        \"sacado_cpf_cnpj\": \"magna ex laboris deserunt consequat\",\n        \"valor_percentual\": -24174745.471620396\n      }\n    ],\n    \"mes_04\": [\n      {\n        \"cedente_nome_razao_social\": \"exercitation\",\n        \"cedente_cnpj\": \"amet cupidatat\",\n        \"sacado_nome_fantasia\": \"fugiat\",\n        \"sacado_razao_social\": \"irure aliquip dolor velit\",\n        \"sacado_cpf_cnpj\": \"commodo qui Excepteur voluptate\",\n        \"valor_percentual\": -23186616.449933514\n      },\n      {\n        \"cedente_nome_razao_social\": \"ipsum sed dolor\",\n        \"cedente_cnpj\": \"ipsum consectetur aliquip sunt\",\n        \"sacado_nome_fantasia\": \"quis commodo\",\n        \"sacado_razao_social\": \"eiusmod\",\n        \"sacado_cpf_cnpj\": \"do laborum minim consectetur\",\n        \"valor_percentual\": 72089114.6663408\n      }\n    ],\n    \"mes_05\": [\n      {\n        \"cedente_nome_razao_social\": \"esse labore\",\n        \"cedente_cnpj\": \"minim sint elit\",\n        \"sacado_nome_fantasia\": \"laboris nulla enim ut\",\n        \"sacado_razao_social\": \"commodo ut ipsum veniam\",\n        \"sacado_cpf_cnpj\": \"Duis id d\",\n        \"valor_percentual\": 31160349.77925408\n      },\n      {\n        \"cedente_nome_razao_social\": \"velit eu fugiat\",\n        \"cedente_cnpj\": \"eu\",\n        \"sacado_nome_fantasia\": \"cillum id\",\n        \"sacado_razao_social\": \"deserunt in sit sunt\",\n        \"sacado_cpf_cnpj\": \"ut officia esse\",\n        \"valor_percentual\": -15483332.515870973\n      }\n    ],\n    \"mes_06\": [\n      {\n        \"cedente_nome_razao_social\": \"magna aliqua\",\n        \"cedente_cnpj\": \"dolor ullamco et anim mollit\",\n        \"sacado_nome_fantasia\": \"in aliqua mollit deserunt\",\n        \"sacado_razao_social\": \"mollit ea commodo\",\n        \"sacado_cpf_cnpj\": \"enim ex anim dolor non\",\n        \"valor_percentual\": -45386411.21614311\n      },\n      {\n        \"cedente_nome_razao_social\": \"dolore et amet\",\n        \"cedente_cnpj\": \"commodo id in\",\n        \"sacado_nome_fantasia\": \"sint\",\n        \"sacado_razao_social\": \"culpa et esse elit\",\n        \"sacado_cpf_cnpj\": \"dolore anim si\",\n        \"valor_percentual\": -45716273.76420984\n      }\n    ]\n  },\n  \"campos_adicionais\": [\n    {\n      \"coluna\": \"deserunt exercitation\",\n      \"tipo\": \"aliquip sit Lorem proident\",\n      \"valor\": \"cillum tempor culpa nulla anim\"\n    },\n    {\n      \"coluna\": \"ullamco irure commodo Duis\",\n      \"tipo\": \"ad esse aute\",\n      \"valor\": \"laborum velit ullamco non\"\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/fornecedor",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"fornecedor"
+									]
+								},
+								"description": "Envio de informações do balanço financeiro do fornecedor(cedente). Retorna 201, em caso de sucesso."
+							},
+							"response": [
+								{
+									"name": "Envio feito com sucesso",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"razao_social\": \"nisi magna\",\n  \"cnpj\": \"amet ut\",\n  \"email\": \"cillum est id reprehenderit\",\n  \"telefone\": \"nulla non exercitation\",\n  \"celular\": \"aliqua ut in reprehenderit Ut\",\n  \"situacao\": \"dolor voluptate\",\n  \"faturamentos\": [\n    {\n      \"mes_01\": 31864350.458711058,\n      \"mes_02\": 48795032.7767019,\n      \"mes_03\": -67997575.2958668,\n      \"mes_04\": 48655178.371845156,\n      \"mes_05\": 85582995.95447311,\n      \"mes_06\": 93779298.1380881,\n      \"mes_07\": 60458098.29780361,\n      \"mes_08\": 72160171.94343814,\n      \"mes_09\": 95512674.20727459,\n      \"mes_10\": 25714102.84209037,\n      \"mes_11\": 88843216.720166,\n      \"mes_12\": -42856512.13723325,\n      \"mes_13\": -44903392.47249842,\n      \"mes_14\": -89972443.76677132,\n      \"mes_15\": -10697749.614642367,\n      \"mes_16\": 57529185.186074466,\n      \"mes_17\": -68112081.88724871,\n      \"mes_18\": -40344330.340218894,\n      \"mes_19\": 93535197.77521423,\n      \"mes_20\": -66349033.88113487,\n      \"mes_21\": 85551288.25184384,\n      \"mes_22\": -8380135.453511611,\n      \"mes_23\": 96354611.42274803,\n      \"mes_24\": -71604719.0177,\n      \"mes_25\": -81180779.62327686,\n      \"mes_26\": 86834.7699932903,\n      \"mes_27\": -58425380.30090831,\n      \"mes_28\": 97121829.53659508,\n      \"mes_29\": 59920378.44586471,\n      \"mes_30\": -92382178.21232495,\n      \"mes_31\": -51800130.46566811,\n      \"mes_32\": -29213646.939809352,\n      \"mes_33\": -15679984.852158442,\n      \"mes_34\": 60485576.7399337,\n      \"mes_35\": 40738098.12025574,\n      \"mes_36\": 74065652.30608177\n    },\n    {\n      \"mes_01\": 23611895.989199594,\n      \"mes_02\": -76489101.26885027,\n      \"mes_03\": 8388891.68055576,\n      \"mes_04\": -19975669.109046027,\n      \"mes_05\": 277763.40097278357,\n      \"mes_06\": 3706958.5238170177,\n      \"mes_07\": 92310595.42161235,\n      \"mes_08\": -13588937.23068136,\n      \"mes_09\": -27893349.84033367,\n      \"mes_10\": -64329826.667465985,\n      \"mes_11\": -87127427.14116412,\n      \"mes_12\": -34391675.583921,\n      \"mes_13\": 59708395.99143693,\n      \"mes_14\": -48270108.935861744,\n      \"mes_15\": -97004809.04459473,\n      \"mes_16\": -21584571.684833482,\n      \"mes_17\": 99199931.20316452,\n      \"mes_18\": 41867422.437702775,\n      \"mes_19\": 76409932.64256307,\n      \"mes_20\": -11411913.449538693,\n      \"mes_21\": -15238092.224152043,\n      \"mes_22\": -3775836.6357119083,\n      \"mes_23\": -95623763.0930171,\n      \"mes_24\": 16085817.671371356,\n      \"mes_25\": 37784001.96601263,\n      \"mes_26\": -7073137.164821431,\n      \"mes_27\": -73840465.05299833,\n      \"mes_28\": -91037879.19488977,\n      \"mes_29\": 5745288.851361036,\n      \"mes_30\": -64611108.48693239,\n      \"mes_31\": 22970010.157529503,\n      \"mes_32\": -29059586.55895993,\n      \"mes_33\": 62261445.556886494,\n      \"mes_34\": 43598046.390205085,\n      \"mes_35\": -83529403.84914276,\n      \"mes_36\": 60207093.71948159\n    }\n  ],\n  \"despesas\": [\n    {\n      \"mes_01\": -26765854.187456653,\n      \"mes_02\": -60361508.25884503,\n      \"mes_03\": -85116002.06013653,\n      \"mes_04\": 70163959.41390994,\n      \"mes_05\": 86428731.75730208,\n      \"mes_06\": -39392126.43441925,\n      \"mes_07\": 88500323.77182534,\n      \"mes_08\": -61382976.9795073,\n      \"mes_09\": 72438369.54168037,\n      \"mes_10\": 45449146.94078398,\n      \"mes_11\": -2424115.89693439,\n      \"mes_12\": -6426002.192765921,\n      \"mes_13\": -89574921.25910443,\n      \"mes_14\": 21612963.42745395,\n      \"mes_15\": 34215105.08881563,\n      \"mes_16\": -91893000.5347438,\n      \"mes_17\": -93212346.77404928,\n      \"mes_18\": -51972056.4284345,\n      \"mes_19\": 12930550.099306256,\n      \"mes_20\": 19617400.872199923,\n      \"mes_21\": -64279221.738262214,\n      \"mes_22\": -77196949.37096353,\n      \"mes_23\": -90443915.98542413,\n      \"mes_24\": -24657354.55346656,\n      \"mes_25\": -6352983.694718614,\n      \"mes_26\": -41835628.87898775,\n      \"mes_27\": 26450129.28188142,\n      \"mes_28\": -66755054.80719997,\n      \"mes_29\": -95685170.30828479,\n      \"mes_30\": 96040088.22077414,\n      \"mes_31\": -88710295.28156585,\n      \"mes_32\": -62306582.53936428,\n      \"mes_33\": -56328154.45953723,\n      \"mes_34\": -60398755.10779766,\n      \"mes_35\": -76898786.17466874,\n      \"mes_36\": -22654838.232423604\n    },\n    {\n      \"mes_01\": 55649355.19901025,\n      \"mes_02\": -25647309.784951046,\n      \"mes_03\": -53041521.12652738,\n      \"mes_04\": 14839035.360432401,\n      \"mes_05\": -57964300.99547028,\n      \"mes_06\": 30416601.59461403,\n      \"mes_07\": -99980517.26929855,\n      \"mes_08\": -77773548.7981059,\n      \"mes_09\": 61136585.11946708,\n      \"mes_10\": 10717967.672585621,\n      \"mes_11\": 78242037.32399839,\n      \"mes_12\": 35575940.78869316,\n      \"mes_13\": 75691898.59752789,\n      \"mes_14\": -58732894.08125833,\n      \"mes_15\": -82248919.9303512,\n      \"mes_16\": 61956272.99199277,\n      \"mes_17\": 76144410.23855725,\n      \"mes_18\": -41885707.78199936,\n      \"mes_19\": 21245057.445348352,\n      \"mes_20\": 70948228.08982953,\n      \"mes_21\": -67176388.80891737,\n      \"mes_22\": 83719131.28060684,\n      \"mes_23\": 41786385.074174166,\n      \"mes_24\": 26179148.596358374,\n      \"mes_25\": 1268731.9708074331,\n      \"mes_26\": -10715594.43871659,\n      \"mes_27\": -83799774.94355248,\n      \"mes_28\": 53753098.67947319,\n      \"mes_29\": -88461007.59421453,\n      \"mes_30\": -76143987.89995782,\n      \"mes_31\": 97290432.99327844,\n      \"mes_32\": -44269432.12534371,\n      \"mes_33\": -58877864.81853392,\n      \"mes_34\": -20293915.400578737,\n      \"mes_35\": 33929356.092648536,\n      \"mes_36\": -57834405.59463488\n    }\n  ],\n  \"clientes\": [\n    {\n      \"mes_01\": 77886336.39151952,\n      \"mes_02\": 31409263.549695015,\n      \"mes_03\": -81841173.86747114,\n      \"mes_04\": -89391119.8404449,\n      \"mes_05\": -78224075.43325597,\n      \"mes_06\": 72640111.90809882,\n      \"mes_07\": 94495213.23546103,\n      \"mes_08\": -5041036.734548852,\n      \"mes_09\": 78269594.51655662,\n      \"mes_10\": 68176950.33302718,\n      \"mes_11\": -19588142.680948287,\n      \"mes_12\": 98511906.72546148,\n      \"mes_13\": 85723819.073073,\n      \"mes_14\": -94742274.5515512,\n      \"mes_15\": 24010192.561486885,\n      \"mes_16\": 39464216.99282089,\n      \"mes_17\": -94669566.01156169,\n      \"mes_18\": -3583643.25980331,\n      \"mes_19\": -46575617.70802521,\n      \"mes_20\": 99369104.12118843,\n      \"mes_21\": 99016152.74304298,\n      \"mes_22\": 88053783.7539328,\n      \"mes_23\": -68758101.78841002,\n      \"mes_24\": -31585928.88637121,\n      \"mes_25\": 67381999.73220187,\n      \"mes_26\": 56242260.63912246,\n      \"mes_27\": -34307168.0747515,\n      \"mes_28\": 95748899.34108213,\n      \"mes_29\": 85898528.20460394,\n      \"mes_30\": -54583295.57400918,\n      \"mes_31\": 43960491.43126702,\n      \"mes_32\": -48843450.51492871,\n      \"mes_33\": -70473675.03875464,\n      \"mes_34\": -20421596.776862964,\n      \"mes_35\": 54531502.0484308,\n      \"mes_36\": 18199491.30706781\n    },\n    {\n      \"mes_01\": 86360189.74493667,\n      \"mes_02\": 14622425.581013367,\n      \"mes_03\": 57980274.66433942,\n      \"mes_04\": 45530995.70441067,\n      \"mes_05\": 39838825.084747106,\n      \"mes_06\": -10154075.945911646,\n      \"mes_07\": -37443525.095903985,\n      \"mes_08\": 80153890.1208885,\n      \"mes_09\": 76675282.46022314,\n      \"mes_10\": -23927717.359067604,\n      \"mes_11\": 67488547.461009,\n      \"mes_12\": 83773325.25418201,\n      \"mes_13\": -63337331.69686275,\n      \"mes_14\": -81228952.34207919,\n      \"mes_15\": -84215342.32691842,\n      \"mes_16\": -72653851.66578157,\n      \"mes_17\": -21194856.754021525,\n      \"mes_18\": 37925928.23663625,\n      \"mes_19\": -45296170.26739903,\n      \"mes_20\": -68725847.83588569,\n      \"mes_21\": -16310982.788093671,\n      \"mes_22\": 35673977.63137597,\n      \"mes_23\": -9349366.833726153,\n      \"mes_24\": -20881312.11820942,\n      \"mes_25\": -19180768.866286486,\n      \"mes_26\": -55127864.32935215,\n      \"mes_27\": 7351736.821435928,\n      \"mes_28\": 15769319.95223552,\n      \"mes_29\": -73739377.40157488,\n      \"mes_30\": 1002280.3889042586,\n      \"mes_31\": 63587675.16180816,\n      \"mes_32\": 38048501.57019541,\n      \"mes_33\": -79524554.64940086,\n      \"mes_34\": -47448224.0468085,\n      \"mes_35\": -86639040.26144497,\n      \"mes_36\": 69175341.865542\n    }\n  ],\n  \"contas_pagar\": [\n    {\n      \"vencido_07\": 23257678.024206594,\n      \"vencido_90\": -3340350.015728697,\n      \"vencido_30\": 87182206.13816333,\n      \"vencido_15\": 32438541.45240332,\n      \"apos_90\": 8471572.722034633,\n      \"ate_05\": 9913504.941569462,\n      \"ate_10\": 59256070.17312488,\n      \"ate_15\": 35637684.64014202,\n      \"ate_20\": -28146436.416347727,\n      \"ate_25\": -19742175.280777022,\n      \"ate_30\": 83431209.92845595,\n      \"ate_35\": 46949611.300436676,\n      \"ate_40\": -21429602.497346997,\n      \"ate_45\": 49425718.804741085,\n      \"ate_50\": 15657316.44768405,\n      \"ate_55\": -97960323.91614994,\n      \"ate_60\": -89335256.02007739,\n      \"ate_65\": 55860738.14203876,\n      \"ate_70\": -39234569.74472237,\n      \"ate_75\": -39358713.106408946,\n      \"ate_80\": -64912002.985158555,\n      \"ate_85\": -75523217.70062415,\n      \"ate_90\": -81172090.81012589\n    },\n    {\n      \"vencido_07\": 28422591.196344137,\n      \"vencido_90\": -49044912.82187786,\n      \"vencido_30\": -93738464.95998307,\n      \"vencido_15\": -89650844.92927162,\n      \"apos_90\": -59622745.90057963,\n      \"ate_05\": 72471417.45585766,\n      \"ate_10\": 51319243.4823882,\n      \"ate_15\": -28105226.944362506,\n      \"ate_20\": -95067436.07622764,\n      \"ate_25\": -60464419.00163435,\n      \"ate_30\": 50524448.33941379,\n      \"ate_35\": 76324390.90747476,\n      \"ate_40\": 25734900.385493636,\n      \"ate_45\": -37952750.838078186,\n      \"ate_50\": -60724780.85871271,\n      \"ate_55\": -31719867.810659125,\n      \"ate_60\": -62369247.295873456,\n      \"ate_65\": -1912739.6934987605,\n      \"ate_70\": 7837772.440348938,\n      \"ate_75\": 14228316.255972654,\n      \"ate_80\": 38800190.507109195,\n      \"ate_85\": 30985842.682792738,\n      \"ate_90\": 69481458.3994301\n    }\n  ],\n  \"contas_receber\": [\n    {\n      \"vencido_07\": -17490528.94378203,\n      \"vencido_90\": 22130043.365460977,\n      \"vencido_30\": -74758149.02638596,\n      \"vencido_15\": -25099284.391726285,\n      \"apos_90\": -15086342.393368974,\n      \"ate_05\": 91124633.57137334,\n      \"ate_10\": -81772496.89788364,\n      \"ate_15\": 60298384.93548924,\n      \"ate_20\": 67389330.21337914,\n      \"ate_25\": -67905726.70030528,\n      \"ate_30\": -6266584.608883455,\n      \"ate_35\": -87189303.62531538,\n      \"ate_40\": 15936827.06706047,\n      \"ate_45\": -25732430.07251875,\n      \"ate_50\": -95905691.65887271,\n      \"ate_55\": 45565809.938147664,\n      \"ate_60\": 2194252.439345941,\n      \"ate_65\": 79048465.8634437,\n      \"ate_70\": -82398958.36651824,\n      \"ate_75\": 92114565.59379849,\n      \"ate_80\": 3969582.629186034,\n      \"ate_85\": -68741340.074348,\n      \"ate_90\": 32532374.288407385\n    },\n    {\n      \"vencido_07\": -28966414.600305513,\n      \"vencido_90\": -81893351.56837374,\n      \"vencido_30\": 66692039.205409735,\n      \"vencido_15\": 8732563.514770046,\n      \"apos_90\": -62373548.100862086,\n      \"ate_05\": -58309805.9320553,\n      \"ate_10\": 76480200.15048295,\n      \"ate_15\": -4270869.51013425,\n      \"ate_20\": 26252171.81337267,\n      \"ate_25\": 33169404.288287073,\n      \"ate_30\": 36228264.71736786,\n      \"ate_35\": 378057.25601808727,\n      \"ate_40\": 57810724.66806725,\n      \"ate_45\": -55511874.47129924,\n      \"ate_50\": 8783895.678965598,\n      \"ate_55\": -27512537.029459104,\n      \"ate_60\": -55726462.21943431,\n      \"ate_65\": -77806881.59426638,\n      \"ate_70\": -22360324.410058215,\n      \"ate_75\": 85654446.22628817,\n      \"ate_80\": 53320962.82741636,\n      \"ate_85\": 53976849.07078087,\n      \"ate_90\": 8005627.155565694\n    }\n  ],\n  \"top10_clientes\": {\n    \"mes_01\": [\n      {\n        \"cedente_nome_razao_social\": \"dolor et velit eiusmod offici\",\n        \"cedente_cnpj\": \"magna Duis\",\n        \"sacado_nome_fantasia\": \"ex irure Except\",\n        \"sacado_razao_social\": \"velit\",\n        \"sacado_cpf_cnpj\": \"laboris labore sit minim\",\n        \"valor_percentual\": -31065574.277922943\n      },\n      {\n        \"cedente_nome_razao_social\": \"magna nulla\",\n        \"cedente_cnpj\": \"nulla elit dolor ex\",\n        \"sacado_nome_fantasia\": \"elit Ut aliqu\",\n        \"sacado_razao_social\": \"quis irure Lo\",\n        \"sacado_cpf_cnpj\": \"in proident\",\n        \"valor_percentual\": -50115254.72155367\n      }\n    ],\n    \"mes_02\": [\n      {\n        \"cedente_nome_razao_social\": \"sed\",\n        \"cedente_cnpj\": \"aliqua laboris eiusmod\",\n        \"sacado_nome_fantasia\": \"et Excepteur ut quis\",\n        \"sacado_razao_social\": \"aute commodo ut nulla\",\n        \"sacado_cpf_cnpj\": \"sit dolor aliqua\",\n        \"valor_percentual\": 71635637.41635898\n      },\n      {\n        \"cedente_nome_razao_social\": \"officia Lorem anim minim\",\n        \"cedente_cnpj\": \"dolor sit ea\",\n        \"sacado_nome_fantasia\": \"laboris ad\",\n        \"sacado_razao_social\": \"\",\n        \"sacado_cpf_cnpj\": \"dolor irure\",\n        \"valor_percentual\": -63309690.58776126\n      }\n    ],\n    \"mes_03\": [\n      {\n        \"cedente_nome_razao_social\": \"id ullamco dolore\",\n        \"cedente_cnpj\": \"eiusmod ex reprehenderit enim aliqua\",\n        \"sacado_nome_fantasia\": \"est amet\",\n        \"sacado_razao_social\": \"id laborum magna\",\n        \"sacado_cpf_cnpj\": \"anim aliquip officia Lorem occaecat\",\n        \"valor_percentual\": 92002249.5077064\n      },\n      {\n        \"cedente_nome_razao_social\": \"Ut dolor minim sunt\",\n        \"cedente_cnpj\": \"pariatur\",\n        \"sacado_nome_fantasia\": \"pariatur sit incididunt\",\n        \"sacado_razao_social\": \"proident aliqua\",\n        \"sacado_cpf_cnpj\": \"laborum Lorem\",\n        \"valor_percentual\": 37223104.079286605\n      }\n    ],\n    \"mes_04\": [\n      {\n        \"cedente_nome_razao_social\": \"adipisicing ut\",\n        \"cedente_cnpj\": \"e\",\n        \"sacado_nome_fantasia\": \"qui consequat\",\n        \"sacado_razao_social\": \"tempor quis\",\n        \"sacado_cpf_cnpj\": \"sunt consequat\",\n        \"valor_percentual\": -99810751.63646373\n      },\n      {\n        \"cedente_nome_razao_social\": \"mollit dolore tempor culpa reprehenderit\",\n        \"cedente_cnpj\": \"aliqua consectetur sunt fugiat\",\n        \"sacado_nome_fantasia\": \"id ad mollit deserunt\",\n        \"sacado_razao_social\": \"ullamco tempor eiusmod ipsum\",\n        \"sacado_cpf_cnpj\": \"consequat dolor aute sunt\",\n        \"valor_percentual\": -53109801.32374854\n      }\n    ],\n    \"mes_05\": [\n      {\n        \"cedente_nome_razao_social\": \"d\",\n        \"cedente_cnpj\": \"dolore et culpa\",\n        \"sacado_nome_fantasia\": \"tempor id\",\n        \"sacado_razao_social\": \"pariatur laborum deserunt velit\",\n        \"sacado_cpf_cnpj\": \"qui non voluptate dolore\",\n        \"valor_percentual\": 82772972.82598531\n      },\n      {\n        \"cedente_nome_razao_social\": \"voluptate incididunt sint labore\",\n        \"cedente_cnpj\": \"dolor velit irure labore\",\n        \"sacado_nome_fantasia\": \"Ut tempor mollit\",\n        \"sacado_razao_social\": \"tempor\",\n        \"sacado_cpf_cnpj\": \"sit quis Excepteur\",\n        \"valor_percentual\": 93191052.88317248\n      }\n    ],\n    \"mes_06\": [\n      {\n        \"cedente_nome_razao_social\": \"Ut Excepteur\",\n        \"cedente_cnpj\": \"cupidatat aliqua\",\n        \"sacado_nome_fantasia\": \"dolor e\",\n        \"sacado_razao_social\": \"occaecat\",\n        \"sacado_cpf_cnpj\": \"in magna\",\n        \"valor_percentual\": 2842882.0750640184\n      },\n      {\n        \"cedente_nome_razao_social\": \"non nulla laboris do\",\n        \"cedente_cnpj\": \"et\",\n        \"sacado_nome_fantasia\": \"adipisicing irure\",\n        \"sacado_razao_social\": \"ipsum Ut cillum labore\",\n        \"sacado_cpf_cnpj\": \"labore tempor\",\n        \"valor_percentual\": 24816890.162017018\n      }\n    ]\n  },\n  \"top10_fornecedores\": {\n    \"mes_01\": [\n      {\n        \"cedente_nome_razao_social\": \"dolor pariatur sunt\",\n        \"cedente_cnpj\": \"laborum ex\",\n        \"sacado_nome_fantasia\": \"veniam nulla ea\",\n        \"sacado_razao_social\": \"qui dolor aliquip\",\n        \"sacado_cpf_cnpj\": \"ullamco ut\",\n        \"valor_percentual\": 72129475.26793432\n      },\n      {\n        \"cedente_nome_razao_social\": \"incididunt fugiat enim in est\",\n        \"cedente_cnpj\": \"eiusmod aute\",\n        \"sacado_nome_fantasia\": \"eu ut\",\n        \"sacado_razao_social\": \"ullamco\",\n        \"sacado_cpf_cnpj\": \"ex enim veniam\",\n        \"valor_percentual\": 97960757.8054699\n      }\n    ],\n    \"mes_02\": [\n      {\n        \"cedente_nome_razao_social\": \"Lorem\",\n        \"cedente_cnpj\": \"Lorem in in sed\",\n        \"sacado_nome_fantasia\": \"laborum Ut exercitation\",\n        \"sacado_razao_social\": \"in\",\n        \"sacado_cpf_cnpj\": \"dolor sit pariatur\",\n        \"valor_percentual\": 10433398.639281675\n      },\n      {\n        \"cedente_nome_razao_social\": \"ut ad in\",\n        \"cedente_cnpj\": \"commodo quis\",\n        \"sacado_nome_fantasia\": \"commodo est voluptate eu\",\n        \"sacado_razao_social\": \"eu incididunt culpa proident quis\",\n        \"sacado_cpf_cnpj\": \"laboris fugiat consequat\",\n        \"valor_percentual\": 31917836.071001068\n      }\n    ],\n    \"mes_03\": [\n      {\n        \"cedente_nome_razao_social\": \"occaecat dolore\",\n        \"cedente_cnpj\": \"ullamco consectetur\",\n        \"sacado_nome_fantasia\": \"proident mollit nisi\",\n        \"sacado_razao_social\": \"dolore in\",\n        \"sacado_cpf_cnpj\": \"officia aliquip\",\n        \"valor_percentual\": -2861218.990590602\n      },\n      {\n        \"cedente_nome_razao_social\": \"ad\",\n        \"cedente_cnpj\": \"in aute esse aliquip\",\n        \"sacado_nome_fantasia\": \"esse irure eiusmod do minim\",\n        \"sacado_razao_social\": \"do\",\n        \"sacado_cpf_cnpj\": \"laboris anim do in dolore\",\n        \"valor_percentual\": -39636038.448497236\n      }\n    ],\n    \"mes_04\": [\n      {\n        \"cedente_nome_razao_social\": \"Ut non\",\n        \"cedente_cnpj\": \"do\",\n        \"sacado_nome_fantasia\": \"esse occaecat enim vol\",\n        \"sacado_razao_social\": \"fugiat\",\n        \"sacado_cpf_cnpj\": \"in ut\",\n        \"valor_percentual\": 8698233.319852337\n      },\n      {\n        \"cedente_nome_razao_social\": \"tempor in labore\",\n        \"cedente_cnpj\": \"voluptate sint dolore deserunt nisi\",\n        \"sacado_nome_fantasia\": \"qui\",\n        \"sacado_razao_social\": \"ad\",\n        \"sacado_cpf_cnpj\": \"Ut sunt nostrud esse\",\n        \"valor_percentual\": 99607061.77167612\n      }\n    ],\n    \"mes_05\": [\n      {\n        \"cedente_nome_razao_social\": \"cillum\",\n        \"cedente_cnpj\": \"occaecat minim id fugiat\",\n        \"sacado_nome_fantasia\": \"ut et deserunt Duis\",\n        \"sacado_razao_social\": \"officia\",\n        \"sacado_cpf_cnpj\": \"occaecat Exce\",\n        \"valor_percentual\": -92759607.42506522\n      },\n      {\n        \"cedente_nome_razao_social\": \"anim mollit enim ut\",\n        \"cedente_cnpj\": \"Lorem laboris \",\n        \"sacado_nome_fantasia\": \"ea ut\",\n        \"sacado_razao_social\": \"ut dolor\",\n        \"sacado_cpf_cnpj\": \"ut\",\n        \"valor_percentual\": -92931049.87031242\n      }\n    ],\n    \"mes_06\": [\n      {\n        \"cedente_nome_razao_social\": \"ea\",\n        \"cedente_cnpj\": \"occaecat dolore nostrud consectetur\",\n        \"sacado_nome_fantasia\": \"Ut proident nisi\",\n        \"sacado_razao_social\": \"Ut in commodo e\",\n        \"sacado_cpf_cnpj\": \"qui Ut sed\",\n        \"valor_percentual\": 31170821.78047377\n      },\n      {\n        \"cedente_nome_razao_social\": \"in eiusmod incididunt\",\n        \"cedente_cnpj\": \"aliquip nisi el\",\n        \"sacado_nome_fantasia\": \"cupidatat consectetur\",\n        \"sacado_razao_social\": \"tempor veniam nisi\",\n        \"sacado_cpf_cnpj\": \"esse enim laboris\",\n        \"valor_percentual\": 29746274.37261121\n      }\n    ]\n  },\n  \"campos_adicionais\": [\n    {\n      \"coluna\": \"Lorem ea elit\",\n      \"tipo\": \"deserunt qui in Lorem occaecat\",\n      \"valor\": \"fugiat consequat\"\n    },\n    {\n      \"coluna\": \"et cupidatat dolore pariatur\",\n      \"tipo\": \"labore aliquip occaecat\",\n      \"valor\": \"et elit Duis qui veniam\"\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/fornecedor",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"fornecedor"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Campo faltando no payload",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"razao_social\": \"nisi magna\",\n  \"cnpj\": \"amet ut\",\n  \"email\": \"cillum est id reprehenderit\",\n  \"telefone\": \"nulla non exercitation\",\n  \"celular\": \"aliqua ut in reprehenderit Ut\",\n  \"situacao\": \"dolor voluptate\",\n  \"faturamentos\": [\n    {\n      \"mes_01\": 31864350.458711058,\n      \"mes_02\": 48795032.7767019,\n      \"mes_03\": -67997575.2958668,\n      \"mes_04\": 48655178.371845156,\n      \"mes_05\": 85582995.95447311,\n      \"mes_06\": 93779298.1380881,\n      \"mes_07\": 60458098.29780361,\n      \"mes_08\": 72160171.94343814,\n      \"mes_09\": 95512674.20727459,\n      \"mes_10\": 25714102.84209037,\n      \"mes_11\": 88843216.720166,\n      \"mes_12\": -42856512.13723325,\n      \"mes_13\": -44903392.47249842,\n      \"mes_14\": -89972443.76677132,\n      \"mes_15\": -10697749.614642367,\n      \"mes_16\": 57529185.186074466,\n      \"mes_17\": -68112081.88724871,\n      \"mes_18\": -40344330.340218894,\n      \"mes_19\": 93535197.77521423,\n      \"mes_20\": -66349033.88113487,\n      \"mes_21\": 85551288.25184384,\n      \"mes_22\": -8380135.453511611,\n      \"mes_23\": 96354611.42274803,\n      \"mes_24\": -71604719.0177,\n      \"mes_25\": -81180779.62327686,\n      \"mes_26\": 86834.7699932903,\n      \"mes_27\": -58425380.30090831,\n      \"mes_28\": 97121829.53659508,\n      \"mes_29\": 59920378.44586471,\n      \"mes_30\": -92382178.21232495,\n      \"mes_31\": -51800130.46566811,\n      \"mes_32\": -29213646.939809352,\n      \"mes_33\": -15679984.852158442,\n      \"mes_34\": 60485576.7399337,\n      \"mes_35\": 40738098.12025574,\n      \"mes_36\": 74065652.30608177\n    },\n    {\n      \"mes_01\": 23611895.989199594,\n      \"mes_02\": -76489101.26885027,\n      \"mes_03\": 8388891.68055576,\n      \"mes_04\": -19975669.109046027,\n      \"mes_05\": 277763.40097278357,\n      \"mes_06\": 3706958.5238170177,\n      \"mes_07\": 92310595.42161235,\n      \"mes_08\": -13588937.23068136,\n      \"mes_09\": -27893349.84033367,\n      \"mes_10\": -64329826.667465985,\n      \"mes_11\": -87127427.14116412,\n      \"mes_12\": -34391675.583921,\n      \"mes_13\": 59708395.99143693,\n      \"mes_14\": -48270108.935861744,\n      \"mes_15\": -97004809.04459473,\n      \"mes_16\": -21584571.684833482,\n      \"mes_17\": 99199931.20316452,\n      \"mes_18\": 41867422.437702775,\n      \"mes_19\": 76409932.64256307,\n      \"mes_20\": -11411913.449538693,\n      \"mes_21\": -15238092.224152043,\n      \"mes_22\": -3775836.6357119083,\n      \"mes_23\": -95623763.0930171,\n      \"mes_24\": 16085817.671371356,\n      \"mes_25\": 37784001.96601263,\n      \"mes_26\": -7073137.164821431,\n      \"mes_27\": -73840465.05299833,\n      \"mes_28\": -91037879.19488977,\n      \"mes_29\": 5745288.851361036,\n      \"mes_30\": -64611108.48693239,\n      \"mes_31\": 22970010.157529503,\n      \"mes_32\": -29059586.55895993,\n      \"mes_33\": 62261445.556886494,\n      \"mes_34\": 43598046.390205085,\n      \"mes_35\": -83529403.84914276,\n      \"mes_36\": 60207093.71948159\n    }\n  ],\n  \"despesas\": [\n    {\n      \"mes_01\": -26765854.187456653,\n      \"mes_02\": -60361508.25884503,\n      \"mes_03\": -85116002.06013653,\n      \"mes_04\": 70163959.41390994,\n      \"mes_05\": 86428731.75730208,\n      \"mes_06\": -39392126.43441925,\n      \"mes_07\": 88500323.77182534,\n      \"mes_08\": -61382976.9795073,\n      \"mes_09\": 72438369.54168037,\n      \"mes_10\": 45449146.94078398,\n      \"mes_11\": -2424115.89693439,\n      \"mes_12\": -6426002.192765921,\n      \"mes_13\": -89574921.25910443,\n      \"mes_14\": 21612963.42745395,\n      \"mes_15\": 34215105.08881563,\n      \"mes_16\": -91893000.5347438,\n      \"mes_17\": -93212346.77404928,\n      \"mes_18\": -51972056.4284345,\n      \"mes_19\": 12930550.099306256,\n      \"mes_20\": 19617400.872199923,\n      \"mes_21\": -64279221.738262214,\n      \"mes_22\": -77196949.37096353,\n      \"mes_23\": -90443915.98542413,\n      \"mes_24\": -24657354.55346656,\n      \"mes_25\": -6352983.694718614,\n      \"mes_26\": -41835628.87898775,\n      \"mes_27\": 26450129.28188142,\n      \"mes_28\": -66755054.80719997,\n      \"mes_29\": -95685170.30828479,\n      \"mes_30\": 96040088.22077414,\n      \"mes_31\": -88710295.28156585,\n      \"mes_32\": -62306582.53936428,\n      \"mes_33\": -56328154.45953723,\n      \"mes_34\": -60398755.10779766,\n      \"mes_35\": -76898786.17466874,\n      \"mes_36\": -22654838.232423604\n    },\n    {\n      \"mes_01\": 55649355.19901025,\n      \"mes_02\": -25647309.784951046,\n      \"mes_03\": -53041521.12652738,\n      \"mes_04\": 14839035.360432401,\n      \"mes_05\": -57964300.99547028,\n      \"mes_06\": 30416601.59461403,\n      \"mes_07\": -99980517.26929855,\n      \"mes_08\": -77773548.7981059,\n      \"mes_09\": 61136585.11946708,\n      \"mes_10\": 10717967.672585621,\n      \"mes_11\": 78242037.32399839,\n      \"mes_12\": 35575940.78869316,\n      \"mes_13\": 75691898.59752789,\n      \"mes_14\": -58732894.08125833,\n      \"mes_15\": -82248919.9303512,\n      \"mes_16\": 61956272.99199277,\n      \"mes_17\": 76144410.23855725,\n      \"mes_18\": -41885707.78199936,\n      \"mes_19\": 21245057.445348352,\n      \"mes_20\": 70948228.08982953,\n      \"mes_21\": -67176388.80891737,\n      \"mes_22\": 83719131.28060684,\n      \"mes_23\": 41786385.074174166,\n      \"mes_24\": 26179148.596358374,\n      \"mes_25\": 1268731.9708074331,\n      \"mes_26\": -10715594.43871659,\n      \"mes_27\": -83799774.94355248,\n      \"mes_28\": 53753098.67947319,\n      \"mes_29\": -88461007.59421453,\n      \"mes_30\": -76143987.89995782,\n      \"mes_31\": 97290432.99327844,\n      \"mes_32\": -44269432.12534371,\n      \"mes_33\": -58877864.81853392,\n      \"mes_34\": -20293915.400578737,\n      \"mes_35\": 33929356.092648536,\n      \"mes_36\": -57834405.59463488\n    }\n  ],\n  \"clientes\": [\n    {\n      \"mes_01\": 77886336.39151952,\n      \"mes_02\": 31409263.549695015,\n      \"mes_03\": -81841173.86747114,\n      \"mes_04\": -89391119.8404449,\n      \"mes_05\": -78224075.43325597,\n      \"mes_06\": 72640111.90809882,\n      \"mes_07\": 94495213.23546103,\n      \"mes_08\": -5041036.734548852,\n      \"mes_09\": 78269594.51655662,\n      \"mes_10\": 68176950.33302718,\n      \"mes_11\": -19588142.680948287,\n      \"mes_12\": 98511906.72546148,\n      \"mes_13\": 85723819.073073,\n      \"mes_14\": -94742274.5515512,\n      \"mes_15\": 24010192.561486885,\n      \"mes_16\": 39464216.99282089,\n      \"mes_17\": -94669566.01156169,\n      \"mes_18\": -3583643.25980331,\n      \"mes_19\": -46575617.70802521,\n      \"mes_20\": 99369104.12118843,\n      \"mes_21\": 99016152.74304298,\n      \"mes_22\": 88053783.7539328,\n      \"mes_23\": -68758101.78841002,\n      \"mes_24\": -31585928.88637121,\n      \"mes_25\": 67381999.73220187,\n      \"mes_26\": 56242260.63912246,\n      \"mes_27\": -34307168.0747515,\n      \"mes_28\": 95748899.34108213,\n      \"mes_29\": 85898528.20460394,\n      \"mes_30\": -54583295.57400918,\n      \"mes_31\": 43960491.43126702,\n      \"mes_32\": -48843450.51492871,\n      \"mes_33\": -70473675.03875464,\n      \"mes_34\": -20421596.776862964,\n      \"mes_35\": 54531502.0484308,\n      \"mes_36\": 18199491.30706781\n    },\n    {\n      \"mes_01\": 86360189.74493667,\n      \"mes_02\": 14622425.581013367,\n      \"mes_03\": 57980274.66433942,\n      \"mes_04\": 45530995.70441067,\n      \"mes_05\": 39838825.084747106,\n      \"mes_06\": -10154075.945911646,\n      \"mes_07\": -37443525.095903985,\n      \"mes_08\": 80153890.1208885,\n      \"mes_09\": 76675282.46022314,\n      \"mes_10\": -23927717.359067604,\n      \"mes_11\": 67488547.461009,\n      \"mes_12\": 83773325.25418201,\n      \"mes_13\": -63337331.69686275,\n      \"mes_14\": -81228952.34207919,\n      \"mes_15\": -84215342.32691842,\n      \"mes_16\": -72653851.66578157,\n      \"mes_17\": -21194856.754021525,\n      \"mes_18\": 37925928.23663625,\n      \"mes_19\": -45296170.26739903,\n      \"mes_20\": -68725847.83588569,\n      \"mes_21\": -16310982.788093671,\n      \"mes_22\": 35673977.63137597,\n      \"mes_23\": -9349366.833726153,\n      \"mes_24\": -20881312.11820942,\n      \"mes_25\": -19180768.866286486,\n      \"mes_26\": -55127864.32935215,\n      \"mes_27\": 7351736.821435928,\n      \"mes_28\": 15769319.95223552,\n      \"mes_29\": -73739377.40157488,\n      \"mes_30\": 1002280.3889042586,\n      \"mes_31\": 63587675.16180816,\n      \"mes_32\": 38048501.57019541,\n      \"mes_33\": -79524554.64940086,\n      \"mes_34\": -47448224.0468085,\n      \"mes_35\": -86639040.26144497,\n      \"mes_36\": 69175341.865542\n    }\n  ],\n  \"contas_pagar\": [\n    {\n      \"vencido_07\": 23257678.024206594,\n      \"vencido_90\": -3340350.015728697,\n      \"vencido_30\": 87182206.13816333,\n      \"vencido_15\": 32438541.45240332,\n      \"apos_90\": 8471572.722034633,\n      \"ate_05\": 9913504.941569462,\n      \"ate_10\": 59256070.17312488,\n      \"ate_15\": 35637684.64014202,\n      \"ate_20\": -28146436.416347727,\n      \"ate_25\": -19742175.280777022,\n      \"ate_30\": 83431209.92845595,\n      \"ate_35\": 46949611.300436676,\n      \"ate_40\": -21429602.497346997,\n      \"ate_45\": 49425718.804741085,\n      \"ate_50\": 15657316.44768405,\n      \"ate_55\": -97960323.91614994,\n      \"ate_60\": -89335256.02007739,\n      \"ate_65\": 55860738.14203876,\n      \"ate_70\": -39234569.74472237,\n      \"ate_75\": -39358713.106408946,\n      \"ate_80\": -64912002.985158555,\n      \"ate_85\": -75523217.70062415,\n      \"ate_90\": -81172090.81012589\n    },\n    {\n      \"vencido_07\": 28422591.196344137,\n      \"vencido_90\": -49044912.82187786,\n      \"vencido_30\": -93738464.95998307,\n      \"vencido_15\": -89650844.92927162,\n      \"apos_90\": -59622745.90057963,\n      \"ate_05\": 72471417.45585766,\n      \"ate_10\": 51319243.4823882,\n      \"ate_15\": -28105226.944362506,\n      \"ate_20\": -95067436.07622764,\n      \"ate_25\": -60464419.00163435,\n      \"ate_30\": 50524448.33941379,\n      \"ate_35\": 76324390.90747476,\n      \"ate_40\": 25734900.385493636,\n      \"ate_45\": -37952750.838078186,\n      \"ate_50\": -60724780.85871271,\n      \"ate_55\": -31719867.810659125,\n      \"ate_60\": -62369247.295873456,\n      \"ate_65\": -1912739.6934987605,\n      \"ate_70\": 7837772.440348938,\n      \"ate_75\": 14228316.255972654,\n      \"ate_80\": 38800190.507109195,\n      \"ate_85\": 30985842.682792738,\n      \"ate_90\": 69481458.3994301\n    }\n  ],\n  \"contas_receber\": [\n    {\n      \"vencido_07\": -17490528.94378203,\n      \"vencido_90\": 22130043.365460977,\n      \"vencido_30\": -74758149.02638596,\n      \"vencido_15\": -25099284.391726285,\n      \"apos_90\": -15086342.393368974,\n      \"ate_05\": 91124633.57137334,\n      \"ate_10\": -81772496.89788364,\n      \"ate_15\": 60298384.93548924,\n      \"ate_20\": 67389330.21337914,\n      \"ate_25\": -67905726.70030528,\n      \"ate_30\": -6266584.608883455,\n      \"ate_35\": -87189303.62531538,\n      \"ate_40\": 15936827.06706047,\n      \"ate_45\": -25732430.07251875,\n      \"ate_50\": -95905691.65887271,\n      \"ate_55\": 45565809.938147664,\n      \"ate_60\": 2194252.439345941,\n      \"ate_65\": 79048465.8634437,\n      \"ate_70\": -82398958.36651824,\n      \"ate_75\": 92114565.59379849,\n      \"ate_80\": 3969582.629186034,\n      \"ate_85\": -68741340.074348,\n      \"ate_90\": 32532374.288407385\n    },\n    {\n      \"vencido_07\": -28966414.600305513,\n      \"vencido_90\": -81893351.56837374,\n      \"vencido_30\": 66692039.205409735,\n      \"vencido_15\": 8732563.514770046,\n      \"apos_90\": -62373548.100862086,\n      \"ate_05\": -58309805.9320553,\n      \"ate_10\": 76480200.15048295,\n      \"ate_15\": -4270869.51013425,\n      \"ate_20\": 26252171.81337267,\n      \"ate_25\": 33169404.288287073,\n      \"ate_30\": 36228264.71736786,\n      \"ate_35\": 378057.25601808727,\n      \"ate_40\": 57810724.66806725,\n      \"ate_45\": -55511874.47129924,\n      \"ate_50\": 8783895.678965598,\n      \"ate_55\": -27512537.029459104,\n      \"ate_60\": -55726462.21943431,\n      \"ate_65\": -77806881.59426638,\n      \"ate_70\": -22360324.410058215,\n      \"ate_75\": 85654446.22628817,\n      \"ate_80\": 53320962.82741636,\n      \"ate_85\": 53976849.07078087,\n      \"ate_90\": 8005627.155565694\n    }\n  ],\n  \"top10_clientes\": {\n    \"mes_01\": [\n      {\n        \"cedente_nome_razao_social\": \"dolor et velit eiusmod offici\",\n        \"cedente_cnpj\": \"magna Duis\",\n        \"sacado_nome_fantasia\": \"ex irure Except\",\n        \"sacado_razao_social\": \"velit\",\n        \"sacado_cpf_cnpj\": \"laboris labore sit minim\",\n        \"valor_percentual\": -31065574.277922943\n      },\n      {\n        \"cedente_nome_razao_social\": \"magna nulla\",\n        \"cedente_cnpj\": \"nulla elit dolor ex\",\n        \"sacado_nome_fantasia\": \"elit Ut aliqu\",\n        \"sacado_razao_social\": \"quis irure Lo\",\n        \"sacado_cpf_cnpj\": \"in proident\",\n        \"valor_percentual\": -50115254.72155367\n      }\n    ],\n    \"mes_02\": [\n      {\n        \"cedente_nome_razao_social\": \"sed\",\n        \"cedente_cnpj\": \"aliqua laboris eiusmod\",\n        \"sacado_nome_fantasia\": \"et Excepteur ut quis\",\n        \"sacado_razao_social\": \"aute commodo ut nulla\",\n        \"sacado_cpf_cnpj\": \"sit dolor aliqua\",\n        \"valor_percentual\": 71635637.41635898\n      },\n      {\n        \"cedente_nome_razao_social\": \"officia Lorem anim minim\",\n        \"cedente_cnpj\": \"dolor sit ea\",\n        \"sacado_nome_fantasia\": \"laboris ad\",\n        \"sacado_razao_social\": \"\",\n        \"sacado_cpf_cnpj\": \"dolor irure\",\n        \"valor_percentual\": -63309690.58776126\n      }\n    ],\n    \"mes_03\": [\n      {\n        \"cedente_nome_razao_social\": \"id ullamco dolore\",\n        \"cedente_cnpj\": \"eiusmod ex reprehenderit enim aliqua\",\n        \"sacado_nome_fantasia\": \"est amet\",\n        \"sacado_razao_social\": \"id laborum magna\",\n        \"sacado_cpf_cnpj\": \"anim aliquip officia Lorem occaecat\",\n        \"valor_percentual\": 92002249.5077064\n      },\n      {\n        \"cedente_nome_razao_social\": \"Ut dolor minim sunt\",\n        \"cedente_cnpj\": \"pariatur\",\n        \"sacado_nome_fantasia\": \"pariatur sit incididunt\",\n        \"sacado_razao_social\": \"proident aliqua\",\n        \"sacado_cpf_cnpj\": \"laborum Lorem\",\n        \"valor_percentual\": 37223104.079286605\n      }\n    ],\n    \"mes_04\": [\n      {\n        \"cedente_nome_razao_social\": \"adipisicing ut\",\n        \"cedente_cnpj\": \"e\",\n        \"sacado_nome_fantasia\": \"qui consequat\",\n        \"sacado_razao_social\": \"tempor quis\",\n        \"sacado_cpf_cnpj\": \"sunt consequat\",\n        \"valor_percentual\": -99810751.63646373\n      },\n      {\n        \"cedente_nome_razao_social\": \"mollit dolore tempor culpa reprehenderit\",\n        \"cedente_cnpj\": \"aliqua consectetur sunt fugiat\",\n        \"sacado_nome_fantasia\": \"id ad mollit deserunt\",\n        \"sacado_razao_social\": \"ullamco tempor eiusmod ipsum\",\n        \"sacado_cpf_cnpj\": \"consequat dolor aute sunt\",\n        \"valor_percentual\": -53109801.32374854\n      }\n    ],\n    \"mes_05\": [\n      {\n        \"cedente_nome_razao_social\": \"d\",\n        \"cedente_cnpj\": \"dolore et culpa\",\n        \"sacado_nome_fantasia\": \"tempor id\",\n        \"sacado_razao_social\": \"pariatur laborum deserunt velit\",\n        \"sacado_cpf_cnpj\": \"qui non voluptate dolore\",\n        \"valor_percentual\": 82772972.82598531\n      },\n      {\n        \"cedente_nome_razao_social\": \"voluptate incididunt sint labore\",\n        \"cedente_cnpj\": \"dolor velit irure labore\",\n        \"sacado_nome_fantasia\": \"Ut tempor mollit\",\n        \"sacado_razao_social\": \"tempor\",\n        \"sacado_cpf_cnpj\": \"sit quis Excepteur\",\n        \"valor_percentual\": 93191052.88317248\n      }\n    ],\n    \"mes_06\": [\n      {\n        \"cedente_nome_razao_social\": \"Ut Excepteur\",\n        \"cedente_cnpj\": \"cupidatat aliqua\",\n        \"sacado_nome_fantasia\": \"dolor e\",\n        \"sacado_razao_social\": \"occaecat\",\n        \"sacado_cpf_cnpj\": \"in magna\",\n        \"valor_percentual\": 2842882.0750640184\n      },\n      {\n        \"cedente_nome_razao_social\": \"non nulla laboris do\",\n        \"cedente_cnpj\": \"et\",\n        \"sacado_nome_fantasia\": \"adipisicing irure\",\n        \"sacado_razao_social\": \"ipsum Ut cillum labore\",\n        \"sacado_cpf_cnpj\": \"labore tempor\",\n        \"valor_percentual\": 24816890.162017018\n      }\n    ]\n  },\n  \"top10_fornecedores\": {\n    \"mes_01\": [\n      {\n        \"cedente_nome_razao_social\": \"dolor pariatur sunt\",\n        \"cedente_cnpj\": \"laborum ex\",\n        \"sacado_nome_fantasia\": \"veniam nulla ea\",\n        \"sacado_razao_social\": \"qui dolor aliquip\",\n        \"sacado_cpf_cnpj\": \"ullamco ut\",\n        \"valor_percentual\": 72129475.26793432\n      },\n      {\n        \"cedente_nome_razao_social\": \"incididunt fugiat enim in est\",\n        \"cedente_cnpj\": \"eiusmod aute\",\n        \"sacado_nome_fantasia\": \"eu ut\",\n        \"sacado_razao_social\": \"ullamco\",\n        \"sacado_cpf_cnpj\": \"ex enim veniam\",\n        \"valor_percentual\": 97960757.8054699\n      }\n    ],\n    \"mes_02\": [\n      {\n        \"cedente_nome_razao_social\": \"Lorem\",\n        \"cedente_cnpj\": \"Lorem in in sed\",\n        \"sacado_nome_fantasia\": \"laborum Ut exercitation\",\n        \"sacado_razao_social\": \"in\",\n        \"sacado_cpf_cnpj\": \"dolor sit pariatur\",\n        \"valor_percentual\": 10433398.639281675\n      },\n      {\n        \"cedente_nome_razao_social\": \"ut ad in\",\n        \"cedente_cnpj\": \"commodo quis\",\n        \"sacado_nome_fantasia\": \"commodo est voluptate eu\",\n        \"sacado_razao_social\": \"eu incididunt culpa proident quis\",\n        \"sacado_cpf_cnpj\": \"laboris fugiat consequat\",\n        \"valor_percentual\": 31917836.071001068\n      }\n    ],\n    \"mes_03\": [\n      {\n        \"cedente_nome_razao_social\": \"occaecat dolore\",\n        \"cedente_cnpj\": \"ullamco consectetur\",\n        \"sacado_nome_fantasia\": \"proident mollit nisi\",\n        \"sacado_razao_social\": \"dolore in\",\n        \"sacado_cpf_cnpj\": \"officia aliquip\",\n        \"valor_percentual\": -2861218.990590602\n      },\n      {\n        \"cedente_nome_razao_social\": \"ad\",\n        \"cedente_cnpj\": \"in aute esse aliquip\",\n        \"sacado_nome_fantasia\": \"esse irure eiusmod do minim\",\n        \"sacado_razao_social\": \"do\",\n        \"sacado_cpf_cnpj\": \"laboris anim do in dolore\",\n        \"valor_percentual\": -39636038.448497236\n      }\n    ],\n    \"mes_04\": [\n      {\n        \"cedente_nome_razao_social\": \"Ut non\",\n        \"cedente_cnpj\": \"do\",\n        \"sacado_nome_fantasia\": \"esse occaecat enim vol\",\n        \"sacado_razao_social\": \"fugiat\",\n        \"sacado_cpf_cnpj\": \"in ut\",\n        \"valor_percentual\": 8698233.319852337\n      },\n      {\n        \"cedente_nome_razao_social\": \"tempor in labore\",\n        \"cedente_cnpj\": \"voluptate sint dolore deserunt nisi\",\n        \"sacado_nome_fantasia\": \"qui\",\n        \"sacado_razao_social\": \"ad\",\n        \"sacado_cpf_cnpj\": \"Ut sunt nostrud esse\",\n        \"valor_percentual\": 99607061.77167612\n      }\n    ],\n    \"mes_05\": [\n      {\n        \"cedente_nome_razao_social\": \"cillum\",\n        \"cedente_cnpj\": \"occaecat minim id fugiat\",\n        \"sacado_nome_fantasia\": \"ut et deserunt Duis\",\n        \"sacado_razao_social\": \"officia\",\n        \"sacado_cpf_cnpj\": \"occaecat Exce\",\n        \"valor_percentual\": -92759607.42506522\n      },\n      {\n        \"cedente_nome_razao_social\": \"anim mollit enim ut\",\n        \"cedente_cnpj\": \"Lorem laboris \",\n        \"sacado_nome_fantasia\": \"ea ut\",\n        \"sacado_razao_social\": \"ut dolor\",\n        \"sacado_cpf_cnpj\": \"ut\",\n        \"valor_percentual\": -92931049.87031242\n      }\n    ],\n    \"mes_06\": [\n      {\n        \"cedente_nome_razao_social\": \"ea\",\n        \"cedente_cnpj\": \"occaecat dolore nostrud consectetur\",\n        \"sacado_nome_fantasia\": \"Ut proident nisi\",\n        \"sacado_razao_social\": \"Ut in commodo e\",\n        \"sacado_cpf_cnpj\": \"qui Ut sed\",\n        \"valor_percentual\": 31170821.78047377\n      },\n      {\n        \"cedente_nome_razao_social\": \"in eiusmod incididunt\",\n        \"cedente_cnpj\": \"aliquip nisi el\",\n        \"sacado_nome_fantasia\": \"cupidatat consectetur\",\n        \"sacado_razao_social\": \"tempor veniam nisi\",\n        \"sacado_cpf_cnpj\": \"esse enim laboris\",\n        \"valor_percentual\": 29746274.37261121\n      }\n    ]\n  },\n  \"campos_adicionais\": [\n    {\n      \"coluna\": \"Lorem ea elit\",\n      \"tipo\": \"deserunt qui in Lorem occaecat\",\n      \"valor\": \"fugiat consequat\"\n    },\n    {\n      \"coluna\": \"et cupidatat dolore pariatur\",\n      \"tipo\": \"labore aliquip occaecat\",\n      \"valor\": \"et elit Duis qui veniam\"\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/fornecedor",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"fornecedor"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Consulta o score",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/fornecedor/scores",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"fornecedor",
+										"scores"
+									]
+								},
+								"description": "Consulta scores e recomendações de fornecedores(cedentes) que foram analisados. É possível filtrar um CNPJ em específico. Retorna 200, em caso de sucesso."
+							},
+							"response": [
+								{
+									"name": "Consulta realizada com sucesso",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/v1/fornecedor/scores",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"fornecedor",
+												"scores"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"cnpj\": \"ad dolore cupidatat Excepteur mollit\",\n  \"score\": 36878335.78954467,\n  \"data_score\": \"1971-11-25T08:58:23.722Z\",\n  \"recomedacoes\": {\n    \"modalidade\": \"cillum mollit ex\",\n    \"tipo\": \"consequat sunt magna consectetur\",\n    \"descricao\": \"esse in nulla\",\n    \"valor\": -82637904.55636558\n  }\n}"
+								},
+								{
+									"name": "CNPJ inválido",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/v1/fornecedor/scores",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"fornecedor",
+												"scores"
+											]
+										}
+									},
+									"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+									"code": 422,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "Sug recebíveis antecipação",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v1/fornecedor/recebiveis-antecipaveis",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"fornecedor",
+										"recebiveis-antecipaveis"
+									]
+								},
+								"description": "Consulta sugestão de recebíveis para antecipação de fornecedores(cedentes) que foram analisados. Retorna 200, em caso de sucesso."
+							},
+							"response": [
+								{
+									"name": "Consulta realizada com sucesso",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/v1/fornecedor/recebiveis-antecipaveis",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"fornecedor",
+												"recebiveis-antecipaveis"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"recebiveis\": [\n    {\n      \"num_documento\": \"esse\",\n      \"data_emissao_documento\": \"1962-12-13T15:46:33.462Z\",\n      \"data_vencimento_documento\": \"1961-06-27T10:36:43.131Z\",\n      \"valor_bruto\": 20478209.86566493,\n      \"valor_juros_multa\": 81869734.27543774,\n      \"valor_desconto\": -15194167.413532078,\n      \"valor_liquido\": 8738050.70171833,\n      \"observacoes\": \"esse ea est ipsum\"\n    },\n    {\n      \"num_documento\": \"ut officia\",\n      \"data_emissao_documento\": \"1994-12-11T02:42:03.407Z\",\n      \"data_vencimento_documento\": \"1999-01-01T03:22:43.860Z\",\n      \"valor_bruto\": -78721553.87017377,\n      \"valor_juros_multa\": 24481276.49462934,\n      \"valor_desconto\": 42384819.52527505,\n      \"valor_liquido\": 18334978.038085654,\n      \"observacoes\": \"irure voluptate ut dolor\"\n    }\n  ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Envio info recebíveis",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"recebiveis\": [\n    {\n      \"emitente\": {\n        \"nome\": \"non veniam ex velit\",\n        \"nome_razao_social\": \"reprehenderit Excepteur\",\n        \"cnpj\": \"nulla eu do Ut est\",\n        \"nome_abreviado\": \"sit enim nostrud nisi sunt\",\n        \"inscricao_estadual\": \"id dolore\",\n        \"inscricao_municipal\": \"ex qui\",\n        \"endereco\": \"enim veniam\",\n        \"endereco_numero\": \"eiusmod exercitation sint ut\",\n        \"endereco_complemento\": \"est e\",\n        \"endereco_bairro\": \"non cupidatat dolore\",\n        \"endereco_cidade\": \"nulla veniam\",\n        \"endereco_cep\": \"nulla ad amet\",\n        \"endereco_uf\": \"do sunt eu est\",\n        \"endereco_pais\": \"eu magna tempor\",\n        \"endereco_telefone_01\": \"consequat irure\",\n        \"endereco_telefone_02\": \"officia d\",\n        \"endereco_telefone_03\": \"ullamco\",\n        \"endereco_telefone_04\": \"eiusmod culpa irure ullamco ipsum\",\n        \"endereco_telefone_05\": \"in enim Excepteur\",\n        \"endereco_site\": \"amet aute\",\n        \"endereco_email\": \"veniam voluptate labore anim nostrud\",\n        \"data_registro\": \"1960-12-21T22:09:32.219Z\",\n        \"tipo_apuracao\": \"sed non Duis est\"\n      },\n      \"cliente\": {\n        \"tipo_pessoa_fisica\": \"in eiusmod\",\n        \"cpf_cnpj\": \"nisi ut reprehenderit voluptate eu\",\n        \"razao_social\": \"ex velit\",\n        \"nome_fantasia\": \"mo\",\n        \"limite_credito\": 8995163.041122466,\n        \"natureza_juridica\": \"cillum\",\n        \"endereco\": \"eiusmod\",\n        \"endereco_numero\": \"id qui\",\n        \"endereco_complemento\": \"mollit sint Lorem officia\",\n        \"endereco_bairro\": \"ullamco minim sunt magna\",\n        \"endereco_cidade\": \"dolor eiusmod commodo\",\n        \"endereco_cep\": \"culpa minim deserunt fugiat\",\n        \"endereco_uf\": \"commodo sunt non\",\n        \"endereco_pais\": \"ullamco anim velit\",\n        \"endereco_telefone_01\": \"aliquip mollit\",\n        \"endereco_telefone_02\": \"mollit officia\",\n        \"endereco_telefone_03\": \"magna eu\",\n        \"endereco_telefone_04\": \"laboris mollit magna\",\n        \"endereco_telefone_05\": \"in ullamco\",\n        \"endereco_site\": \"non\",\n        \"endereco_email\": \"ad et\"\n      },\n      \"nfe\": {\n        \"num_documento\": \"amet\",\n        \"data_emissao\": \"2013-01-19T23:43:02.408Z\",\n        \"tipo_es\": \"proident commodo\",\n        \"valor_total_bruto\": 20272528.15524921,\n        \"valor_total_liquido\": 49755184.47863102,\n        \"valor_total_custo\": -61356945.826895125,\n        \"status\": \"dolor do laboris conseq\",\n        \"data_ultima_alteracao\": \"2001-04-26T22:52:58.309Z\",\n        \"obs_gerais\": \"in nulla veniam aliqua\",\n        \"sefaz_id\": \"\",\n        \"sefaz_recibo\": \"exercitation est eu\",\n        \"sefaz_protocolo\": \"ad est\",\n        \"sefaz_xml\": \"eiusmod\",\n        \"sefaz_status_retorno\": \"amet laborum qui aute\",\n        \"sefaz_xml_autorizacao\": \"do fugiat culpa\",\n        \"data_cancelamento\": \"1963-04-22T05:01:03.907Z\",\n        \"obs_cancelamento\": \"dolore irure\",\n        \"sefaz_status_cancelamento\": \"amet Duis quis minim non\",\n        \"sefaz_xml_cancelamento\": \"Excepteur amet enim\",\n        \"numero_pedido\": \"et ipsum\",\n        \"data_pedido\": \"1976-10-08T17:11:48.910Z\"\n      },\n      \"titulo\": {\n        \"num_documento\": \"do nisi in ipsum\",\n        \"data_emissao_documento\": \"1950-06-05T17:16:27.870Z\",\n        \"data_vencimento_documento_atual\": \"2018-05-12T16:27:24.891Z\",\n        \"data_vencimento_documento_original\": \"1998-05-07T10:18:15.793Z\",\n        \"valor_bruto\": 87011644.32781917,\n        \"valor_juros_multa\": 39995414.5342949,\n        \"valor_desconto\": 79404199.552023,\n        \"valor_liquido\": 25315934.30981283,\n        \"data_ultima_alteracao\": \"2013-05-12T05:47:11.884Z\",\n        \"data_pagamento\": \"2018-07-23T13:22:49.719Z\",\n        \"forma_pagamento\": \"magna\",\n        \"status\": \"eu\",\n        \"num_documento_novo_titulo\": \"laboris in consequat\",\n        \"observacoes\": \"ullamco \"\n      },\n      \"campos_adicionais\": [\n        {\n          \"coluna\": \"commodo Ut veniam\",\n          \"tipo\": \"amet consequat culpa\",\n          \"valor\": \"proident sit\"\n        },\n        {\n          \"coluna\": \"nulla aliquip magna quis\",\n          \"tipo\": \"irure ut dolo\",\n          \"valor\": \"ullamco\"\n        }\n      ]\n    },\n    {\n      \"emitente\": {\n        \"nome\": \"fugiat est voluptate nulla\",\n        \"nome_razao_social\": \"Excepteur cillum\",\n        \"cnpj\": \"exercitation deserunt esse dolor\",\n        \"nome_abreviado\": \"ut est consequat Duis\",\n        \"inscricao_estadual\": \"veniam officia dolore\",\n        \"inscricao_municipal\": \"dolore eiusmod anim\",\n        \"endereco\": \"dolore sint ipsum irure\",\n        \"endereco_numero\": \"aliquip ex\",\n        \"endereco_complemento\": \"eiusmod in\",\n        \"endereco_bairro\": \"eiusmod ullamco nisi\",\n        \"endereco_cidade\": \"laboris consectetur nostrud Duis\",\n        \"endereco_cep\": \"irure qui commodo\",\n        \"endereco_uf\": \"deserunt enim\",\n        \"endereco_pais\": \"sit dolore\",\n        \"endereco_telefone_01\": \"aliquip\",\n        \"endereco_telefone_02\": \"eiusmod co\",\n        \"endereco_telefone_03\": \"quis non veniam incididunt\",\n        \"endereco_telefone_04\": \"dolore mollit id ea\",\n        \"endereco_telefone_05\": \"ad in ipsum aute\",\n        \"endereco_site\": \"laboris incididunt minim\",\n        \"endereco_email\": \"esse eu \",\n        \"data_registro\": \"2010-10-17T18:51:57.680Z\",\n        \"tipo_apuracao\": \"nisi Excepteur officia in\"\n      },\n      \"cliente\": {\n        \"tipo_pessoa_fisica\": \"ut minim enim\",\n        \"cpf_cnpj\": \"incididunt laborum commodo dolor\",\n        \"razao_social\": \"sint mollit commodo consectetur dolo\",\n        \"nome_fantasia\": \"dolore incididunt\",\n        \"limite_credito\": -70240748.58177093,\n        \"natureza_juridica\": \"Excepteur Duis\",\n        \"endereco\": \"officia minim deserunt ut ex\",\n        \"endereco_numero\": \"velit\",\n        \"endereco_complemento\": \"aliqua dolor tempor eu sunt\",\n        \"endereco_bairro\": \"culpa\",\n        \"endereco_cidade\": \"magna in Excepteur dolore\",\n        \"endereco_cep\": \"Duis mollit irure voluptate nulla\",\n        \"endereco_uf\": \"eu\",\n        \"endereco_pais\": \"eu irure\",\n        \"endereco_telefone_01\": \"sint fugiat dolor cupidat\",\n        \"endereco_telefone_02\": \"cillum do qui\",\n        \"endereco_telefone_03\": \"labore\",\n        \"endereco_telefone_04\": \"id tempor ut voluptate\",\n        \"endereco_telefone_05\": \"sit anim\",\n        \"endereco_site\": \"nulla laborum Excepteur commodo\",\n        \"endereco_email\": \"adipisicing dolor veniam nostr\"\n      },\n      \"nfe\": {\n        \"num_documento\": \"aliqua in cillum\",\n        \"data_emissao\": \"1985-04-20T22:05:09.940Z\",\n        \"tipo_es\": \"labore\",\n        \"valor_total_bruto\": -27769486.13779266,\n        \"valor_total_liquido\": -11900735.535732701,\n        \"valor_total_custo\": 8837448.739123493,\n        \"status\": \"Ut consectetur nisi elit\",\n        \"data_ultima_alteracao\": \"2017-02-28T19:09:45.562Z\",\n        \"obs_gerais\": \"nostrud dolor et dolor\",\n        \"sefaz_id\": \"adipisicing Ut quis aliquip\",\n        \"sefaz_recibo\": \"laborum cillum labore irure\",\n        \"sefaz_protocolo\": \"Excepteur\",\n        \"sefaz_xml\": \"in aliqua consectetur\",\n        \"sefaz_status_retorno\": \"ipsum in Excepteur\",\n        \"sefaz_xml_autorizacao\": \"pariatur et\",\n        \"data_cancelamento\": \"1948-01-05T21:51:13.075Z\",\n        \"obs_cancelamento\": \"nulla\",\n        \"sefaz_status_cancelamento\": \"tempor quis Lorem \",\n        \"sefaz_xml_cancelamento\": \"id do\",\n        \"numero_pedido\": \"aliquip cupidat\",\n        \"data_pedido\": \"2010-03-08T18:50:02.906Z\"\n      },\n      \"titulo\": {\n        \"num_documento\": \"minim in consectetur l\",\n        \"data_emissao_documento\": \"1953-04-21T05:21:52.477Z\",\n        \"data_vencimento_documento_atual\": \"1996-08-15T02:25:06.968Z\",\n        \"data_vencimento_documento_original\": \"2011-06-21T21:42:37.827Z\",\n        \"valor_bruto\": -77610032.46252996,\n        \"valor_juros_multa\": -87450994.75583155,\n        \"valor_desconto\": 39481381.09029445,\n        \"valor_liquido\": -51967877.44648184,\n        \"data_ultima_alteracao\": \"1982-11-10T07:56:06.636Z\",\n        \"data_pagamento\": \"1982-06-26T01:46:32.566Z\",\n        \"forma_pagamento\": \"dolore proident Exce\",\n        \"status\": \"fugiat sed\",\n        \"num_documento_novo_titulo\": \"dolor ipsum\",\n        \"observacoes\": \"velit quis sint id commodo\"\n      },\n      \"campos_adicionais\": [\n        {\n          \"coluna\": \"id\",\n          \"tipo\": \"consectetur ut reprehenderit est\",\n          \"valor\": \"commodo sit magna\"\n        },\n        {\n          \"coluna\": \"tempor\",\n          \"tipo\": \"Lorem ut sint\",\n          \"valor\": \"ex aliqua\"\n        }\n      ]\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/recebiveis",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"recebiveis"
+							]
+						},
+						"description": "Envio de informações dos recebíveis de clientes(sacados) a serem analisados. Retorna 201, em caso de sucesso. Os campos com formato Date-time devem ser enviados no formato ISO 8601 informando o offset do timezone (fuso horário) ou com Z no final para zero (UTC)."
+					},
+					"response": [
+						{
+							"name": "Envio feito com sucesso",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"recebiveis\": [\n    {\n      \"emitente\": {\n        \"nome\": \"ea sed do\",\n        \"nome_razao_social\": \"laboris mollit aute consectetur quis\",\n        \"cnpj\": \"ut occaecat\",\n        \"nome_abreviado\": \"ipsum est eiusm\",\n        \"inscricao_estadual\": \"id pariatur in aute\",\n        \"inscricao_municipal\": \"veniam sed\",\n        \"endereco\": \"incididunt reprehenderit\",\n        \"endereco_numero\": \"ullamco ex\",\n        \"endereco_complemento\": \"sint incididunt ut\",\n        \"endereco_bairro\": \"occaecat proident deserunt labore et\",\n        \"endereco_cidade\": \"Lorem in dolore\",\n        \"endereco_cep\": \"do culpa eu laboris adipisicing\",\n        \"endereco_uf\": \"commodo amet e\",\n        \"endereco_pais\": \"nisi\",\n        \"endereco_telefone_01\": \"nostrud ea\",\n        \"endereco_telefone_02\": \"enim exerc\",\n        \"endereco_telefone_03\": \"non\",\n        \"endereco_telefone_04\": \"pariatur i\",\n        \"endereco_telefone_05\": \"tempor ad eiusmod est\",\n        \"endereco_site\": \"adipisicing ad ea\",\n        \"endereco_email\": \"id esse ullamco dolore\",\n        \"data_registro\": \"1969-03-29T21:35:40.795Z\",\n        \"tipo_apuracao\": \"es\"\n      },\n      \"cliente\": {\n        \"tipo_pessoa_fisica\": \"consequat dolor officia do fugiat\",\n        \"cpf_cnpj\": \"labore irure Ut\",\n        \"razao_social\": \"adipisicing officia in\",\n        \"nome_fantasia\": \"Ut\",\n        \"limite_credito\": -57130327.15187767,\n        \"natureza_juridica\": \"labore\",\n        \"endereco\": \"tempor\",\n        \"endereco_numero\": \"pariatur aliqua aute\",\n        \"endereco_complemento\": \"Excepteur deserunt Duis irure Lorem\",\n        \"endereco_bairro\": \"occaecat mol\",\n        \"endereco_cidade\": \"esse Lorem Excepteur\",\n        \"endereco_cep\": \"mollit pariatur magna in\",\n        \"endereco_uf\": \"veniam exercitation velit laboris\",\n        \"endereco_pais\": \"amet nostrud eiusmod consequat\",\n        \"endereco_telefone_01\": \"et proident deserunt\",\n        \"endereco_telefone_02\": \"in reprehenderit commodo Lorem\",\n        \"endereco_telefone_03\": \"officia minim\",\n        \"endereco_telefone_04\": \"aliqua sit\",\n        \"endereco_telefone_05\": \"et veniam aute ut\",\n        \"endereco_site\": \"magna Lorem\",\n        \"endereco_email\": \"culpa adipisicing\"\n      },\n      \"nfe\": {\n        \"num_documento\": \"incididunt Duis sunt ex\",\n        \"data_emissao\": \"2017-10-14T04:57:07.892Z\",\n        \"tipo_es\": \"sint\",\n        \"valor_total_bruto\": 22735396.445089057,\n        \"valor_total_liquido\": -81012619.70213716,\n        \"valor_total_custo\": 58543390.55801284,\n        \"status\": \"eu ad elit sed\",\n        \"data_ultima_alteracao\": \"2013-01-02T00:30:17.396Z\",\n        \"obs_gerais\": \"dolore \",\n        \"sefaz_id\": \"nisi cupidatat\",\n        \"sefaz_recibo\": \"aliqua\",\n        \"sefaz_protocolo\": \"incididunt reprehenderit d\",\n        \"sefaz_xml\": \"dolore tempor\",\n        \"sefaz_status_retorno\": \"aliqua nostrud nisi\",\n        \"sefaz_xml_autorizacao\": \"quis sit \",\n        \"data_cancelamento\": \"1979-02-09T04:34:11.966Z\",\n        \"obs_cancelamento\": \"consectetu\",\n        \"sefaz_status_cancelamento\": \"incididunt sunt\",\n        \"sefaz_xml_cancelamento\": \"esse consequat anim\",\n        \"numero_pedido\": \"adipisicing culpa deserunt et exercitation\",\n        \"data_pedido\": \"1996-07-15T12:03:20.309Z\"\n      },\n      \"titulo\": {\n        \"num_documento\": \"anim proident adipisicing dolore\",\n        \"data_emissao_documento\": \"2008-10-22T20:27:21.026Z\",\n        \"data_vencimento_documento_atual\": \"1976-02-02T01:31:03.187Z\",\n        \"data_vencimento_documento_original\": \"2017-02-04T16:36:56.632Z\",\n        \"valor_bruto\": 87906259.70343897,\n        \"valor_juros_multa\": -85455970.43338794,\n        \"valor_desconto\": 23952762.291788206,\n        \"valor_liquido\": 3464106.828845322,\n        \"data_ultima_alteracao\": \"1985-12-31T03:03:46.593Z\",\n        \"data_pagamento\": \"1984-09-06T02:35:47.861Z\",\n        \"forma_pagamento\": \"nisi incididunt\",\n        \"status\": \"ullamco quis proident\",\n        \"num_documento_novo_titulo\": \"ipsum ea consectetur\",\n        \"observacoes\": \"pariatur aute tempor ullamco\"\n      },\n      \"campos_adicionais\": [\n        {\n          \"coluna\": \"eu tempor proident velit\",\n          \"tipo\": \"dolore\",\n          \"valor\": \"dolore amet fugiat pariatur\"\n        },\n        {\n          \"coluna\": \"do deserunt dolor nulla\",\n          \"tipo\": \"dolor do\",\n          \"valor\": \"quis sunt Duis\"\n        }\n      ]\n    },\n    {\n      \"emitente\": {\n        \"nome\": \"cupidatat consectetur sit\",\n        \"nome_razao_social\": \"Duis\",\n        \"cnpj\": \"nostrud Duis laborum\",\n        \"nome_abreviado\": \"exercitation occaecat\",\n        \"inscricao_estadual\": \"ullamco\",\n        \"inscricao_municipal\": \"sint Lorem sed\",\n        \"endereco\": \"sit\",\n        \"endereco_numero\": \"sunt ea \",\n        \"endereco_complemento\": \"dolor\",\n        \"endereco_bairro\": \"commodo con\",\n        \"endereco_cidade\": \"ex\",\n        \"endereco_cep\": \"cillum ad\",\n        \"endereco_uf\": \"magna quis voluptate\",\n        \"endereco_pais\": \"nostrud\",\n        \"endereco_telefone_01\": \"nisi\",\n        \"endereco_telefone_02\": \"ut irure ut fugiat\",\n        \"endereco_telefone_03\": \"culpa incididunt laborum adipisicing\",\n        \"endereco_telefone_04\": \"magna incididunt in sit id\",\n        \"endereco_telefone_05\": \"cillum mollit exercitation\",\n        \"endereco_site\": \"labore ad\",\n        \"endereco_email\": \"dolor quis cupidatat ut deserunt\",\n        \"data_registro\": \"2018-09-27T09:29:22.506Z\",\n        \"tipo_apuracao\": \"deserunt mollit\"\n      },\n      \"cliente\": {\n        \"tipo_pessoa_fisica\": \"exercitation pariatur consectetur elit ut\",\n        \"cpf_cnpj\": \"consequat dolor dolore Lorem\",\n        \"razao_social\": \"ad voluptate cillum sit\",\n        \"nome_fantasia\": \"nulla consequat Lorem\",\n        \"limite_credito\": 93761534.11925805,\n        \"natureza_juridica\": \"culpa\",\n        \"endereco\": \"ipsum culpa\",\n        \"endereco_numero\": \"labore sed amet\",\n        \"endereco_complemento\": \"quis minim dolor\",\n        \"endereco_bairro\": \"aute sit\",\n        \"endereco_cidade\": \"ut dolore laborum ut\",\n        \"endereco_cep\": \"nostrud cupidatat id\",\n        \"endereco_uf\": \"aliquip Duis incididunt\",\n        \"endereco_pais\": \"nulla Ut\",\n        \"endereco_telefone_01\": \"fugiat occaecat minim ad\",\n        \"endereco_telefone_02\": \"ut sunt ea culpa\",\n        \"endereco_telefone_03\": \"a\",\n        \"endereco_telefone_04\": \"ullamco labore\",\n        \"endereco_telefone_05\": \"ea ad ex proident\",\n        \"endereco_site\": \"labore laboris velit quis aute\",\n        \"endereco_email\": \"irure\"\n      },\n      \"nfe\": {\n        \"num_documento\": \"sint aliqua Duis minim occaecat\",\n        \"data_emissao\": \"1991-02-22T08:49:53.171Z\",\n        \"tipo_es\": \"in exercitation aute commodo\",\n        \"valor_total_bruto\": 15916703.874433354,\n        \"valor_total_liquido\": -79977591.15888345,\n        \"valor_total_custo\": 45293505.89939806,\n        \"status\": \"sit sunt nostrud officia\",\n        \"data_ultima_alteracao\": \"2020-10-31T20:38:54.743Z\",\n        \"obs_gerais\": \"labore do\",\n        \"sefaz_id\": \"Excepteur consectetur in eiusmod\",\n        \"sefaz_recibo\": \"Excepteur aute pariatur et elit\",\n        \"sefaz_protocolo\": \"incididunt voluptate tempor fugiat\",\n        \"sefaz_xml\": \"anim nulla enim non commodo\",\n        \"sefaz_status_retorno\": \"magna quis\",\n        \"sefaz_xml_autorizacao\": \"Excepteur\",\n        \"data_cancelamento\": \"1978-09-14T07:42:50.234Z\",\n        \"obs_cancelamento\": \"officia non incididunt\",\n        \"sefaz_status_cancelamento\": \"consectetur ad\",\n        \"sefaz_xml_cancelamento\": \"sit mollit Duis laborum\",\n        \"numero_pedido\": \"ex\",\n        \"data_pedido\": \"1972-02-24T21:02:04.365Z\"\n      },\n      \"titulo\": {\n        \"num_documento\": \"in\",\n        \"data_emissao_documento\": \"1947-04-20T19:07:28.223Z\",\n        \"data_vencimento_documento_atual\": \"1975-10-02T10:35:33.522Z\",\n        \"data_vencimento_documento_original\": \"1960-12-23T14:42:10.472Z\",\n        \"valor_bruto\": 75566779.46309042,\n        \"valor_juros_multa\": -61991514.304196075,\n        \"valor_desconto\": -73739244.05364081,\n        \"valor_liquido\": -45537208.96234692,\n        \"data_ultima_alteracao\": \"1958-09-04T13:37:01.893Z\",\n        \"data_pagamento\": \"1963-03-21T00:41:31.027Z\",\n        \"forma_pagamento\": \"dolore mollit\",\n        \"status\": \"pariatur\",\n        \"num_documento_novo_titulo\": \"ullamco commodo ea ad\",\n        \"observacoes\": \"non sunt\"\n      },\n      \"campos_adicionais\": [\n        {\n          \"coluna\": \"culpa qui labore nostrud\",\n          \"tipo\": \"sint nostrud\",\n          \"valor\": \"culpa\"\n        },\n        {\n          \"coluna\": \"laborum minim nostrud labore consectetur\",\n          \"tipo\": \"dolo\",\n          \"valor\": \"laborum\"\n        }\n      ]\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/recebiveis",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"recebiveis"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Campo faltando no payload",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"recebiveis\": [\n    {\n      \"emitente\": {\n        \"nome\": \"ea sed do\",\n        \"nome_razao_social\": \"laboris mollit aute consectetur quis\",\n        \"cnpj\": \"ut occaecat\",\n        \"nome_abreviado\": \"ipsum est eiusm\",\n        \"inscricao_estadual\": \"id pariatur in aute\",\n        \"inscricao_municipal\": \"veniam sed\",\n        \"endereco\": \"incididunt reprehenderit\",\n        \"endereco_numero\": \"ullamco ex\",\n        \"endereco_complemento\": \"sint incididunt ut\",\n        \"endereco_bairro\": \"occaecat proident deserunt labore et\",\n        \"endereco_cidade\": \"Lorem in dolore\",\n        \"endereco_cep\": \"do culpa eu laboris adipisicing\",\n        \"endereco_uf\": \"commodo amet e\",\n        \"endereco_pais\": \"nisi\",\n        \"endereco_telefone_01\": \"nostrud ea\",\n        \"endereco_telefone_02\": \"enim exerc\",\n        \"endereco_telefone_03\": \"non\",\n        \"endereco_telefone_04\": \"pariatur i\",\n        \"endereco_telefone_05\": \"tempor ad eiusmod est\",\n        \"endereco_site\": \"adipisicing ad ea\",\n        \"endereco_email\": \"id esse ullamco dolore\",\n        \"data_registro\": \"1969-03-29T21:35:40.795Z\",\n        \"tipo_apuracao\": \"es\"\n      },\n      \"cliente\": {\n        \"tipo_pessoa_fisica\": \"consequat dolor officia do fugiat\",\n        \"cpf_cnpj\": \"labore irure Ut\",\n        \"razao_social\": \"adipisicing officia in\",\n        \"nome_fantasia\": \"Ut\",\n        \"limite_credito\": -57130327.15187767,\n        \"natureza_juridica\": \"labore\",\n        \"endereco\": \"tempor\",\n        \"endereco_numero\": \"pariatur aliqua aute\",\n        \"endereco_complemento\": \"Excepteur deserunt Duis irure Lorem\",\n        \"endereco_bairro\": \"occaecat mol\",\n        \"endereco_cidade\": \"esse Lorem Excepteur\",\n        \"endereco_cep\": \"mollit pariatur magna in\",\n        \"endereco_uf\": \"veniam exercitation velit laboris\",\n        \"endereco_pais\": \"amet nostrud eiusmod consequat\",\n        \"endereco_telefone_01\": \"et proident deserunt\",\n        \"endereco_telefone_02\": \"in reprehenderit commodo Lorem\",\n        \"endereco_telefone_03\": \"officia minim\",\n        \"endereco_telefone_04\": \"aliqua sit\",\n        \"endereco_telefone_05\": \"et veniam aute ut\",\n        \"endereco_site\": \"magna Lorem\",\n        \"endereco_email\": \"culpa adipisicing\"\n      },\n      \"nfe\": {\n        \"num_documento\": \"incididunt Duis sunt ex\",\n        \"data_emissao\": \"2017-10-14T04:57:07.892Z\",\n        \"tipo_es\": \"sint\",\n        \"valor_total_bruto\": 22735396.445089057,\n        \"valor_total_liquido\": -81012619.70213716,\n        \"valor_total_custo\": 58543390.55801284,\n        \"status\": \"eu ad elit sed\",\n        \"data_ultima_alteracao\": \"2013-01-02T00:30:17.396Z\",\n        \"obs_gerais\": \"dolore \",\n        \"sefaz_id\": \"nisi cupidatat\",\n        \"sefaz_recibo\": \"aliqua\",\n        \"sefaz_protocolo\": \"incididunt reprehenderit d\",\n        \"sefaz_xml\": \"dolore tempor\",\n        \"sefaz_status_retorno\": \"aliqua nostrud nisi\",\n        \"sefaz_xml_autorizacao\": \"quis sit \",\n        \"data_cancelamento\": \"1979-02-09T04:34:11.966Z\",\n        \"obs_cancelamento\": \"consectetu\",\n        \"sefaz_status_cancelamento\": \"incididunt sunt\",\n        \"sefaz_xml_cancelamento\": \"esse consequat anim\",\n        \"numero_pedido\": \"adipisicing culpa deserunt et exercitation\",\n        \"data_pedido\": \"1996-07-15T12:03:20.309Z\"\n      },\n      \"titulo\": {\n        \"num_documento\": \"anim proident adipisicing dolore\",\n        \"data_emissao_documento\": \"2008-10-22T20:27:21.026Z\",\n        \"data_vencimento_documento_atual\": \"1976-02-02T01:31:03.187Z\",\n        \"data_vencimento_documento_original\": \"2017-02-04T16:36:56.632Z\",\n        \"valor_bruto\": 87906259.70343897,\n        \"valor_juros_multa\": -85455970.43338794,\n        \"valor_desconto\": 23952762.291788206,\n        \"valor_liquido\": 3464106.828845322,\n        \"data_ultima_alteracao\": \"1985-12-31T03:03:46.593Z\",\n        \"data_pagamento\": \"1984-09-06T02:35:47.861Z\",\n        \"forma_pagamento\": \"nisi incididunt\",\n        \"status\": \"ullamco quis proident\",\n        \"num_documento_novo_titulo\": \"ipsum ea consectetur\",\n        \"observacoes\": \"pariatur aute tempor ullamco\"\n      },\n      \"campos_adicionais\": [\n        {\n          \"coluna\": \"eu tempor proident velit\",\n          \"tipo\": \"dolore\",\n          \"valor\": \"dolore amet fugiat pariatur\"\n        },\n        {\n          \"coluna\": \"do deserunt dolor nulla\",\n          \"tipo\": \"dolor do\",\n          \"valor\": \"quis sunt Duis\"\n        }\n      ]\n    },\n    {\n      \"emitente\": {\n        \"nome\": \"cupidatat consectetur sit\",\n        \"nome_razao_social\": \"Duis\",\n        \"cnpj\": \"nostrud Duis laborum\",\n        \"nome_abreviado\": \"exercitation occaecat\",\n        \"inscricao_estadual\": \"ullamco\",\n        \"inscricao_municipal\": \"sint Lorem sed\",\n        \"endereco\": \"sit\",\n        \"endereco_numero\": \"sunt ea \",\n        \"endereco_complemento\": \"dolor\",\n        \"endereco_bairro\": \"commodo con\",\n        \"endereco_cidade\": \"ex\",\n        \"endereco_cep\": \"cillum ad\",\n        \"endereco_uf\": \"magna quis voluptate\",\n        \"endereco_pais\": \"nostrud\",\n        \"endereco_telefone_01\": \"nisi\",\n        \"endereco_telefone_02\": \"ut irure ut fugiat\",\n        \"endereco_telefone_03\": \"culpa incididunt laborum adipisicing\",\n        \"endereco_telefone_04\": \"magna incididunt in sit id\",\n        \"endereco_telefone_05\": \"cillum mollit exercitation\",\n        \"endereco_site\": \"labore ad\",\n        \"endereco_email\": \"dolor quis cupidatat ut deserunt\",\n        \"data_registro\": \"2018-09-27T09:29:22.506Z\",\n        \"tipo_apuracao\": \"deserunt mollit\"\n      },\n      \"cliente\": {\n        \"tipo_pessoa_fisica\": \"exercitation pariatur consectetur elit ut\",\n        \"cpf_cnpj\": \"consequat dolor dolore Lorem\",\n        \"razao_social\": \"ad voluptate cillum sit\",\n        \"nome_fantasia\": \"nulla consequat Lorem\",\n        \"limite_credito\": 93761534.11925805,\n        \"natureza_juridica\": \"culpa\",\n        \"endereco\": \"ipsum culpa\",\n        \"endereco_numero\": \"labore sed amet\",\n        \"endereco_complemento\": \"quis minim dolor\",\n        \"endereco_bairro\": \"aute sit\",\n        \"endereco_cidade\": \"ut dolore laborum ut\",\n        \"endereco_cep\": \"nostrud cupidatat id\",\n        \"endereco_uf\": \"aliquip Duis incididunt\",\n        \"endereco_pais\": \"nulla Ut\",\n        \"endereco_telefone_01\": \"fugiat occaecat minim ad\",\n        \"endereco_telefone_02\": \"ut sunt ea culpa\",\n        \"endereco_telefone_03\": \"a\",\n        \"endereco_telefone_04\": \"ullamco labore\",\n        \"endereco_telefone_05\": \"ea ad ex proident\",\n        \"endereco_site\": \"labore laboris velit quis aute\",\n        \"endereco_email\": \"irure\"\n      },\n      \"nfe\": {\n        \"num_documento\": \"sint aliqua Duis minim occaecat\",\n        \"data_emissao\": \"1991-02-22T08:49:53.171Z\",\n        \"tipo_es\": \"in exercitation aute commodo\",\n        \"valor_total_bruto\": 15916703.874433354,\n        \"valor_total_liquido\": -79977591.15888345,\n        \"valor_total_custo\": 45293505.89939806,\n        \"status\": \"sit sunt nostrud officia\",\n        \"data_ultima_alteracao\": \"2020-10-31T20:38:54.743Z\",\n        \"obs_gerais\": \"labore do\",\n        \"sefaz_id\": \"Excepteur consectetur in eiusmod\",\n        \"sefaz_recibo\": \"Excepteur aute pariatur et elit\",\n        \"sefaz_protocolo\": \"incididunt voluptate tempor fugiat\",\n        \"sefaz_xml\": \"anim nulla enim non commodo\",\n        \"sefaz_status_retorno\": \"magna quis\",\n        \"sefaz_xml_autorizacao\": \"Excepteur\",\n        \"data_cancelamento\": \"1978-09-14T07:42:50.234Z\",\n        \"obs_cancelamento\": \"officia non incididunt\",\n        \"sefaz_status_cancelamento\": \"consectetur ad\",\n        \"sefaz_xml_cancelamento\": \"sit mollit Duis laborum\",\n        \"numero_pedido\": \"ex\",\n        \"data_pedido\": \"1972-02-24T21:02:04.365Z\"\n      },\n      \"titulo\": {\n        \"num_documento\": \"in\",\n        \"data_emissao_documento\": \"1947-04-20T19:07:28.223Z\",\n        \"data_vencimento_documento_atual\": \"1975-10-02T10:35:33.522Z\",\n        \"data_vencimento_documento_original\": \"1960-12-23T14:42:10.472Z\",\n        \"valor_bruto\": 75566779.46309042,\n        \"valor_juros_multa\": -61991514.304196075,\n        \"valor_desconto\": -73739244.05364081,\n        \"valor_liquido\": -45537208.96234692,\n        \"data_ultima_alteracao\": \"1958-09-04T13:37:01.893Z\",\n        \"data_pagamento\": \"1963-03-21T00:41:31.027Z\",\n        \"forma_pagamento\": \"dolore mollit\",\n        \"status\": \"pariatur\",\n        \"num_documento_novo_titulo\": \"ullamco commodo ea ad\",\n        \"observacoes\": \"non sunt\"\n      },\n      \"campos_adicionais\": [\n        {\n          \"coluna\": \"culpa qui labore nostrud\",\n          \"tipo\": \"sint nostrud\",\n          \"valor\": \"culpa\"\n        },\n        {\n          \"coluna\": \"laborum minim nostrud labore consectetur\",\n          \"tipo\": \"dolo\",\n          \"valor\": \"laborum\"\n        }\n      ]\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/recebiveis",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"recebiveis"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Consulta score cliente",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/v1/cliente/scores",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"cliente",
+								"scores"
+							]
+						},
+						"description": "Consulta scores e recomendações de clientes(sacados) que foram analisados. É possível filtrar um CNPJ em específico. Retorna 200, em caso de sucesso."
+					},
+					"response": [
+						{
+							"name": "Consulta realizada com sucesso",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/v1/cliente/scores",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"cliente",
+										"scores"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"cnpj\": \"incididunt ea aute dolor eu\",\n  \"score\": -68737508.43277761,\n  \"data_score\": \"aute et\",\n  \"recomedacoes\": {\n    \"modalidade\": \"sunt\",\n    \"tipo\": \"dolor exercitation quis\",\n    \"descricao\": \"ut\",\n    \"valor\": -36831034.694630735\n  }\n}"
+						},
+						{
+							"name": "CNPJ inválido",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/v1/cliente/scores",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"cliente",
+										"scores"
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Consulta o status da API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/health",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"health"
+					]
+				},
+				"description": "Consulta se a API está funcionando, retornando status 200 em caso positivo"
+			},
+			"response": [
+				{
+					"name": "Ok",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/health",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"health"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "Novo bearer token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"commodo sit voluptate id\",\n  \"password\": \"anim magna ipsum voluptate\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/auth",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Envio feito com sucesso",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"commodo sit voluptate id\",\n  \"password\": \"anim magna ipsum voluptate\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"access_token\": \"cupidatat ex Excepteur velit\"\n}"
+				},
+				{
+					"name": "A autenticação falhou.",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"commodo sit voluptate id\",\n  \"password\": \"anim magna ipsum voluptate\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}
