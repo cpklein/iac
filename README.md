@@ -1,27 +1,28 @@
 # iac
-Scripts to deal with Integration as Code specification
+Scripts to deal with Integration as Code specification - **Integra.Sky**
 
-Conversor Postman → .iac
-O grupo de Professional Services desenvolveu um script que transforma as collections em .iac. 
+## Postman → iac Converter
+You can run this script locally. Just update the the following variables:
 
-Você pode acessar esse script através de uma chamada REST.
+>examples_dir = 'subdirectory'
+collection_file = 'your_collection.json'
 
-*Variáveis
-Todas as varáveis encontradas no request da collection são convertidas em parâmetros do .iac.
+This script was also meant to run as a proxied AWS Lambda Function 
 
-Entretanto é comum encontrar nas collections variáveis que não desejamos, tais como {{server}} que descrevem o endereço do servidor. Nesse caso podemos usar a lista change_variables para removê-las. Basta especificar um nome vazio "“ para isso.
+### Collection Variables
+All collection variables marked with double braces {{variable}} are converted to iac parameters. However, you may also **rename** or **remove** any existing variable using the **change_variables** object. You must specify any variable that you want to rename as the property and the value must contain the new name or "" (empty) if you want to remove it.
 
-*Response
-As collections permitem armazenar as respostas esperadas das APIs. Nesse momento não estamos utilizando essa informação no .iac. Para remover a response do .iac, especifique  "include_response" : false
 
-*Path 
-O PATH do .iac está decomposto em uma lista com seus ramos. Nas collections podemos já encontrar esse formato e portanto preservamos, ou podemos encontrar apenas o formato raw e nesse caso fazemos um parse  e incluímos o a lista do path.
+### Collections Response
+Collections can store respective responses. They usually consume large amount of space and are currently not being used by the iac specification. You can remove the response from the iac file by specifying **include_response** as **false**.
 
-Variáveis especificadas no path através de “:” também são inseridas nos parâmetros
+### Path
+The iac path is specified as a list with all the branches. This list may or may not be found on the original collection files. The script will generate the path list if not available on the original collection.
+Variables specified on the path are marked with a ":" (colon) as the first character. These variables are also converted to iac parameters.
 
-*Header
-Todas os parâmetros da collection que constam no header são convertidos em parâmetros do .iac. Caso deseje remover algum parâmetro, especifique-o na lista remove_header.
+### Header
+All collection header parameters are converted to iac prameters. You can remove any parameter by specifying its name on the **remove_header** list.
 
-*Collection
-Envie toda a collection  no parâmetro collection. 
+### Collection
+The original collection must be specified in the parameter.
 
